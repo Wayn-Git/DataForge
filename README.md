@@ -35,17 +35,30 @@ Users can upload their data, and our system will automatically:
 
 ## 📸 Screenshots
 
-### Before
+### Hero Page
 
-![Before](./images/before.jpg)
+![Hero Page](./images/before.jpg)
+
+---
+
+### Configuration Options
+
+![options](./images/cleaning_options.jpg)
 
 ---
 
-### After
+### Cleaning Process
 
-![After](./images/after.jpg)
+![Process](./images/process.jpg)
 
 ---
+
+### Cleaning Summary
+
+![summary](./images/cleaning_summary.jpg)
+
+---
+
 
 ## 🛠️ Contributions
 
