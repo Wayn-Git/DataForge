@@ -412,3 +412,321 @@
 2025-08-25 05:44:39,784 - INFO - Final data shape: (215, 5)
 2025-08-25 05:44:39,788 - INFO - Final data saved to: uploads\messy_dataset_cleaned.csv
 2025-08-25 05:44:39,789 - INFO - Pipeline completed. Final shape: (215, 5)
+2025-08-25 06:00:16,250 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 06:01:15,441 - INFO - Dataset info generated - Shape: (215, 5), Missing: 0, Duplicates: 0
+2025-08-25 06:02:05,073 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 06:02:40,711 - INFO - Dataset info generated - Shape: (215, 5), Missing: 0, Duplicates: 0
+2025-08-25 06:03:11,116 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 06:03:52,447 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 06:04:21,811 - INFO - Dataset info generated - Shape: (215, 5), Missing: 0, Duplicates: 0
+2025-08-25 06:13:08,872 - INFO - Dataset info generated - Shape: (205, 6), Missing: 120, Duplicates: 25
+2025-08-25 06:14:34,725 - INFO - Starting pipeline for file: uploads\transactions.csv
+2025-08-25 06:14:34,740 - INFO - Loaded initial dataset: (205, 6)
+2025-08-25 06:14:34,740 - INFO - Running data_type_conversion operation...
+2025-08-25 06:14:34,741 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:14:34,765 - INFO - Data type conversion completed. Conversions: 3
+2025-08-25 06:14:34,769 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:14:34,769 - INFO - Running text_cleaning operation...
+2025-08-25 06:14:34,771 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:14:34,772 - INFO - Running missing_values operation...
+2025-08-25 06:14:34,772 - INFO - Before cleaning, dataset has 205 rows and 6 columns
+2025-08-25 06:14:34,773 - INFO - Found 0 total missing values
+2025-08-25 06:14:34,775 - INFO - missing_values operation completed successfully
+2025-08-25 06:14:34,775 - INFO - Running duplicates operation...
+2025-08-25 06:14:34,775 - INFO - Before cleaning, dataset has 205 rows
+2025-08-25 06:14:34,777 - INFO - Found 25 duplicate rows
+2025-08-25 06:14:34,778 - INFO - After cleaning, dataset has 180 rows
+2025-08-25 06:14:34,780 - INFO - duplicates operation completed successfully
+2025-08-25 06:14:34,781 - INFO - Running outliers operation...
+2025-08-25 06:14:34,781 - INFO - Processing outliers in 4 columns using iqr method
+2025-08-25 06:14:34,788 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 21
+2025-08-25 06:14:34,790 - INFO - outliers operation completed successfully
+2025-08-25 06:14:34,790 - INFO - Running encoding operation...
+2025-08-25 06:14:34,790 - INFO - Before encoding, dataset has 159 rows and 6 columns
+2025-08-25 06:14:34,790 - INFO - Encoding 2 categorical columns: ['PaymentMethod', 'Status']
+2025-08-25 06:14:34,870 - INFO - After encoding, dataset has 159 rows and 15 columns
+2025-08-25 06:14:34,872 - INFO - encoding operation completed successfully
+2025-08-25 06:14:34,873 - INFO - Final data shape: (159, 15)
+2025-08-25 06:14:34,885 - INFO - Final data saved to: uploads\transactions_cleaned.csv
+2025-08-25 06:14:34,885 - INFO - Pipeline completed. Final shape: (159, 15)
+2025-08-25 06:16:50,673 - INFO - Dataset info generated - Shape: (205, 6), Missing: 120, Duplicates: 25
+2025-08-25 06:17:44,254 - INFO - Starting pipeline for file: uploads\transactions.csv
+2025-08-25 06:17:44,257 - INFO - Loaded initial dataset: (205, 6)
+2025-08-25 06:17:44,257 - INFO - Running data_type_conversion operation...
+2025-08-25 06:17:44,258 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:17:44,263 - INFO - Data type conversion completed. Conversions: 3
+2025-08-25 06:17:44,265 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:17:44,265 - INFO - Running text_cleaning operation...
+2025-08-25 06:17:44,268 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:17:44,268 - INFO - Running datetime_parsing operation...
+2025-08-25 06:17:44,268 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 06:17:44,268 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 06:17:44,268 - INFO - Running missing_values operation...
+2025-08-25 06:17:44,268 - INFO - Before cleaning, dataset has 205 rows and 6 columns
+2025-08-25 06:17:44,270 - INFO - Found 0 total missing values
+2025-08-25 06:17:44,271 - INFO - missing_values operation completed successfully
+2025-08-25 06:17:44,272 - INFO - Running duplicates operation...
+2025-08-25 06:17:44,272 - INFO - Before cleaning, dataset has 205 rows
+2025-08-25 06:17:44,272 - INFO - Found 25 duplicate rows
+2025-08-25 06:17:44,273 - INFO - After cleaning, dataset has 180 rows
+2025-08-25 06:17:44,275 - INFO - duplicates operation completed successfully
+2025-08-25 06:17:44,275 - INFO - Running outliers operation...
+2025-08-25 06:17:44,275 - INFO - Processing outliers in 4 columns using iqr method
+2025-08-25 06:17:44,279 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 21
+2025-08-25 06:17:44,281 - INFO - outliers operation completed successfully
+2025-08-25 06:17:44,281 - INFO - Running encoding operation...
+2025-08-25 06:17:44,281 - INFO - Before encoding, dataset has 159 rows and 6 columns
+2025-08-25 06:17:44,281 - INFO - Encoding 2 categorical columns: ['PaymentMethod', 'Status']
+2025-08-25 06:17:44,283 - INFO - After encoding, dataset has 159 rows and 6 columns
+2025-08-25 06:17:44,287 - INFO - encoding operation completed successfully
+2025-08-25 06:17:44,287 - INFO - Final data shape: (159, 6)
+2025-08-25 06:17:44,290 - INFO - Final data saved to: uploads\transactions_cleaned.csv
+2025-08-25 06:17:44,290 - INFO - Pipeline completed. Final shape: (159, 6)
+2025-08-25 06:19:17,075 - INFO - Dataset info generated - Shape: (135, 5), Missing: 89, Duplicates: 15
+2025-08-25 06:20:18,346 - INFO - Starting pipeline for file: uploads\products.csv
+2025-08-25 06:20:18,349 - INFO - Loaded initial dataset: (135, 5)
+2025-08-25 06:20:18,349 - INFO - Running data_type_conversion operation...
+2025-08-25 06:20:18,350 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:20:18,355 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 06:20:18,356 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:20:18,356 - INFO - Running text_cleaning operation...
+2025-08-25 06:20:18,358 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:20:18,358 - INFO - Running missing_values operation...
+2025-08-25 06:20:18,358 - INFO - Before cleaning, dataset has 135 rows and 5 columns
+2025-08-25 06:20:18,359 - INFO - Found 0 total missing values
+2025-08-25 06:20:18,362 - INFO - missing_values operation completed successfully
+2025-08-25 06:20:18,362 - INFO - Running duplicates operation...
+2025-08-25 06:20:18,362 - INFO - Before cleaning, dataset has 135 rows
+2025-08-25 06:20:18,362 - INFO - Found 15 duplicate rows
+2025-08-25 06:20:18,364 - INFO - After cleaning, dataset has 120 rows
+2025-08-25 06:20:18,366 - INFO - duplicates operation completed successfully
+2025-08-25 06:20:18,366 - INFO - Running encoding operation...
+2025-08-25 06:20:18,366 - INFO - Before encoding, dataset has 120 rows and 5 columns
+2025-08-25 06:20:18,366 - INFO - Encoding 1 categorical columns: ['Category']
+2025-08-25 06:20:18,367 - INFO - After encoding, dataset has 120 rows and 5 columns
+2025-08-25 06:20:18,370 - INFO - encoding operation completed successfully
+2025-08-25 06:20:18,370 - INFO - Final data shape: (120, 5)
+2025-08-25 06:20:18,373 - INFO - Final data saved to: uploads\products_cleaned.csv
+2025-08-25 06:20:18,373 - INFO - Pipeline completed. Final shape: (120, 5)
+2025-08-25 06:21:49,073 - INFO - Dataset info generated - Shape: (170, 5), Missing: 136, Duplicates: 20
+2025-08-25 06:22:11,883 - INFO - Starting pipeline for file: uploads\customers.csv
+2025-08-25 06:22:11,887 - INFO - Loaded initial dataset: (170, 5)
+2025-08-25 06:22:11,887 - INFO - Running data_type_conversion operation...
+2025-08-25 06:22:11,887 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:22:11,893 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 06:22:11,895 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:22:11,895 - INFO - Running text_cleaning operation...
+2025-08-25 06:22:11,896 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:22:11,896 - INFO - Running missing_values operation...
+2025-08-25 06:22:11,896 - INFO - Before cleaning, dataset has 170 rows and 5 columns
+2025-08-25 06:22:11,897 - INFO - Found 0 total missing values
+2025-08-25 06:22:11,898 - INFO - missing_values operation completed successfully
+2025-08-25 06:22:11,898 - INFO - Running duplicates operation...
+2025-08-25 06:22:11,898 - INFO - Before cleaning, dataset has 170 rows
+2025-08-25 06:22:11,899 - INFO - Found 20 duplicate rows
+2025-08-25 06:22:11,899 - INFO - After cleaning, dataset has 150 rows
+2025-08-25 06:22:11,902 - INFO - duplicates operation completed successfully
+2025-08-25 06:22:11,902 - INFO - Running encoding operation...
+2025-08-25 06:22:11,902 - INFO - Before encoding, dataset has 150 rows and 5 columns
+2025-08-25 06:22:11,902 - INFO - Encoding 2 categorical columns: ['Gender', 'City']
+2025-08-25 06:22:11,904 - INFO - After encoding, dataset has 150 rows and 5 columns
+2025-08-25 06:22:11,906 - INFO - encoding operation completed successfully
+2025-08-25 06:22:11,906 - INFO - Final data shape: (150, 5)
+2025-08-25 06:22:11,909 - INFO - Final data saved to: uploads\customers_cleaned.csv
+2025-08-25 06:22:11,909 - INFO - Pipeline completed. Final shape: (150, 5)
+2025-08-25 06:23:47,976 - INFO - Dataset info generated - Shape: (205, 6), Missing: 120, Duplicates: 25
+2025-08-25 06:25:03,840 - INFO - Starting pipeline for file: uploads\transactions.csv
+2025-08-25 06:25:03,844 - INFO - Loaded initial dataset: (205, 6)
+2025-08-25 06:25:03,844 - INFO - Running data_type_conversion operation...
+2025-08-25 06:25:03,844 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:25:03,849 - INFO - Data type conversion completed. Conversions: 3
+2025-08-25 06:25:03,852 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:25:03,852 - INFO - Running text_cleaning operation...
+2025-08-25 06:25:03,854 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:25:03,854 - INFO - Running datetime_parsing operation...
+2025-08-25 06:25:03,854 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 06:25:03,854 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 06:25:03,854 - INFO - Running missing_values operation...
+2025-08-25 06:25:03,854 - INFO - Before cleaning, dataset has 205 rows and 6 columns
+2025-08-25 06:25:03,855 - INFO - Found 0 total missing values
+2025-08-25 06:25:03,857 - INFO - missing_values operation completed successfully
+2025-08-25 06:25:03,857 - INFO - Running duplicates operation...
+2025-08-25 06:25:03,857 - INFO - Before cleaning, dataset has 205 rows
+2025-08-25 06:25:03,858 - INFO - Found 25 duplicate rows
+2025-08-25 06:25:03,858 - INFO - After cleaning, dataset has 180 rows
+2025-08-25 06:25:03,860 - INFO - duplicates operation completed successfully
+2025-08-25 06:25:03,860 - INFO - Running outliers operation...
+2025-08-25 06:25:03,860 - INFO - Processing outliers in 4 columns using iqr method
+2025-08-25 06:25:03,864 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 21
+2025-08-25 06:25:03,866 - INFO - outliers operation completed successfully
+2025-08-25 06:25:03,866 - INFO - Running encoding operation...
+2025-08-25 06:25:03,866 - INFO - Before encoding, dataset has 159 rows and 6 columns
+2025-08-25 06:25:03,866 - INFO - Encoding 2 categorical columns: ['PaymentMethod', 'Status']
+2025-08-25 06:25:03,868 - INFO - After encoding, dataset has 159 rows and 6 columns
+2025-08-25 06:25:03,870 - INFO - encoding operation completed successfully
+2025-08-25 06:25:03,871 - INFO - Final data shape: (159, 6)
+2025-08-25 06:25:03,874 - INFO - Final data saved to: uploads\transactions_cleaned.csv
+2025-08-25 06:25:03,874 - INFO - Pipeline completed. Final shape: (159, 6)
+2025-08-25 06:25:38,859 - INFO - Dataset info generated - Shape: (170, 5), Missing: 136, Duplicates: 20
+2025-08-25 06:26:03,898 - INFO - Starting pipeline for file: uploads\customers.csv
+2025-08-25 06:26:03,901 - INFO - Loaded initial dataset: (170, 5)
+2025-08-25 06:26:03,902 - INFO - Running data_type_conversion operation...
+2025-08-25 06:26:03,902 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:26:03,908 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 06:26:03,910 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:26:03,910 - INFO - Running text_cleaning operation...
+2025-08-25 06:26:03,912 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:26:03,912 - INFO - Running missing_values operation...
+2025-08-25 06:26:03,912 - INFO - Before cleaning, dataset has 170 rows and 5 columns
+2025-08-25 06:26:03,912 - INFO - Found 0 total missing values
+2025-08-25 06:26:03,914 - INFO - missing_values operation completed successfully
+2025-08-25 06:26:03,914 - INFO - Running duplicates operation...
+2025-08-25 06:26:03,914 - INFO - Before cleaning, dataset has 170 rows
+2025-08-25 06:26:03,914 - INFO - Found 20 duplicate rows
+2025-08-25 06:26:03,915 - INFO - After cleaning, dataset has 150 rows
+2025-08-25 06:26:03,916 - INFO - duplicates operation completed successfully
+2025-08-25 06:26:03,916 - INFO - Running encoding operation...
+2025-08-25 06:26:03,917 - INFO - Before encoding, dataset has 150 rows and 5 columns
+2025-08-25 06:26:03,917 - INFO - Encoding 2 categorical columns: ['Gender', 'City']
+2025-08-25 06:26:03,919 - INFO - After encoding, dataset has 150 rows and 5 columns
+2025-08-25 06:26:03,921 - INFO - encoding operation completed successfully
+2025-08-25 06:26:03,921 - INFO - Final data shape: (150, 5)
+2025-08-25 06:26:03,924 - INFO - Final data saved to: uploads\customers_cleaned.csv
+2025-08-25 06:26:03,924 - INFO - Pipeline completed. Final shape: (150, 5)
+2025-08-25 06:26:20,765 - INFO - Starting pipeline for file: uploads\customers.csv
+2025-08-25 06:26:20,769 - INFO - Loaded initial dataset: (170, 5)
+2025-08-25 06:26:20,770 - INFO - Running data_type_conversion operation...
+2025-08-25 06:26:20,770 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:26:20,775 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 06:26:20,777 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:26:20,777 - INFO - Running text_cleaning operation...
+2025-08-25 06:26:20,778 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:26:20,778 - INFO - Running missing_values operation...
+2025-08-25 06:26:20,778 - INFO - Before cleaning, dataset has 170 rows and 5 columns
+2025-08-25 06:26:20,779 - INFO - Found 0 total missing values
+2025-08-25 06:26:20,780 - INFO - missing_values operation completed successfully
+2025-08-25 06:26:20,780 - INFO - Running duplicates operation...
+2025-08-25 06:26:20,781 - INFO - Before cleaning, dataset has 170 rows
+2025-08-25 06:26:20,781 - INFO - Found 20 duplicate rows
+2025-08-25 06:26:20,782 - INFO - After cleaning, dataset has 150 rows
+2025-08-25 06:26:20,783 - INFO - duplicates operation completed successfully
+2025-08-25 06:26:20,783 - INFO - Running encoding operation...
+2025-08-25 06:26:20,783 - INFO - Before encoding, dataset has 150 rows and 5 columns
+2025-08-25 06:26:20,783 - INFO - Encoding 2 categorical columns: ['Gender', 'City']
+2025-08-25 06:26:20,788 - INFO - After encoding, dataset has 150 rows and 15 columns
+2025-08-25 06:26:20,790 - INFO - encoding operation completed successfully
+2025-08-25 06:26:20,790 - INFO - Final data shape: (150, 15)
+2025-08-25 06:26:20,794 - INFO - Final data saved to: uploads\customers_cleaned.csv
+2025-08-25 06:26:20,794 - INFO - Pipeline completed. Final shape: (150, 15)
+2025-08-25 06:27:42,314 - INFO - Dataset info generated - Shape: (150, 15), Missing: 0, Duplicates: 0
+2025-08-25 06:28:23,365 - INFO - Starting pipeline for file: uploads\customers_cleaned.csv
+2025-08-25 06:28:23,371 - INFO - Loaded initial dataset: (150, 15)
+2025-08-25 06:28:23,371 - INFO - Running data_type_conversion operation...
+2025-08-25 06:28:23,371 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:28:23,374 - INFO - Data type conversion completed. Conversions: 0
+2025-08-25 06:28:23,377 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:28:23,377 - INFO - Running text_cleaning operation...
+2025-08-25 06:28:23,379 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:28:23,379 - INFO - Running datetime_parsing operation...
+2025-08-25 06:28:23,379 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 06:28:23,379 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 06:28:23,379 - INFO - Running missing_values operation...
+2025-08-25 06:28:23,379 - INFO - Before cleaning, dataset has 150 rows and 15 columns
+2025-08-25 06:28:23,380 - INFO - Found 0 total missing values
+2025-08-25 06:28:23,382 - INFO - missing_values operation completed successfully
+2025-08-25 06:28:23,382 - INFO - Running duplicates operation...
+2025-08-25 06:28:23,382 - INFO - Before cleaning, dataset has 150 rows
+2025-08-25 06:28:23,383 - INFO - Found 0 duplicate rows
+2025-08-25 06:28:23,384 - INFO - After cleaning, dataset has 150 rows
+2025-08-25 06:28:23,387 - INFO - duplicates operation completed successfully
+2025-08-25 06:28:23,387 - INFO - Running encoding operation...
+2025-08-25 06:28:23,387 - INFO - Before encoding, dataset has 150 rows and 15 columns
+2025-08-25 06:28:23,391 - INFO - encoding operation completed successfully
+2025-08-25 06:28:23,391 - INFO - Final data shape: (150, 15)
+2025-08-25 06:28:23,397 - INFO - Final data saved to: uploads\customers_cleaned_cleaned.csv
+2025-08-25 06:28:23,397 - INFO - Pipeline completed. Final shape: (150, 15)
+2025-08-25 06:28:36,628 - INFO - Dataset info generated - Shape: (170, 5), Missing: 136, Duplicates: 20
+2025-08-25 06:29:10,128 - INFO - Starting pipeline for file: uploads\customers.csv
+2025-08-25 06:29:10,130 - INFO - Loaded initial dataset: (170, 5)
+2025-08-25 06:29:10,131 - INFO - Running data_type_conversion operation...
+2025-08-25 06:29:10,131 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:29:10,138 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 06:29:10,140 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:29:10,140 - INFO - Running text_cleaning operation...
+2025-08-25 06:29:10,142 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:29:10,142 - INFO - Running datetime_parsing operation...
+2025-08-25 06:29:10,142 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 06:29:10,142 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 06:29:10,142 - INFO - Running missing_values operation...
+2025-08-25 06:29:10,142 - INFO - Before cleaning, dataset has 170 rows and 5 columns
+2025-08-25 06:29:10,143 - INFO - Found 0 total missing values
+2025-08-25 06:29:10,144 - INFO - missing_values operation completed successfully
+2025-08-25 06:29:10,144 - INFO - Running duplicates operation...
+2025-08-25 06:29:10,144 - INFO - Before cleaning, dataset has 170 rows
+2025-08-25 06:29:10,145 - INFO - Found 20 duplicate rows
+2025-08-25 06:29:10,146 - INFO - After cleaning, dataset has 150 rows
+2025-08-25 06:29:10,147 - INFO - duplicates operation completed successfully
+2025-08-25 06:29:10,147 - INFO - Running encoding operation...
+2025-08-25 06:29:10,147 - INFO - Before encoding, dataset has 150 rows and 5 columns
+2025-08-25 06:29:10,148 - INFO - Encoding 2 categorical columns: ['Gender', 'City']
+2025-08-25 06:29:10,150 - INFO - After encoding, dataset has 150 rows and 15 columns
+2025-08-25 06:29:10,153 - INFO - encoding operation completed successfully
+2025-08-25 06:29:10,153 - INFO - Final data shape: (150, 15)
+2025-08-25 06:29:10,158 - INFO - Final data saved to: uploads\customers_cleaned.csv
+2025-08-25 06:29:10,158 - INFO - Pipeline completed. Final shape: (150, 15)
+2025-08-25 06:31:41,295 - INFO - Dataset info generated - Shape: (170, 5), Missing: 136, Duplicates: 20
+2025-08-25 06:32:31,374 - INFO - Starting pipeline for file: uploads\customers.csv
+2025-08-25 06:32:31,379 - INFO - Loaded initial dataset: (170, 5)
+2025-08-25 06:32:31,379 - INFO - Running data_type_conversion operation...
+2025-08-25 06:32:31,379 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 06:32:31,386 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 06:32:31,389 - INFO - data_type_conversion operation completed successfully
+2025-08-25 06:32:31,389 - INFO - Running text_cleaning operation...
+2025-08-25 06:32:31,391 - INFO - text_cleaning operation completed successfully
+2025-08-25 06:32:31,391 - INFO - Running missing_values operation...
+2025-08-25 06:32:31,391 - INFO - Before cleaning, dataset has 170 rows and 5 columns
+2025-08-25 06:32:31,392 - INFO - Found 0 total missing values
+2025-08-25 06:32:31,393 - INFO - missing_values operation completed successfully
+2025-08-25 06:32:31,393 - INFO - Running duplicates operation...
+2025-08-25 06:32:31,394 - INFO - Before cleaning, dataset has 170 rows
+2025-08-25 06:32:31,394 - INFO - Found 20 duplicate rows
+2025-08-25 06:32:31,395 - INFO - After cleaning, dataset has 150 rows
+2025-08-25 06:32:31,397 - INFO - duplicates operation completed successfully
+2025-08-25 06:32:31,397 - INFO - Running outliers operation...
+2025-08-25 06:32:31,397 - INFO - Processing outliers in 3 columns using iqr method
+2025-08-25 06:32:31,400 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 0
+2025-08-25 06:32:31,402 - INFO - outliers operation completed successfully
+2025-08-25 06:32:31,402 - INFO - Running encoding operation...
+2025-08-25 06:32:31,402 - INFO - Before encoding, dataset has 150 rows and 5 columns
+2025-08-25 06:32:31,402 - INFO - Encoding 2 categorical columns: ['Gender', 'City']
+2025-08-25 06:32:31,407 - INFO - After encoding, dataset has 150 rows and 15 columns
+2025-08-25 06:32:31,411 - INFO - encoding operation completed successfully
+2025-08-25 06:32:31,411 - INFO - Final data shape: (150, 15)
+2025-08-25 06:32:31,416 - INFO - Final data saved to: uploads\customers_cleaned.csv
+2025-08-25 06:32:31,416 - INFO - Pipeline completed. Final shape: (150, 15)
+2025-08-25 07:05:05,683 - INFO - Dataset info generated - Shape: (170, 5), Missing: 136, Duplicates: 20
+2025-08-25 07:05:41,077 - INFO - Starting pipeline for file: uploads\customers.csv
+2025-08-25 07:05:41,085 - INFO - Loaded initial dataset: (170, 5)
+2025-08-25 07:05:41,086 - INFO - Running data_type_conversion operation...
+2025-08-25 07:05:41,086 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 07:05:41,101 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 07:05:41,103 - INFO - data_type_conversion operation completed successfully
+2025-08-25 07:05:41,103 - INFO - Running text_cleaning operation...
+2025-08-25 07:05:41,105 - INFO - text_cleaning operation completed successfully
+2025-08-25 07:05:41,105 - INFO - Running missing_values operation...
+2025-08-25 07:05:41,105 - INFO - Before cleaning, dataset has 170 rows and 5 columns
+2025-08-25 07:05:41,106 - INFO - Found 0 total missing values
+2025-08-25 07:05:41,108 - INFO - missing_values operation completed successfully
+2025-08-25 07:05:41,108 - INFO - Running duplicates operation...
+2025-08-25 07:05:41,108 - INFO - Before cleaning, dataset has 170 rows
+2025-08-25 07:05:41,108 - INFO - Found 20 duplicate rows
+2025-08-25 07:05:41,110 - INFO - After cleaning, dataset has 150 rows
+2025-08-25 07:05:41,110 - INFO - duplicates operation completed successfully
+2025-08-25 07:05:41,111 - INFO - Running encoding operation...
+2025-08-25 07:05:41,111 - INFO - Before encoding, dataset has 150 rows and 5 columns
+2025-08-25 07:05:41,111 - INFO - Encoding 2 categorical columns: ['Gender', 'City']
+2025-08-25 07:05:41,113 - INFO - After encoding, dataset has 150 rows and 5 columns
+2025-08-25 07:05:41,115 - INFO - encoding operation completed successfully
+2025-08-25 07:05:41,115 - INFO - Final data shape: (150, 5)
+2025-08-25 07:05:41,119 - INFO - Final data saved to: uploads\customers_cleaned.csv
+2025-08-25 07:05:41,119 - INFO - Pipeline completed. Final shape: (150, 5)

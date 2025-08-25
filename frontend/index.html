@@ -69,9 +69,7 @@
         #splash-screen h1 {
             font-size: 3rem;
             font-weight: 700;
-            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
             margin-bottom: 0.5rem;
         }
 
@@ -100,9 +98,7 @@
         header h1 {
             font-size: 2.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
         }
 
         header p {
@@ -166,7 +162,7 @@
         .step-number {
             width: 40px;
             height: 40px;
-            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+            color: white;
             color: white;
             border-radius: 50%;
             display: flex;
@@ -484,12 +480,13 @@
             padding: 1rem 2rem;
             font-size: 1.2rem;
             font-weight: 600;
-            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
             color: white;
+            background: none;
             border: none;
             border-radius: var(--border-radius);
             cursor: pointer;
             transition: all 0.3s ease;
+            box-shadow: var(--glow);
             margin-top: 2rem;
         }
 
@@ -566,7 +563,7 @@
 
         .progress-bar {
             height: 100%;
-            background: linear-gradient(90deg, var(--accent-color), #8b5cf6);
+            background: #5F9EA0;
             transition: width 0.5s ease;
             border-radius: 4px;
         }
@@ -773,7 +770,7 @@
         <header>
             <div>
                 <h1>AutoClean Pipeline</h1>
-                <p>AI-Powered Data Cleaning with Real-time Visualization</p>
+                <p>Data Cleaning with Real-time Visualization</p>
             </div>
             <div class="status-indicator">
                 <div class="status-light" id="status-light"></div>
@@ -940,6 +937,60 @@
                         </div>
                     </div>
                 </div>
+
+<!-- Step 6: Cleaned Data Preview -->
+            <section id="cleaned-preview-section" class="workflow-step">
+                <div class="step-header">
+                    <span class="step-number">6</span>
+                    <h2>Cleaned Data Preview</h2>
+                </div>
+                
+                <div class="data-preview">
+                    <div class="preview-tabs">
+                        <button class="tab-button active" id="cleaned-tab-sample">Sample Data</button>
+                        <button class="tab-button" id="cleaned-tab-columns">Column Info</button>
+                        <button class="tab-button" id="cleaned-tab-summary">Processing Summary</button>
+                    </div>
+                    
+                    <div id="cleaned-preview-content">
+                        <div id="cleaned-sample-preview" class="data-table-container">
+                            <table class="data-table" id="cleaned-sample-table">
+                                <thead></thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="cleaned-columns-preview" class="data-table-container hidden">
+                            <table class="data-table" id="cleaned-columns-table">
+                                <thead>
+                                    <tr>
+                                        <th>Column</th>
+                                        <th>Data Type</th>
+                                        <th>Non-Null Count</th>
+                                        <th>Missing %</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="cleaned-summary-preview" class="data-table-container hidden">
+                            <table class="data-table" id="cleaned-summary-table">
+                                <thead>
+                                    <tr>
+                                        <th>Operation</th>
+                                        <th>Status</th>
+                                        <th>Rows Affected</th>
+                                        <th>Processing Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
                 <div class="export-options">
                     <a href="#" class="export-button" id="export-csv">
