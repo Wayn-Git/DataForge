@@ -1,0 +1,414 @@
+2025-08-25 03:01:00,438 - INFO - Starting pipeline for file: uploads\sample_dirty.csv
+2025-08-25 03:01:00,441 - INFO - Loaded initial dataset: (125, 6)
+2025-08-25 03:01:00,441 - INFO - Running data_type_conversion operation...
+2025-08-25 03:01:00,441 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 03:01:00,480 - INFO - Data type conversion completed. Conversions: 6
+2025-08-25 03:01:00,483 - ERROR - data_type_conversion operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:01:00,483 - INFO - Running text_cleaning operation...
+2025-08-25 03:01:00,486 - ERROR - text_cleaning operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:01:00,486 - INFO - Running datetime_parsing operation...
+2025-08-25 03:01:00,486 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:01:00,486 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:01:00,486 - INFO - Running missing_values operation...
+2025-08-25 03:01:00,486 - INFO - Before cleaning, dataset has 125 rows and 6 columns
+2025-08-25 03:01:00,487 - INFO - Found 0 total missing values
+2025-08-25 03:01:00,488 - ERROR - missing_values operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:01:00,488 - INFO - Running duplicates operation...
+2025-08-25 03:01:00,488 - INFO - Before cleaning, dataset has 125 rows
+2025-08-25 03:01:00,491 - INFO - Found 5 duplicate rows
+2025-08-25 03:01:00,492 - INFO - After cleaning, dataset has 120 rows
+2025-08-25 03:01:00,495 - ERROR - duplicates operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:01:00,495 - INFO - Running outliers operation...
+2025-08-25 03:01:00,495 - INFO - Processing outliers in 1 columns using iqr method
+2025-08-25 03:01:00,497 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 0
+2025-08-25 03:01:00,498 - ERROR - outliers operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:01:00,498 - INFO - Running typo_fix operation...
+2025-08-25 03:01:00,498 - INFO - Before typo fix, dataset has 120 rows and 6 columns
+2025-08-25 03:01:00,500 - ERROR - typo_fix operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:01:00,500 - INFO - Running encoding operation...
+2025-08-25 03:01:00,500 - INFO - Before encoding, dataset has 120 rows and 6 columns
+2025-08-25 03:01:00,501 - INFO - Encoding 5 categorical columns: ['Name', 'City', 'Grade', 'Gender', 'Note']
+2025-08-25 03:01:00,504 - INFO - After encoding, dataset has 120 rows and 6 columns
+2025-08-25 03:01:00,506 - INFO - encoding operation completed successfully
+2025-08-25 03:01:00,506 - INFO - Running normalization operation...
+2025-08-25 03:01:00,507 - INFO - Before normalization, dataset has 120 rows and 6 columns
+2025-08-25 03:01:00,507 - INFO - Normalizing 6 numerical columns
+2025-08-25 03:01:00,523 - INFO - After normalization, dataset has 120 rows and 6 columns
+2025-08-25 03:01:00,526 - INFO - normalization operation completed successfully
+2025-08-25 03:01:00,526 - INFO - Final data shape: (120, 6)
+2025-08-25 03:01:00,534 - INFO - Final data saved to: uploads\sample_dirty_cleaned.csv
+2025-08-25 03:01:00,534 - INFO - Pipeline completed. Final shape: (120, 6)
+2025-08-25 03:07:43,730 - INFO - Starting pipeline for file: uploads\sample_dirty.csv
+2025-08-25 03:07:43,734 - INFO - Loaded initial dataset: (125, 6)
+2025-08-25 03:07:43,734 - INFO - Running data_type_conversion operation...
+2025-08-25 03:07:43,735 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 03:07:43,757 - INFO - Data type conversion completed. Conversions: 6
+2025-08-25 03:07:43,758 - ERROR - data_type_conversion operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:43,758 - INFO - Running text_cleaning operation...
+2025-08-25 03:07:43,759 - ERROR - text_cleaning operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:43,759 - INFO - Running datetime_parsing operation...
+2025-08-25 03:07:43,759 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:07:43,759 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:07:43,759 - INFO - Running missing_values operation...
+2025-08-25 03:07:43,759 - INFO - Before cleaning, dataset has 125 rows and 6 columns
+2025-08-25 03:07:43,760 - INFO - Found 0 total missing values
+2025-08-25 03:07:43,761 - ERROR - missing_values operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:43,762 - INFO - Running duplicates operation...
+2025-08-25 03:07:43,762 - INFO - Before cleaning, dataset has 125 rows
+2025-08-25 03:07:43,763 - INFO - Found 5 duplicate rows
+2025-08-25 03:07:43,764 - INFO - After cleaning, dataset has 120 rows
+2025-08-25 03:07:43,765 - ERROR - duplicates operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:43,765 - INFO - Running outliers operation...
+2025-08-25 03:07:43,765 - INFO - Processing outliers in 1 columns using iqr method
+2025-08-25 03:07:43,767 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 0
+2025-08-25 03:07:43,768 - ERROR - outliers operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:43,768 - INFO - Running typo_fix operation...
+2025-08-25 03:07:43,769 - INFO - Before typo fix, dataset has 120 rows and 6 columns
+2025-08-25 03:07:43,769 - ERROR - typo_fix operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:43,769 - INFO - Final data shape: (120, 6)
+2025-08-25 03:07:43,770 - ERROR - Failed to save final data: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:43,770 - INFO - Pipeline completed. Final shape: (120, 6)
+2025-08-25 03:07:53,774 - INFO - Starting pipeline for file: uploads\sample_dirty.csv
+2025-08-25 03:07:53,776 - INFO - Loaded initial dataset: (125, 6)
+2025-08-25 03:07:53,776 - INFO - Running data_type_conversion operation...
+2025-08-25 03:07:53,776 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 03:07:53,792 - INFO - Data type conversion completed. Conversions: 6
+2025-08-25 03:07:53,793 - ERROR - data_type_conversion operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:53,793 - INFO - Running text_cleaning operation...
+2025-08-25 03:07:53,794 - ERROR - text_cleaning operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:53,794 - INFO - Running datetime_parsing operation...
+2025-08-25 03:07:53,795 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:07:53,795 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:07:53,795 - INFO - Running missing_values operation...
+2025-08-25 03:07:53,795 - INFO - Before cleaning, dataset has 125 rows and 6 columns
+2025-08-25 03:07:53,796 - INFO - Found 0 total missing values
+2025-08-25 03:07:53,797 - ERROR - missing_values operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:53,797 - INFO - Final data shape: (125, 6)
+2025-08-25 03:07:53,799 - ERROR - Failed to save final data: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:07:53,799 - INFO - Pipeline completed. Final shape: (125, 6)
+2025-08-25 03:26:30,740 - INFO - Starting pipeline for file: uploads\messy_dataset.csv
+2025-08-25 03:26:30,748 - INFO - Loaded initial dataset: (240, 5)
+2025-08-25 03:26:30,748 - INFO - Running data_type_conversion operation...
+2025-08-25 03:26:30,748 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 03:26:30,762 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 03:26:30,764 - INFO - data_type_conversion operation completed successfully
+2025-08-25 03:26:30,764 - INFO - Running text_cleaning operation...
+2025-08-25 03:26:30,766 - INFO - text_cleaning operation completed successfully
+2025-08-25 03:26:30,766 - INFO - Running datetime_parsing operation...
+2025-08-25 03:26:30,766 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:26:30,766 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:26:30,766 - INFO - Running missing_values operation...
+2025-08-25 03:26:30,766 - INFO - Before cleaning, dataset has 240 rows and 5 columns
+2025-08-25 03:26:30,767 - INFO - Found 0 total missing values
+2025-08-25 03:26:30,769 - INFO - missing_values operation completed successfully
+2025-08-25 03:26:30,769 - INFO - Running duplicates operation...
+2025-08-25 03:26:30,769 - INFO - Before cleaning, dataset has 240 rows
+2025-08-25 03:26:30,770 - INFO - Found 16 duplicate rows
+2025-08-25 03:26:30,771 - INFO - After cleaning, dataset has 224 rows
+2025-08-25 03:26:30,773 - INFO - duplicates operation completed successfully
+2025-08-25 03:26:30,773 - INFO - Running outliers operation...
+2025-08-25 03:26:30,773 - INFO - Processing outliers in 4 columns using iqr method
+2025-08-25 03:26:30,778 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 12
+2025-08-25 03:26:30,780 - INFO - outliers operation completed successfully
+2025-08-25 03:26:30,780 - INFO - Running typo_fix operation...
+2025-08-25 03:26:30,780 - INFO - Before typo fix, dataset has 215 rows and 5 columns
+2025-08-25 03:26:30,782 - INFO - typo_fix operation completed successfully
+2025-08-25 03:26:30,782 - INFO - Running encoding operation...
+2025-08-25 03:26:30,782 - INFO - Before encoding, dataset has 215 rows and 5 columns
+2025-08-25 03:26:30,782 - INFO - Encoding 1 categorical columns: ['department']
+2025-08-25 03:26:30,784 - INFO - After encoding, dataset has 215 rows and 5 columns
+2025-08-25 03:26:30,787 - INFO - encoding operation completed successfully
+2025-08-25 03:26:30,787 - INFO - Running normalization operation...
+2025-08-25 03:26:30,787 - INFO - Before normalization, dataset has 215 rows and 5 columns
+2025-08-25 03:26:30,787 - INFO - Normalizing 5 numerical columns
+2025-08-25 03:26:30,801 - INFO - After normalization, dataset has 215 rows and 5 columns
+2025-08-25 03:26:30,803 - INFO - normalization operation completed successfully
+2025-08-25 03:26:30,803 - INFO - Final data shape: (215, 5)
+2025-08-25 03:26:30,809 - INFO - Final data saved to: uploads\messy_dataset_cleaned.csv
+2025-08-25 03:26:30,809 - INFO - Pipeline completed. Final shape: (215, 5)
+2025-08-25 03:27:44,822 - INFO - Starting pipeline for file: uploads\messy_dataset.csv
+2025-08-25 03:27:44,826 - INFO - Loaded initial dataset: (240, 5)
+2025-08-25 03:27:44,827 - INFO - Running data_type_conversion operation...
+2025-08-25 03:27:44,827 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 03:27:44,832 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 03:27:44,834 - INFO - data_type_conversion operation completed successfully
+2025-08-25 03:27:44,834 - INFO - Running text_cleaning operation...
+2025-08-25 03:27:44,836 - INFO - text_cleaning operation completed successfully
+2025-08-25 03:27:44,836 - INFO - Running datetime_parsing operation...
+2025-08-25 03:27:44,836 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:27:44,836 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:27:44,836 - INFO - Running missing_values operation...
+2025-08-25 03:27:44,836 - INFO - Before cleaning, dataset has 240 rows and 5 columns
+2025-08-25 03:27:44,837 - INFO - Found 0 total missing values
+2025-08-25 03:27:44,838 - INFO - missing_values operation completed successfully
+2025-08-25 03:27:44,838 - INFO - Running duplicates operation...
+2025-08-25 03:27:44,838 - INFO - Before cleaning, dataset has 240 rows
+2025-08-25 03:27:44,839 - INFO - Found 16 duplicate rows
+2025-08-25 03:27:44,839 - INFO - After cleaning, dataset has 224 rows
+2025-08-25 03:27:44,841 - INFO - duplicates operation completed successfully
+2025-08-25 03:27:44,841 - INFO - Running outliers operation...
+2025-08-25 03:27:44,841 - INFO - Processing outliers in 4 columns using iqr method
+2025-08-25 03:27:44,847 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 12
+2025-08-25 03:27:44,849 - INFO - outliers operation completed successfully
+2025-08-25 03:27:44,849 - INFO - Running typo_fix operation...
+2025-08-25 03:27:44,849 - INFO - Before typo fix, dataset has 215 rows and 5 columns
+2025-08-25 03:27:44,851 - INFO - typo_fix operation completed successfully
+2025-08-25 03:27:44,851 - INFO - Running encoding operation...
+2025-08-25 03:27:44,851 - INFO - Before encoding, dataset has 215 rows and 5 columns
+2025-08-25 03:27:44,851 - INFO - Encoding 1 categorical columns: ['department']
+2025-08-25 03:27:44,852 - INFO - After encoding, dataset has 215 rows and 5 columns
+2025-08-25 03:27:44,854 - INFO - encoding operation completed successfully
+2025-08-25 03:27:44,854 - INFO - Running normalization operation...
+2025-08-25 03:27:44,854 - INFO - Before normalization, dataset has 215 rows and 5 columns
+2025-08-25 03:27:44,854 - INFO - Normalizing 5 numerical columns
+2025-08-25 03:27:44,866 - INFO - After normalization, dataset has 215 rows and 5 columns
+2025-08-25 03:27:44,868 - INFO - normalization operation completed successfully
+2025-08-25 03:27:44,868 - INFO - Final data shape: (215, 5)
+2025-08-25 03:27:44,872 - INFO - Final data saved to: uploads\messy_dataset_cleaned.csv
+2025-08-25 03:27:44,872 - INFO - Pipeline completed. Final shape: (215, 5)
+2025-08-25 03:39:00,589 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 03:39:37,027 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 03:39:53,209 - INFO - Dataset info generated - Shape: (120, 6), Missing: 0, Duplicates: 0
+2025-08-25 03:39:55,398 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 03:39:58,261 - INFO - Dataset info generated - Shape: (10000, 8), Missing: 8460, Duplicates: 0
+2025-08-25 03:40:05,258 - INFO - Dataset info generated - Shape: (1011, 1), Missing: 0, Duplicates: 167
+2025-08-25 03:40:08,922 - INFO - Dataset info generated - Shape: (833, 11), Missing: 983, Duplicates: 0
+2025-08-25 03:40:35,745 - INFO - Starting pipeline for file: uploads\animal_data_reworked.csv
+2025-08-25 03:40:35,762 - INFO - Loaded initial dataset: (833, 11)
+2025-08-25 03:40:35,762 - INFO - Running data_type_conversion operation...
+2025-08-25 03:40:35,762 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 03:40:35,800 - INFO - Data type conversion completed. Conversions: 10
+2025-08-25 03:40:35,804 - ERROR - data_type_conversion operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:40:35,804 - INFO - Running text_cleaning operation...
+2025-08-25 03:40:35,808 - ERROR - text_cleaning operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:40:35,808 - INFO - Running datetime_parsing operation...
+2025-08-25 03:40:35,809 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:40:35,809 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:40:35,809 - INFO - Running missing_values operation...
+2025-08-25 03:40:35,809 - INFO - Before cleaning, dataset has 833 rows and 11 columns
+2025-08-25 03:40:35,811 - INFO - Found 0 total missing values
+2025-08-25 03:40:35,816 - ERROR - missing_values operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:40:35,816 - INFO - Running duplicates operation...
+2025-08-25 03:40:35,816 - INFO - Before cleaning, dataset has 833 rows
+2025-08-25 03:40:35,818 - INFO - Found 0 duplicate rows
+2025-08-25 03:40:35,819 - INFO - After cleaning, dataset has 833 rows
+2025-08-25 03:40:35,822 - ERROR - duplicates operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:40:35,822 - INFO - Running outliers operation...
+2025-08-25 03:40:35,822 - INFO - Processing outliers in 5 columns using iqr method
+2025-08-25 03:40:35,869 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 268
+2025-08-25 03:40:35,872 - ERROR - outliers operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:40:35,872 - INFO - Running typo_fix operation...
+2025-08-25 03:40:35,873 - INFO - Before typo fix, dataset has 699 rows and 11 columns
+2025-08-25 03:40:35,875 - ERROR - typo_fix operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:40:35,875 - INFO - Running encoding operation...
+2025-08-25 03:40:35,875 - INFO - Before encoding, dataset has 699 rows and 11 columns
+2025-08-25 03:40:35,875 - INFO - Encoding 5 categorical columns: ['Animal_type', 'Country', 'Gender', 'Animal_name', 'Data_compiled_by']
+2025-08-25 03:40:35,881 - INFO - After encoding, dataset has 699 rows and 11 columns
+2025-08-25 03:40:35,886 - INFO - encoding operation completed successfully
+2025-08-25 03:40:35,886 - INFO - Running normalization operation...
+2025-08-25 03:40:35,886 - INFO - Before normalization, dataset has 699 rows and 11 columns
+2025-08-25 03:40:35,886 - INFO - Normalizing 10 numerical columns
+2025-08-25 03:40:35,913 - INFO - After normalization, dataset has 699 rows and 11 columns
+2025-08-25 03:40:35,919 - INFO - normalization operation completed successfully
+2025-08-25 03:40:35,919 - INFO - Final data shape: (699, 11)
+2025-08-25 03:40:35,937 - INFO - Final data saved to: uploads\animal_data_reworked_cleaned.csv
+2025-08-25 03:40:35,937 - INFO - Pipeline completed. Final shape: (699, 11)
+2025-08-25 03:43:10,467 - INFO - Starting pipeline for file: uploads\animal_data_reworked.csv
+2025-08-25 03:43:10,476 - INFO - Loaded initial dataset: (833, 11)
+2025-08-25 03:43:10,476 - INFO - Running data_type_conversion operation...
+2025-08-25 03:43:10,476 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 03:43:10,503 - INFO - Data type conversion completed. Conversions: 10
+2025-08-25 03:43:10,507 - ERROR - data_type_conversion operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:43:10,507 - INFO - Running text_cleaning operation...
+2025-08-25 03:43:10,510 - ERROR - text_cleaning operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:43:10,510 - INFO - Running datetime_parsing operation...
+2025-08-25 03:43:10,510 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:43:10,510 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 03:43:10,510 - INFO - Running duplicates operation...
+2025-08-25 03:43:10,510 - INFO - Before cleaning, dataset has 833 rows
+2025-08-25 03:43:10,512 - INFO - Found 0 duplicate rows
+2025-08-25 03:43:10,514 - INFO - After cleaning, dataset has 833 rows
+2025-08-25 03:43:10,516 - ERROR - duplicates operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:43:10,516 - INFO - Running outliers operation...
+2025-08-25 03:43:10,517 - INFO - Processing outliers in 5 columns using iqr method
+2025-08-25 03:43:10,524 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 268
+2025-08-25 03:43:10,526 - ERROR - outliers operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:43:10,526 - INFO - Running typo_fix operation...
+2025-08-25 03:43:10,526 - INFO - Before typo fix, dataset has 699 rows and 11 columns
+2025-08-25 03:43:10,531 - ERROR - typo_fix operation failed with exception: Cannot setitem on a Categorical with a new category (), set the categories first
+2025-08-25 03:43:10,531 - INFO - Running encoding operation...
+2025-08-25 03:43:10,531 - INFO - Before encoding, dataset has 699 rows and 11 columns
+2025-08-25 03:43:10,532 - INFO - Encoding 5 categorical columns: ['Animal_type', 'Country', 'Gender', 'Animal_name', 'Data_compiled_by']
+2025-08-25 03:43:10,538 - INFO - After encoding, dataset has 699 rows and 11 columns
+2025-08-25 03:43:10,542 - INFO - encoding operation completed successfully
+2025-08-25 03:43:10,542 - INFO - Running normalization operation...
+2025-08-25 03:43:10,542 - INFO - Before normalization, dataset has 699 rows and 11 columns
+2025-08-25 03:43:10,543 - INFO - Normalizing 10 numerical columns
+2025-08-25 03:43:10,566 - INFO - After normalization, dataset has 699 rows and 11 columns
+2025-08-25 03:43:10,573 - INFO - normalization operation completed successfully
+2025-08-25 03:43:10,573 - INFO - Final data shape: (699, 11)
+2025-08-25 03:43:10,591 - INFO - Final data saved to: uploads\animal_data_reworked_cleaned.csv
+2025-08-25 03:43:10,592 - INFO - Pipeline completed. Final shape: (699, 11)
+2025-08-25 05:25:22,214 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 05:26:52,618 - INFO - Starting pipeline for file: uploads\messy_dataset.csv
+2025-08-25 05:26:52,631 - INFO - Loaded initial dataset: (240, 5)
+2025-08-25 05:26:52,631 - INFO - Running data_type_conversion operation...
+2025-08-25 05:26:52,631 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 05:26:52,649 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 05:26:52,651 - INFO - data_type_conversion operation completed successfully
+2025-08-25 05:26:52,651 - INFO - Running text_cleaning operation...
+2025-08-25 05:26:52,654 - INFO - text_cleaning operation completed successfully
+2025-08-25 05:26:52,654 - INFO - Running datetime_parsing operation...
+2025-08-25 05:26:52,654 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 05:26:52,654 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 05:26:52,654 - INFO - Running missing_values operation...
+2025-08-25 05:26:52,655 - INFO - Before cleaning, dataset has 240 rows and 5 columns
+2025-08-25 05:26:52,656 - INFO - Found 0 total missing values
+2025-08-25 05:26:52,658 - INFO - missing_values operation completed successfully
+2025-08-25 05:26:52,658 - INFO - Running duplicates operation...
+2025-08-25 05:26:52,658 - INFO - Before cleaning, dataset has 240 rows
+2025-08-25 05:26:52,659 - INFO - Found 16 duplicate rows
+2025-08-25 05:26:52,662 - INFO - After cleaning, dataset has 224 rows
+2025-08-25 05:26:52,665 - INFO - duplicates operation completed successfully
+2025-08-25 05:26:52,665 - INFO - Running outliers operation...
+2025-08-25 05:26:52,665 - INFO - Processing outliers in 4 columns using iqr method
+2025-08-25 05:26:52,670 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 12
+2025-08-25 05:26:52,673 - INFO - outliers operation completed successfully
+2025-08-25 05:26:52,673 - INFO - Running typo_fix operation...
+2025-08-25 05:26:52,673 - INFO - Before typo fix, dataset has 215 rows and 5 columns
+2025-08-25 05:26:52,675 - INFO - typo_fix operation completed successfully
+2025-08-25 05:26:52,675 - INFO - Running encoding operation...
+2025-08-25 05:26:52,675 - INFO - Before encoding, dataset has 215 rows and 5 columns
+2025-08-25 05:26:52,675 - INFO - Encoding 1 categorical columns: ['department']
+2025-08-25 05:26:52,678 - INFO - After encoding, dataset has 215 rows and 5 columns
+2025-08-25 05:26:52,680 - INFO - encoding operation completed successfully
+2025-08-25 05:26:52,680 - INFO - Running normalization operation...
+2025-08-25 05:26:52,681 - INFO - Before normalization, dataset has 215 rows and 5 columns
+2025-08-25 05:26:52,681 - INFO - Normalizing 5 numerical columns
+2025-08-25 05:26:52,695 - INFO - After normalization, dataset has 215 rows and 5 columns
+2025-08-25 05:26:52,698 - INFO - normalization operation completed successfully
+2025-08-25 05:26:52,698 - INFO - Final data shape: (215, 5)
+2025-08-25 05:26:52,705 - INFO - Final data saved to: uploads\messy_dataset_cleaned.csv
+2025-08-25 05:26:52,705 - INFO - Pipeline completed. Final shape: (215, 5)
+2025-08-25 05:29:30,612 - INFO - Starting pipeline for file: uploads\messy_dataset.csv
+2025-08-25 05:29:30,619 - INFO - Loaded initial dataset: (240, 5)
+2025-08-25 05:29:30,620 - INFO - Running data_type_conversion operation...
+2025-08-25 05:29:30,620 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 05:29:30,627 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 05:29:30,630 - INFO - data_type_conversion operation completed successfully
+2025-08-25 05:29:30,630 - INFO - Running text_cleaning operation...
+2025-08-25 05:29:30,632 - INFO - text_cleaning operation completed successfully
+2025-08-25 05:29:30,632 - INFO - Running datetime_parsing operation...
+2025-08-25 05:29:30,632 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 05:29:30,633 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 05:29:30,633 - INFO - Running missing_values operation...
+2025-08-25 05:29:30,633 - INFO - Before cleaning, dataset has 240 rows and 5 columns
+2025-08-25 05:29:30,635 - INFO - Found 0 total missing values
+2025-08-25 05:29:30,638 - INFO - missing_values operation completed successfully
+2025-08-25 05:29:30,638 - INFO - Running duplicates operation...
+2025-08-25 05:29:30,638 - INFO - Before cleaning, dataset has 240 rows
+2025-08-25 05:29:30,639 - INFO - Found 16 duplicate rows
+2025-08-25 05:29:30,640 - INFO - After cleaning, dataset has 224 rows
+2025-08-25 05:29:30,641 - INFO - duplicates operation completed successfully
+2025-08-25 05:29:30,641 - INFO - Running outliers operation...
+2025-08-25 05:29:30,642 - INFO - Processing outliers in 4 columns using iqr method
+2025-08-25 05:29:30,648 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 12
+2025-08-25 05:29:30,653 - INFO - outliers operation completed successfully
+2025-08-25 05:29:30,653 - INFO - Running typo_fix operation...
+2025-08-25 05:29:30,653 - INFO - Before typo fix, dataset has 215 rows and 5 columns
+2025-08-25 05:29:30,655 - INFO - typo_fix operation completed successfully
+2025-08-25 05:29:30,655 - INFO - Running encoding operation...
+2025-08-25 05:29:30,655 - INFO - Before encoding, dataset has 215 rows and 5 columns
+2025-08-25 05:29:30,655 - INFO - Encoding 1 categorical columns: ['department']
+2025-08-25 05:29:30,657 - INFO - After encoding, dataset has 215 rows and 5 columns
+2025-08-25 05:29:30,660 - INFO - encoding operation completed successfully
+2025-08-25 05:29:30,660 - INFO - Running normalization operation...
+2025-08-25 05:29:30,660 - INFO - Before normalization, dataset has 215 rows and 5 columns
+2025-08-25 05:29:30,660 - INFO - Normalizing 5 numerical columns
+2025-08-25 05:29:30,674 - INFO - After normalization, dataset has 215 rows and 5 columns
+2025-08-25 05:29:30,677 - INFO - normalization operation completed successfully
+2025-08-25 05:29:30,677 - INFO - Final data shape: (215, 5)
+2025-08-25 05:29:30,683 - INFO - Final data saved to: uploads\messy_dataset_cleaned.csv
+2025-08-25 05:29:30,684 - INFO - Pipeline completed. Final shape: (215, 5)
+2025-08-25 05:43:03,745 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 05:43:32,739 - INFO - Starting pipeline for file: uploads\messy_dataset.csv
+2025-08-25 05:43:32,746 - INFO - Loaded initial dataset: (240, 5)
+2025-08-25 05:43:32,746 - INFO - Running data_type_conversion operation...
+2025-08-25 05:43:32,746 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 05:43:32,757 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 05:43:32,760 - INFO - data_type_conversion operation completed successfully
+2025-08-25 05:43:32,760 - INFO - Running text_cleaning operation...
+2025-08-25 05:43:32,762 - INFO - text_cleaning operation completed successfully
+2025-08-25 05:43:32,762 - INFO - Running datetime_parsing operation...
+2025-08-25 05:43:32,762 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 05:43:32,762 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 05:43:32,762 - INFO - Running missing_values operation...
+2025-08-25 05:43:32,762 - INFO - Before cleaning, dataset has 240 rows and 5 columns
+2025-08-25 05:43:32,763 - INFO - Found 0 total missing values
+2025-08-25 05:43:32,765 - INFO - missing_values operation completed successfully
+2025-08-25 05:43:32,765 - INFO - Running duplicates operation...
+2025-08-25 05:43:32,765 - INFO - Before cleaning, dataset has 240 rows
+2025-08-25 05:43:32,768 - INFO - Found 16 duplicate rows
+2025-08-25 05:43:32,770 - INFO - After cleaning, dataset has 224 rows
+2025-08-25 05:43:32,774 - INFO - duplicates operation completed successfully
+2025-08-25 05:43:32,774 - INFO - Running outliers operation...
+2025-08-25 05:43:32,774 - INFO - Processing outliers in 4 columns using iqr method
+2025-08-25 05:43:32,779 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 12
+2025-08-25 05:43:32,784 - INFO - outliers operation completed successfully
+2025-08-25 05:43:32,784 - INFO - Running typo_fix operation...
+2025-08-25 05:43:32,784 - INFO - Before typo fix, dataset has 215 rows and 5 columns
+2025-08-25 05:43:32,787 - INFO - typo_fix operation completed successfully
+2025-08-25 05:43:32,787 - INFO - Running encoding operation...
+2025-08-25 05:43:32,787 - INFO - Before encoding, dataset has 215 rows and 5 columns
+2025-08-25 05:43:32,787 - INFO - Encoding 1 categorical columns: ['department']
+2025-08-25 05:43:32,790 - INFO - After encoding, dataset has 215 rows and 5 columns
+2025-08-25 05:43:32,792 - INFO - encoding operation completed successfully
+2025-08-25 05:43:32,792 - INFO - Running normalization operation...
+2025-08-25 05:43:32,792 - INFO - Before normalization, dataset has 215 rows and 5 columns
+2025-08-25 05:43:32,792 - INFO - Normalizing 5 numerical columns
+2025-08-25 05:43:32,808 - INFO - After normalization, dataset has 215 rows and 5 columns
+2025-08-25 05:43:32,811 - INFO - normalization operation completed successfully
+2025-08-25 05:43:32,811 - INFO - Final data shape: (215, 5)
+2025-08-25 05:43:32,817 - INFO - Final data saved to: uploads\messy_dataset_cleaned.csv
+2025-08-25 05:43:32,817 - INFO - Pipeline completed. Final shape: (215, 5)
+2025-08-25 05:43:56,123 - INFO - Dataset info generated - Shape: (240, 5), Missing: 96, Duplicates: 16
+2025-08-25 05:44:39,739 - INFO - Starting pipeline for file: uploads\messy_dataset.csv
+2025-08-25 05:44:39,743 - INFO - Loaded initial dataset: (240, 5)
+2025-08-25 05:44:39,743 - INFO - Running data_type_conversion operation...
+2025-08-25 05:44:39,744 - INFO - Starting data type conversion. Auto-detect: True
+2025-08-25 05:44:39,748 - INFO - Data type conversion completed. Conversions: 4
+2025-08-25 05:44:39,751 - INFO - data_type_conversion operation completed successfully
+2025-08-25 05:44:39,751 - INFO - Running text_cleaning operation...
+2025-08-25 05:44:39,752 - INFO - text_cleaning operation completed successfully
+2025-08-25 05:44:39,752 - INFO - Running datetime_parsing operation...
+2025-08-25 05:44:39,752 - ERROR - Error in _handle_datetime_parsing: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 05:44:39,752 - ERROR - datetime_parsing operation failed: parse_datetime_columns() got an unexpected keyword argument 'columns'
+2025-08-25 05:44:39,752 - INFO - Running missing_values operation...
+2025-08-25 05:44:39,753 - INFO - Before cleaning, dataset has 240 rows and 5 columns
+2025-08-25 05:44:39,753 - INFO - Found 0 total missing values
+2025-08-25 05:44:39,755 - INFO - missing_values operation completed successfully
+2025-08-25 05:44:39,755 - INFO - Running duplicates operation...
+2025-08-25 05:44:39,755 - INFO - Before cleaning, dataset has 240 rows
+2025-08-25 05:44:39,755 - INFO - Found 16 duplicate rows
+2025-08-25 05:44:39,757 - INFO - After cleaning, dataset has 224 rows
+2025-08-25 05:44:39,758 - INFO - duplicates operation completed successfully
+2025-08-25 05:44:39,758 - INFO - Running outliers operation...
+2025-08-25 05:44:39,758 - INFO - Processing outliers in 4 columns using iqr method
+2025-08-25 05:44:39,762 - INFO - Outlier handling completed. Method: iqr, Action: remove, Total outliers: 12
+2025-08-25 05:44:39,764 - INFO - outliers operation completed successfully
+2025-08-25 05:44:39,764 - INFO - Running typo_fix operation...
+2025-08-25 05:44:39,764 - INFO - Before typo fix, dataset has 215 rows and 5 columns
+2025-08-25 05:44:39,765 - INFO - typo_fix operation completed successfully
+2025-08-25 05:44:39,766 - INFO - Running encoding operation...
+2025-08-25 05:44:39,766 - INFO - Before encoding, dataset has 215 rows and 5 columns
+2025-08-25 05:44:39,766 - INFO - Encoding 1 categorical columns: ['department']
+2025-08-25 05:44:39,768 - INFO - After encoding, dataset has 215 rows and 5 columns
+2025-08-25 05:44:39,770 - INFO - encoding operation completed successfully
+2025-08-25 05:44:39,770 - INFO - Running normalization operation...
+2025-08-25 05:44:39,770 - INFO - Before normalization, dataset has 215 rows and 5 columns
+2025-08-25 05:44:39,770 - INFO - Normalizing 5 numerical columns
+2025-08-25 05:44:39,780 - INFO - After normalization, dataset has 215 rows and 5 columns
+2025-08-25 05:44:39,784 - INFO - normalization operation completed successfully
+2025-08-25 05:44:39,784 - INFO - Final data shape: (215, 5)
+2025-08-25 05:44:39,788 - INFO - Final data saved to: uploads\messy_dataset_cleaned.csv
+2025-08-25 05:44:39,789 - INFO - Pipeline completed. Final shape: (215, 5)

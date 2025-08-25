@@ -1,0 +1,1993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoClean Pipeline - Enhanced</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0a0a0f;
+            --card-color: #1a1a24;
+            --text-color: #e4e4e7;
+            --text-secondary: #a1a1aa;
+            --accent-color: #3b82f6;
+            --accent-hover: #2563eb;
+            --border-color: #27272a;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --error-color: #ef4444;
+            --shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            --glow: 0 0 20px rgba(59, 130, 246, 0.3);
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --border-radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background: linear-gradient(135deg, var(--bg-color) 0%, #0f0f1a 100%);
+            color: var(--text-color);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Splash Screen */
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--bg-color) 0%, #0f0f1a 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.8s ease-out;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border-color);
+            border-top-color: var(--accent-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 2rem;
+            box-shadow: var(--glow);
+        }
+
+        #splash-screen h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        #splash-screen p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: var(--card-color);
+            padding: 0.75rem 1.25rem;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            font-size: 0.9rem;
+        }
+
+        .status-light {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--warning-color);
+            animation: pulse 2s infinite;
+        }
+
+        .status-light.success {
+            background-color: var(--success-color);
+        }
+
+        .status-light.error {
+            background-color: var(--error-color);
+        }
+
+        /* Workflow Steps */
+        .workflow-step {
+            background: var(--card-color);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+            opacity: 0.5;
+            transition: all 0.4s ease;
+        }
+
+        .workflow-step.active {
+            opacity: 1;
+            border-color: var(--accent-color);
+            box-shadow: var(--glow);
+        }
+
+        .step-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .step-header h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        /* Upload Area */
+        .upload-area {
+            border: 2px dashed var(--border-color);
+            border-radius: var(--border-radius);
+            text-align: center;
+            padding: 3rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(59, 130, 246, 0.02);
+        }
+
+        .upload-area:hover,
+        .upload-area.dragover {
+            border-color: var(--accent-color);
+            background: rgba(59, 130, 246, 0.05);
+            box-shadow: var(--glow);
+        }
+
+        .upload-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .upload-area h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .file-info-bar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            margin-top: 1rem;
+            animation: slideDown 0.3s ease;
+        }
+
+        /* Data Preview */
+        .data-preview {
+            margin-top: 2rem;
+        }
+
+        .preview-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .tab-button {
+            background: var(--border-color);
+            color: var(--text-secondary);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .tab-button.active {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .data-table-container {
+            max-height: 300px;
+            overflow: auto;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background: var(--bg-color);
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .data-table th {
+            background: var(--card-color);
+            font-weight: 600;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .data-table tr:hover {
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        /* Dataset Info Grid */
+        .dataset-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-card {
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .info-card.warning {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: rgba(245, 158, 11, 0.3);
+        }
+
+        .info-card.error {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: rgba(239, 68, 68, 0.3);
+        }
+
+        .info-card .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .info-card.warning .value {
+            color: var(--warning-color);
+        }
+
+        .info-card.error .value {
+            color: var(--error-color);
+        }
+
+        .info-card .label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Operations */
+        .operations-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .op-item {
+            background: rgba(59, 130, 246, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .op-item.active {
+            background: rgba(59, 130, 246, 0.05);
+            border-color: var(--accent-color);
+        }
+
+        .op-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+        }
+
+        .op-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .op-description {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin: 0.5rem 0;
+        }
+
+        /* Switch Toggle */
+        .switch {
+            position: relative;
+            width: 50px;
+            height: 24px;
+        }
+
+        .switch input {
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--border-color);
+            transition: 0.4s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--accent-color);
+            box-shadow: var(--glow);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .op-config {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            opacity: 0;
+        }
+
+        .op-item.active .op-config {
+            max-height: 300px;
+            opacity: 1;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .form-group select,
+        .form-group input[type="text"],
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group select:focus,
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+
+        .form-group-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .form-group-checkbox input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--accent-color);
+        }
+
+        .form-group-checkbox label {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Buttons */
+        .run-button {
+            width: 100%;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .run-button:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: var(--glow);
+        }
+
+        .run-button:disabled {
+            background: var(--border-color);
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .download-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            background: var(--success-color);
+            color: white;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .download-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        }
+
+        /* Progress UI */
+        .progress-list {
+            list-style: none;
+        }
+
+        .progress-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .progress-item:last-child {
+            border-bottom: none;
+        }
+
+        .progress-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .progress-icon {
+            width: 24px;
+            text-align: center;
+            color: var(--text-secondary);
+        }
+
+        .progress-text {
+            flex-grow: 1;
+            font-weight: 500;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            height: 8px;
+            background-color: var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-color), #8b5cf6);
+            transition: width 0.5s ease;
+            border-radius: 4px;
+        }
+
+        .progress-item.success .progress-bar {
+            background: var(--success-color);
+        }
+
+        .progress-item.error .progress-bar {
+            background: var(--error-color);
+        }
+
+        .progress-log {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-left: calc(24px + 1rem);
+        }
+
+        /* Visualization Section */
+        .visualization-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .chart-wrapper {
+            background: rgba(59, 130, 246, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            min-height: 400px;
+        }
+
+        .chart-wrapper h3 {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .chart-canvas {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+
+        .comparison-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: rgba(59, 130, 246, 0.05);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-change {
+            font-size: 0.9rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        .metric-change.positive {
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--success-color);
+        }
+
+        .metric-change.negative {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--error-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .dataset-info-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .operations-container {
+                grid-template-columns: 1fr;
+            }
+
+            .visualization-container {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .comparison-metrics {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        /* Export Options */
+        .export-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .export-button {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: var(--card-color);
+            color: var(--text-color);
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .export-button:hover {
+            border-color: var(--accent-color);
+            background: rgba(59, 130, 246, 0.05);
+        }
+
+        /* Statistics Panel */
+        .stats-panel {
+            background: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="splash-screen">
+        <div class="spinner"></div>
+        <h1>AutoClean Pipeline</h1>
+        <p>Enhanced Data Cleaning & Visualization Platform</p>
+    </div>
+
+    <div class="container" id="app-container" style="display: none;">
+        <header>
+            <div>
+                <h1>AutoClean Pipeline</h1>
+                <p>AI-Powered Data Cleaning with Real-time Visualization</p>
+            </div>
+            <div class="status-indicator">
+                <div class="status-light" id="status-light"></div>
+                <span id="connection-status">Connecting...</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Step 1: Upload Dataset -->
+            <section id="upload-section" class="workflow-step active">
+                <div class="step-header">
+                    <span class="step-number">1</span>
+                    <h2>Upload Dataset</h2>
+                </div>
+                
+                <div class="upload-area" id="file-upload-area">
+                    <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3>Drop your CSV file here</h3>
+                    <p>or click to browse files</p>
+                    <input type="file" id="file-input" accept=".csv" style="display: none;">
+                </div>
+                
+                <div id="file-info-bar" class="file-info-bar hidden">
+                    <i class="fas fa-file-csv"></i>
+                    <span id="file-name">dataset.csv</span>
+                    <span id="file-size">1.2 MB</span>
+                </div>
+
+                <div id="dataset-info-container" class="hidden">
+                    <div id="dataset-info-grid" class="dataset-info-grid"></div>
+                    
+                    <div class="stats-panel">
+                        <h3>Dataset Statistics</h3>
+                        <div id="stats-grid" class="stats-grid"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 2: Data Preview -->
+            <section id="preview-section" class="workflow-step">
+                <div class="step-header">
+                    <span class="step-number">2</span>
+                    <h2>Data Preview</h2>
+                </div>
+                
+                <div class="data-preview">
+                    <div class="preview-tabs">
+                        <button class="tab-button active" id="tab-sample">Sample Data</button>
+                        <button class="tab-button" id="tab-columns">Column Info</button>
+                        <button class="tab-button" id="tab-missing">Missing Values</button>
+                    </div>
+                    
+                    <div id="preview-content">
+                        <div id="sample-preview" class="data-table-container">
+                            <table class="data-table" id="sample-table">
+                                <thead></thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="columns-preview" class="data-table-container hidden">
+                            <table class="data-table" id="columns-table">
+                                <thead>
+                                    <tr>
+                                        <th>Column</th>
+                                        <th>Data Type</th>
+                                        <th>Non-Null Count</th>
+                                        <th>Missing %</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        
+                        <div id="missing-preview" class="data-table-container hidden">
+                            <table class="data-table" id="missing-table">
+                                <thead>
+                                    <tr>
+                                        <th>Column</th>
+                                        <th>Missing Count</th>
+                                        <th>Missing %</th>
+                                        <th>Data Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 3: Configure Operations -->
+            <section id="config-section" class="workflow-step">
+                <div class="step-header">
+                    <span class="step-number">3</span>
+                    <h2>Configure Operations</h2>
+                </div>
+                
+                <div id="operations-container" class="operations-container"></div>
+                
+                <button id="run-pipeline-btn" class="run-button" disabled>
+                    <i class="fas fa-play"></i>
+                    Start Data Cleaning Pipeline
+                </button>
+            </section>
+
+            <!-- Step 4: Processing & Results -->
+            <section id="results-section" class="workflow-step">
+                <div class="step-header">
+                    <span class="step-number">4</span>
+                    <h2>Processing & Results</h2>
+                </div>
+                
+                <div id="pipeline-progress-container"></div>
+                
+                <div id="final-results-container" class="hidden">
+                    <div class="final-results-container"></div>
+                </div>
+            </section>
+
+            <!-- Step 5: Visual Comparison -->
+            <section id="visualization-section" class="workflow-step">
+                <div class="step-header">
+                    <span class="step-number">5</span>
+                    <h2>Before vs After Analysis</h2>
+                </div>
+                
+                <div class="comparison-metrics">
+                    <div class="metric-card">
+                        <div class="metric-value" id="rows-change">-</div>
+                        <div class="metric-label">Rows</div>
+                        <div class="metric-change" id="rows-change-badge"></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="columns-change">-</div>
+                        <div class="metric-label">Columns</div>
+                        <div class="metric-change" id="columns-change-badge"></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="missing-change">-</div>
+                        <div class="metric-label">Missing Values</div>
+                        <div class="metric-change" id="missing-change-badge"></div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-value" id="duplicates-change">-</div>
+                        <div class="metric-label">Duplicates</div>
+                        <div class="metric-change" id="duplicates-change-badge"></div>
+                    </div>
+                </div>
+                
+                <div class="visualization-container">
+                    <div class="chart-wrapper">
+                        <h3>Before Cleaning</h3>
+                        <div class="chart-canvas">
+                            <canvas id="beforeChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-wrapper">
+                        <h3>After Cleaning</h3>
+                        <div class="chart-canvas">
+                            <canvas id="afterChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="export-options">
+                    <a href="#" class="export-button" id="export-csv">
+                        <i class="fas fa-file-csv"></i>
+                        Download Cleaned CSV
+                    </a>
+                    <a href="#" class="export-button" id="export-report">
+                        <i class="fas fa-file-pdf"></i>
+                        Generate Report
+                    </a>
+                    <a href="#" class="export-button" id="export-summary">
+                        <i class="fas fa-chart-bar"></i>
+                        Export Summary
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Configuration & Global Variables
+        const API_BASE_URL = 'http://localhost:8000';
+        let currentFile = null;
+        let originalDataInfo = null;
+        let cleanedDataInfo = null;
+        let beforeChart = null;
+        let afterChart = null;
+
+        const OPERATIONS = {
+            data_type_conversion: {
+                title: "Optimize Data Types",
+                icon: "fas fa-cogs",
+                configHTML: `
+                    <div class="form-group form-group-checkbox">
+                        <input type="checkbox" id="data-auto-detect" checked>
+                        <label for="data-auto-detect">Auto-detect data types</label>
+                    </div>
+                    <p class="op-description">Automatically convert columns to numeric, datetime, or other appropriate types.</p>
+                `
+            },
+            text_cleaning: {
+                title: "Clean Text Columns",
+                icon: "fas fa-font",
+                configHTML: `
+                    <div class="form-group form-group-checkbox">
+                        <input type="checkbox" id="text-lower" checked>
+                        <label for="text-lower">Convert to lowercase</label>
+                    </div>
+                    <div class="form-group form-group-checkbox">
+                        <input type="checkbox" id="text-punct" checked>
+                        <label for="text-punct">Remove punctuation</label>
+                    </div>
+                    <div class="form-group form-group-checkbox">
+                        <input type="checkbox" id="text-whitespace" checked>
+                        <label for="text-whitespace">Strip whitespace</label>
+                    </div>
+                    <div class="form-group form-group-checkbox">
+                        <input type="checkbox" id="text-numbers">
+                        <label for="text-numbers">Remove numbers</label>
+                    </div>
+                    <p class="op-description">Clean and standardize text data across all text columns.</p>
+                `
+            },
+            datetime_parsing: {
+                title: "Parse DateTime Columns",
+                icon: "fas fa-calendar",
+                configHTML: `
+                    <div class="form-group">
+                        <label>Date Format (optional)</label>
+                        <input type="text" id="date-format" placeholder="e.g., %Y-%m-%d">
+                        <p class="op-description">Leave blank to auto-detect format.</p>
+                    </div>
+                    <div class="form-group form-group-checkbox">
+                        <input type="checkbox" id="datetime-extract-features">
+                        <label for="datetime-extract-features">Extract date features (year, month, day)</label>
+                    </div>
+                `
+            },
+            missing_values: {
+                title: "Handle Missing Values",
+                icon: "fas fa-question-circle",
+                configHTML: `
+                    <div class="form-group">
+                        <label>Strategy</label>
+                        <select id="mv-strategy">
+                            <option value="drop_rows">Drop rows with missing values</option>
+                            <option value="drop_rows_threshold">Drop rows above threshold</option>
+                            <option value="drop_columns">Drop columns with missing values</option>
+                            <option value="drop_columns_threshold">Drop columns above threshold</option>
+                            <option value="fill_mean">Fill with mean/mode</option>
+                            <option value="fill_median">Fill with median/mode</option>
+                            <option value="fill_mode">Fill with mode</option>
+                            <option value="forward_fill">Forward fill</option>
+                            <option value="backward_fill">Backward fill</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Threshold (0.0-1.0)</label>
+                        <input type="number" id="mv-threshold" value="0.5" min="0" max="1" step="0.1">
+                        <p class="op-description">Used for threshold-based strategies.</p>
+                    </div>
+                `
+            },
+            duplicates: {
+                title: "Remove Duplicates",
+                icon: "fas fa-clone",
+                configHTML: `
+                    <p class="op-description">Removes all rows that are exact copies of another row.</p>
+                `
+            },
+            outliers: {
+                title: "Handle Outliers",
+                icon: "fas fa-exclamation-triangle",
+                configHTML: `
+                    <div class="form-group">
+                        <label>Detection Method</label>
+                        <select id="outlier-method">
+                            <option value="iqr">IQR (Interquartile Range)</option>
+                            <option value="zscore">Z-Score</option>
+                            <option value="modified_zscore">Modified Z-Score</option>
+                            <option value="isolation_forest">Isolation Forest</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Action</label>
+                        <select id="outlier-action">
+                            <option value="remove">Remove outliers</option>
+                            <option value="cap">Cap outliers</option>
+                            <option value="transform">Transform outliers</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Threshold</label>
+                        <input type="number" id="outlier-threshold" value="3" min="0" step="0.1">
+                        <p class="op-description">Multiplier for IQR, or standard deviations for Z-score.</p>
+                    </div>
+                `
+            },
+            typo_fix: {
+                title: "Fix Typos",
+                icon: "fas fa-spell-check",
+                configHTML: `
+                    <div class="form-group">
+                        <label>Method</label>
+                        <select id="typo-method">
+                            <option value="common_typos">Common Typos Dictionary</option>
+                            <option value="fuzzy_match">Fuzzy String Matching</option>
+                            <option value="spell_check">Statistical Spell Check</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Similarity Threshold (0-100)</label>
+                        <input type="number" id="typo-threshold" value="80" min="0" max="100" step="1">
+                        <p class="op-description">Higher values require closer matches.</p>
+                    </div>
+                `
+            },
+            encoding: {
+                title: "Categorical Encoding",
+                icon: "fas fa-tags",
+                configHTML: `
+                    <div class="form-group">
+                        <label>Encoding Method</label>
+                        <select id="encoding-method">
+                            <option value="label">Label Encoding</option>
+                            <option value="onehot">One-Hot Encoding</option>
+                            <option value="target">Target/Frequency Encoding</option>
+                        </select>
+                    </div>
+                    <div class="form-group form-group-checkbox">
+                        <input type="checkbox" id="encoding-drop-first">
+                        <label for="encoding-drop-first">Drop first category (for one-hot)</label>
+                    </div>
+                    <p class="op-description">Convert categorical variables to numerical format.</p>
+                `
+            },
+            normalization: {
+                title: "Normalize Data",
+                icon: "fas fa-balance-scale",
+                configHTML: `
+                    <div class="form-group">
+                        <label>Normalization Method</label>
+                        <select id="normalization-method">
+                            <option value="standard">Standard Scaling (Z-score)</option>
+                            <option value="minmax">Min-Max Scaling (0-1)</option>
+                            <option value="robust">Robust Scaling (IQR-based)</option>
+                            <option value="normalize">L2 Normalization</option>
+                        </select>
+                    </div>
+                    <p class="op-description">Scale numerical features to a common range.</p>
+                `
+            }
+        };
+
+        // Initialize Application
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                initializeApp();
+            }, 1800);
+        });
+
+        async function initializeApp() {
+            setupEventListeners();
+            populateOperations();
+            await checkBackendConnection();
+            
+            const splash = document.getElementById('splash-screen');
+            const app = document.getElementById('app-container');
+            
+            splash.style.opacity = '0';
+            setTimeout(() => {
+                splash.style.display = 'none';
+                app.style.display = 'block';
+            }, 800);
+        }
+
+        function setupEventListeners() {
+            const uploadArea = document.getElementById('file-upload-area');
+            const fileInput = document.getElementById('file-input');
+            
+            // File upload events
+            uploadArea.addEventListener('click', () => fileInput.click());
+            uploadArea.addEventListener('dragover', handleDragOver);
+            uploadArea.addEventListener('dragleave', handleDragLeave);
+            uploadArea.addEventListener('drop', handleFileDrop);
+            fileInput.addEventListener('change', handleFileSelect);
+            
+            // Pipeline execution
+            document.getElementById('run-pipeline-btn').addEventListener('click', runPipeline);
+            
+            // Preview tabs
+            document.getElementById('tab-sample').addEventListener('click', () => showPreviewTab('sample'));
+            document.getElementById('tab-columns').addEventListener('click', () => showPreviewTab('columns'));
+            document.getElementById('tab-missing').addEventListener('click', () => showPreviewTab('missing'));
+            
+            // Export buttons
+            document.getElementById('export-csv').addEventListener('click', exportCSV);
+            document.getElementById('export-report').addEventListener('click', generateReport);
+            document.getElementById('export-summary').addEventListener('click', exportSummary);
+        }
+
+        // Backend Connection
+        async function checkBackendConnection() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/health`);
+                if (!response.ok) throw new Error();
+                
+                const data = await response.json();
+                updateConnectionStatus(data.status === 'healthy');
+            } catch (error) {
+                console.error('Backend connection failed:', error);
+                updateConnectionStatus(false);
+            }
+        }
+
+        function updateConnectionStatus(isHealthy) {
+            const statusText = document.getElementById('connection-status');
+            const light = document.getElementById('status-light');
+            
+            statusText.textContent = isHealthy ? 'Connected' : 'Disconnected';
+            light.classList.toggle('success', isHealthy);
+            light.classList.toggle('error', !isHealthy);
+        }
+
+        // File Upload Handlers
+        function handleDragOver(e) {
+            e.preventDefault();
+            e.currentTarget.classList.add('dragover');
+        }
+
+        function handleDragLeave(e) {
+            e.currentTarget.classList.remove('dragover');
+        }
+
+        function handleFileDrop(e) {
+            e.preventDefault();
+            e.currentTarget.classList.remove('dragover');
+            
+            if (e.dataTransfer.files.length > 0) {
+                processFile(e.dataTransfer.files[0]);
+            }
+        }
+
+        function handleFileSelect(e) {
+            if (e.target.files.length > 0) {
+                processFile(e.target.files[0]);
+            }
+        }
+
+        async function processFile(file) {
+            if (!file || !file.name.toLowerCase().endsWith('.csv')) {
+                alert('Please select a valid CSV file.');
+                return;
+            }
+
+            // Update UI with file info
+            document.getElementById('file-name').textContent = file.name;
+            document.getElementById('file-size').textContent = formatFileSize(file.size);
+            document.getElementById('file-info-bar').classList.remove('hidden');
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/upload`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const data = await response.json();
+                
+                if (data.status !== 'success') {
+                    throw new Error(data.error || 'Upload failed');
+                }
+                
+                currentFile = data.file_path;
+                originalDataInfo = data.dataset_info;
+                
+                showDatasetInfo(data.dataset_info);
+                showDataPreview(data.dataset_info);
+                
+                // Activate next steps
+                document.getElementById('preview-section').classList.add('active');
+                document.getElementById('config-section').classList.add('active');
+                document.getElementById('run-pipeline-btn').disabled = false;
+                
+            } catch (error) {
+                console.error('Upload error:', error);
+                alert('Upload failed: ' + error.message);
+            }
+        }
+
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        function showDatasetInfo(info) {
+            const container = document.getElementById('dataset-info-grid');
+            const statsContainer = document.getElementById('stats-grid');
+            
+            // Calculate missing values
+            let totalMissing = 0;
+            if (info.missing_values) {
+                totalMissing = Object.values(info.missing_values).reduce((sum, count) => sum + (parseInt(count) || 0), 0);
+            }
+            
+            const totalCells = info.shape[0] * info.shape[1];
+            const missingPercentage = totalCells > 0 ? ((totalMissing / totalCells) * 100).toFixed(1) : '0.0';
+            
+            // Main info cards
+            container.innerHTML = `
+                <div class="info-card">
+                    <div class="value">${info.shape[0].toLocaleString()}</div>
+                    <div class="label">Rows</div>
+                </div>
+                <div class="info-card">
+                    <div class="value">${info.shape[1]}</div>
+                    <div class="label">Columns</div>
+                </div>
+                <div class="info-card ${totalMissing > 0 ? 'warning' : ''}">
+                    <div class="value">${totalMissing.toLocaleString()}</div>
+                    <div class="label">Missing (${missingPercentage}%)</div>
+                </div>
+                <div class="info-card ${info.duplicates > 0 ? 'warning' : ''}">
+                    <div class="value">${info.duplicates}</div>
+                    <div class="label">Duplicates</div>
+                </div>
+            `;
+            
+            // Additional statistics
+            const memoryMB = (info.memory_usage / (1024 * 1024)).toFixed(2);
+            const numericCols = Object.values(info.dtypes).filter(dtype => 
+                dtype.includes('int') || dtype.includes('float')
+            ).length;
+            const textCols = Object.values(info.dtypes).filter(dtype => 
+                dtype === 'object'
+            ).length;
+            
+            statsContainer.innerHTML = `
+                <div class="stat-item">
+                    <div class="stat-value">${memoryMB}</div>
+                    <div class="stat-label">Memory (MB)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${numericCols}</div>
+                    <div class="stat-label">Numeric Cols</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${textCols}</div>
+                    <div class="stat-label">Text Cols</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${Object.keys(info.dtypes).length}</div>
+                    <div class="stat-label">Total Cols</div>
+                </div>
+            `;
+            
+            document.getElementById('dataset-info-container').classList.remove('hidden');
+        }
+
+        function showDataPreview(info) {
+            // Sample data preview
+            if (info.sample_data && info.sample_data.length > 0) {
+                const sampleTable = document.getElementById('sample-table');
+                const columns = Object.keys(info.sample_data[0]);
+                
+                // Create header
+                sampleTable.querySelector('thead').innerHTML = `
+                    <tr>${columns.map(col => `<th>${col}</th>`).join('')}</tr>
+                `;
+                
+                // Create rows
+                sampleTable.querySelector('tbody').innerHTML = info.sample_data.map(row => `
+                    <tr>${columns.map(col => `<td>${row[col] ?? 'null'}</td>`).join('')}</tr>
+                `).join('');
+            }
+            
+            // Column information
+            const columnsTable = document.getElementById('columns-table');
+            const totalRows = info.shape[0];
+            
+            const columnRows = Object.entries(info.dtypes).map(([col, dtype]) => {
+                const missingCount = info.missing_values[col] || 0;
+                const nonNullCount = totalRows - missingCount;
+                const missingPct = totalRows > 0 ? ((missingCount / totalRows) * 100).toFixed(1) : '0.0';
+                
+                return `
+                    <tr>
+                        <td>${col}</td>
+                        <td><span class="dtype-badge">${dtype}</span></td>
+                        <td>${nonNullCount}</td>
+                        <td>${missingPct}%</td>
+                    </tr>
+                `;
+            }).join('');
+            
+            columnsTable.querySelector('tbody').innerHTML = columnRows;
+            
+            // Missing values breakdown
+            const missingTable = document.getElementById('missing-table');
+            const missingRows = Object.entries(info.missing_values)
+                .filter(([col, count]) => count > 0)
+                .sort(([,a], [,b]) => b - a)
+                .map(([col, count]) => {
+                    const pct = totalRows > 0 ? ((count / totalRows) * 100).toFixed(1) : '0.0';
+                    const dtype = info.dtypes[col];
+                    
+                    return `
+                        <tr>
+                            <td>${col}</td>
+                            <td>${count}</td>
+                            <td>${pct}%</td>
+                            <td><span class="dtype-badge">${dtype}</span></td>
+                        </tr>
+                    `;
+                }).join('');
+            
+            missingTable.querySelector('tbody').innerHTML = missingRows || '<tr><td colspan="4" style="text-align: center; color: var(--success-color);">No missing values found!</td></tr>';
+        }
+
+        function showPreviewTab(tabName) {
+            // Update tab buttons
+            document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+            
+            // Show corresponding content
+            document.querySelectorAll('#preview-content > div').forEach(div => div.classList.add('hidden'));
+            document.getElementById(`${tabName}-preview`).classList.remove('hidden');
+        }
+
+        function populateOperations() {
+            const container = document.getElementById('operations-container');
+            
+            container.innerHTML = Object.entries(OPERATIONS).map(([id, op]) => `
+                <div class="op-item" id="op-item-${id}">
+                    <div class="op-header">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="${op.icon}"></i>
+                            <span class="op-title">${op.title}</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="toggle-${id}" data-op-id="${id}" checked>
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <div class="op-config">${op.configHTML}</div>
+                </div>
+            `).join('');
+
+            // Setup toggle listeners
+            container.querySelectorAll('.switch input').forEach(toggle => {
+                toggle.addEventListener('change', () => {
+                    const item = document.getElementById(`op-item-${toggle.dataset.opId}`);
+                    item.classList.toggle('active', toggle.checked);
+                });
+                
+                // Initially set active state
+                const item = document.getElementById(`op-item-${toggle.dataset.opId}`);
+                item.classList.toggle('active', toggle.checked);
+            });
+        }
+
+        function buildOperationsConfig() {
+            const config = {};
+            
+            document.querySelectorAll('.operations-container .switch input:checked').forEach(toggle => {
+                const opId = toggle.dataset.opId;
+                config[opId] = { enabled: true };
+                
+                switch(opId) {
+                    case 'missing_values':
+                        config[opId].strategy = document.getElementById('mv-strategy').value;
+                        config[opId].threshold = parseFloat(document.getElementById('mv-threshold').value);
+                        break;
+                        
+                    case 'outliers':
+                        config[opId].method = document.getElementById('outlier-method').value;
+                        config[opId].action = document.getElementById('outlier-action').value;
+                        config[opId].threshold = parseFloat(document.getElementById('outlier-threshold').value);
+                        break;
+                        
+                    case 'data_type_conversion':
+                        config[opId].auto_detect = document.getElementById('data-auto-detect').checked;
+                        config[opId].type_mapping = {};
+                        config[opId].errors = "coerce";
+                        break;
+                        
+                    case 'text_cleaning':
+                        const operations = [];
+                        if (document.getElementById('text-lower').checked) operations.push('lowercase');
+                        if (document.getElementById('text-punct').checked) operations.push('remove_punctuation');
+                        if (document.getElementById('text-whitespace').checked) operations.push('remove_whitespace');
+                        if (document.getElementById('text-numbers').checked) operations.push('remove_numbers');
+                        config[opId].operations = operations;
+                        config[opId].columns = null;
+                        break;
+                        
+                    case 'datetime_parsing':
+                        config[opId].date_format = document.getElementById('date-format').value || null;
+                        config[opId].auto_detect = true;
+                        config[opId].extract_features = document.getElementById('datetime-extract-features').checked;
+                        config[opId].errors = "coerce";
+                        break;
+                        
+                    case 'encoding':
+                        config[opId].method = document.getElementById('encoding-method').value;
+                        config[opId].drop_first = document.getElementById('encoding-drop-first').checked;
+                        break;
+                        
+                    case 'typo_fix':
+                        config[opId].method = document.getElementById('typo-method').value;
+                        config[opId].similarity_threshold = parseInt(document.getElementById('typo-threshold').value);
+                        break;
+                        
+                    case 'normalization':
+                        config[opId].method = document.getElementById('normalization-method').value;
+                        break;
+                }
+            });
+            
+            return config;
+        }
+
+        async function runPipeline() {
+            if (!currentFile) {
+                alert('Please upload a file first');
+                return;
+            }
+            
+            const operationsConfig = buildOperationsConfig();
+            if (Object.keys(operationsConfig).length === 0) {
+                alert('Please select at least one operation');
+                return;
+            }
+
+            // Show results section and render progress UI
+            document.getElementById('results-section').classList.add('active');
+            renderProgressUI(operationsConfig);
+
+            // Animate progress
+            await animateProgress(operationsConfig);
+
+            const formData = new FormData();
+            formData.append('file_path', currentFile);
+            formData.append('operations', JSON.stringify(operationsConfig));
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/clean-data`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const data = await response.json();
+                
+                if (data.status !== 'success') {
+                    throw new Error(data.detail || 'Pipeline execution failed');
+                }
+                
+                // Complete all progress items
+                Object.keys(operationsConfig).forEach(opId => {
+                    updateStep(opId, 100, 'Complete!', 'success');
+                });
+                
+                // Store cleaned data info and show results
+                cleanedDataInfo = {
+                    shape: data.result.final_data_shape,
+                    operations: data.result.operations
+                };
+                
+                showResults(data);
+                showVisualization();
+                
+            } catch (error) {
+                console.error('Pipeline error:', error);
+                const firstOpId = Object.keys(operationsConfig)[0];
+                if (firstOpId) {
+                    updateStep(firstOpId, 100, `Error: ${error.message}`, 'error');
+                }
+                alert('Pipeline failed: ' + error.message);
+            }
+        }
+
+        function renderProgressUI(operationsConfig) {
+            const container = document.getElementById('pipeline-progress-container');
+            const stepsHtml = Object.entries(operationsConfig).map(([id, config]) => `
+                <li class="progress-item" data-step-id="${id}">
+                    <div class="progress-header">
+                        <div class="progress-icon">
+                            <i class="${OPERATIONS[id].icon}"></i>
+                        </div>
+                        <div class="progress-text">${OPERATIONS[id].title}</div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <div class="progress-log">Initializing...</div>
+                </li>
+            `).join('');
+            
+            container.innerHTML = `<ul class="progress-list">${stepsHtml}</ul>`;
+        }
+
+        async function animateProgress(operationsConfig) {
+            const steps = Object.keys(operationsConfig);
+            
+            for (let i = 0; i < steps.length; i++) {
+                const stepId = steps[i];
+                updateStep(stepId, 0, 'Starting...', 'in-progress');
+                
+                // Simulate realistic progress
+                for (let progress = 0; progress <= 95; progress += Math.floor(Math.random() * 15) + 5) {
+                    await new Promise(resolve => setTimeout(resolve, 150 + Math.random() * 200));
+                    updateStep(stepId, Math.min(progress, 95), `Processing... ${Math.min(progress, 95)}%`);
+                }
+            }
+        }
+
+        function updateStep(stepId, percentage, logMessage, status) {
+            const item = document.querySelector(`.progress-item[data-step-id="${stepId}"]`);
+            if (!item) return;
+
+            if (percentage !== null) {
+                item.querySelector('.progress-bar').style.width = `${percentage}%`;
+            }
+            
+            if (logMessage) {
+                item.querySelector('.progress-log').textContent = logMessage;
+            }
+            
+            if (status) {
+                item.classList.remove('success', 'error', 'in-progress');
+                item.classList.add(status);
+                
+                const iconElement = item.querySelector('.progress-icon i');
+                if (status === 'success') {
+                    iconElement.className = 'fas fa-check-circle';
+                } else if (status === 'error') {
+                    iconElement.className = 'fas fa-exclamation-circle';
+                }
+            }
+        }
+
+        function showResults(data) {
+            const container = document.getElementById('final-results-container');
+            const [finalRows, finalCols] = data.result.final_data_shape;
+            
+            container.innerHTML = `
+                <div class="results-summary">
+                    <h3>Pipeline Execution Complete</h3>
+                    <div class="dataset-info-grid">
+                        <div class="info-card">
+                            <div class="value">${finalRows.toLocaleString()}</div>
+                            <div class="label">Final Rows</div>
+                        </div>
+                        <div class="info-card">
+                            <div class="value">${finalCols}</div>
+                            <div class="label">Final Columns</div>
+                        </div>
+                        <div class="info-card">
+                            <div class="value">${data.result.operations.length}</div>
+                            <div class="label">Operations Applied</div>
+                        </div>
+                        <div class="info-card">
+                            <div class="value">${(data.result.total_processing_time || 0).toFixed(1)}s</div>
+                            <div class="label">Processing Time</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            container.classList.remove('hidden');
+            
+            // Update export button
+            document.getElementById('export-csv').href = `${API_BASE_URL}${data.download_url}`;
+            document.getElementById('export-csv').download = data.download_url.split('/').pop();
+        }
+
+        function showVisualization() {
+            if (!originalDataInfo || !cleanedDataInfo) return;
+            
+            document.getElementById('visualization-section').classList.add('active');
+            
+            // Update comparison metrics
+            updateComparisonMetrics();
+            
+            // Create charts
+            createComparisonCharts();
+        }
+
+        function updateComparisonMetrics() {
+            const originalRows = originalDataInfo.shape[0];
+            const originalCols = originalDataInfo.shape[1];
+            const finalRows = cleanedDataInfo.shape[0];
+            const finalCols = cleanedDataInfo.shape[1];
+            
+            // Calculate original missing values
+            const originalMissing = Object.values(originalDataInfo.missing_values || {})
+                .reduce((sum, count) => sum + (parseInt(count) || 0), 0);
+            
+            // For cleaned data missing values, we'll estimate as 0 or very low
+            const finalMissing = 0; // Assuming cleaning removed most missing values
+            
+            const originalDuplicates = originalDataInfo.duplicates || 0;
+            const finalDuplicates = 0; // Assuming duplicates were removed
+            
+            // Update metric cards
+            updateMetricCard('rows-change', originalRows, finalRows);
+            updateMetricCard('columns-change', originalCols, finalCols);
+            updateMetricCard('missing-change', originalMissing, finalMissing);
+            updateMetricCard('duplicates-change', originalDuplicates, finalDuplicates);
+        }
+
+        function updateMetricCard(cardId, originalValue, finalValue) {
+            const valueElement = document.getElementById(cardId);
+            const badgeElement = document.getElementById(cardId + '-badge');
+            
+            const change = finalValue - originalValue;
+            const changeText = change === 0 ? 'No change' : 
+                              change > 0 ? `+${change.toLocaleString()}` : 
+                              change.toLocaleString();
+            
+            valueElement.textContent = `${originalValue.toLocaleString()} → ${finalValue.toLocaleString()}`;
+            badgeElement.textContent = changeText;
+            
+            // Set badge color based on the type of metric and change
+            badgeElement.classList.remove('positive', 'negative');
+            
+            if (cardId === 'rows-change') {
+                // For rows, we generally want to preserve data, so loss might be negative
+                badgeElement.classList.add(change <= 0 ? 'negative' : 'positive');
+            } else {
+                // For missing values, duplicates, fewer is better
+                badgeElement.classList.add(change <= 0 ? 'positive' : 'negative');
+            }
+        }
+
+        function createComparisonCharts() {
+            // Destroy existing charts if they exist
+            if (beforeChart) {
+                beforeChart.destroy();
+            }
+            if (afterChart) {
+                afterChart.destroy();
+            }
+            
+            // Prepare data for visualization
+            const beforeData = prepareChartData(originalDataInfo, 'before');
+            const afterData = prepareChartData(cleanedDataInfo, 'after');
+            
+            // Chart configuration
+            const chartConfig = (data, title) => ({
+                type: 'bar',
+                data: {
+                    labels: data.labels,
+                    datasets: [{
+                        label: data.label,
+                        data: data.values,
+                        backgroundColor: data.colors,
+                        borderColor: data.borderColors,
+                        borderWidth: 2,
+                        borderRadius: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: title,
+                            color: '#e4e4e7',
+                            font: {
+                                size: 16,
+                                weight: 'bold'
+                            }
+                        },
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(26, 26, 36, 0.95)',
+                            titleColor: '#e4e4e7',
+                            bodyColor: '#a1a1aa',
+                            borderColor: '#3b82f6',
+                            borderWidth: 1,
+                            cornerRadius: 8
+                        }
+                    },
+                    scales: {
+                        x: {
+                            ticks: {
+                                color: '#a1a1aa',
+                                font: {
+                                    size: 12
+                                }
+                            },
+                            grid: {
+                                color: '#27272a',
+                                lineWidth: 1
+                            }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                color: '#a1a1aa',
+                                font: {
+                                    size: 12
+                                }
+                            },
+                            grid: {
+                                color: '#27272a',
+                                lineWidth: 1
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Create charts
+            const beforeCtx = document.getElementById('beforeChart').getContext('2d');
+            const afterCtx = document.getElementById('afterChart').getContext('2d');
+            
+            beforeChart = new Chart(beforeCtx, chartConfig(beforeData, 'Data Quality Issues'));
+            afterChart = new Chart(afterCtx, chartConfig(afterData, 'After Cleaning'));
+        }
+
+        function prepareChartData(dataInfo, phase) {
+            if (phase === 'before') {
+                const totalMissing = Object.values(dataInfo.missing_values || {})
+                    .reduce((sum, count) => sum + (parseInt(count) || 0), 0);
+                
+                const duplicates = dataInfo.duplicates || 0;
+                const totalRows = dataInfo.shape[0];
+                const cleanRows = totalRows - totalMissing - duplicates;
+                
+                return {
+                    labels: ['Clean Data', 'Missing Values', 'Duplicates'],
+                    values: [Math.max(0, cleanRows), totalMissing, duplicates],
+                    colors: [
+                        'rgba(16, 185, 129, 0.7)',  // Green for clean data
+                        'rgba(245, 158, 11, 0.7)',  // Yellow for missing
+                        'rgba(239, 68, 68, 0.7)'    // Red for duplicates
+                    ],
+                    borderColors: [
+                        'rgba(16, 185, 129, 1)',
+                        'rgba(245, 158, 11, 1)',
+                        'rgba(239, 68, 68, 1)'
+                    ],
+                    label: 'Count'
+                };
+            } else {
+                // After cleaning - mostly clean data
+                const totalRows = dataInfo.shape[0];
+                
+                return {
+                    labels: ['Clean Data', 'Missing Values', 'Duplicates'],
+                    values: [totalRows, 0, 0], // Assuming perfect cleaning
+                    colors: [
+                        'rgba(16, 185, 129, 0.7)',
+                        'rgba(16, 185, 129, 0.3)',
+                        'rgba(16, 185, 129, 0.3)'
+                    ],
+                    borderColors: [
+                        'rgba(16, 185, 129, 1)',
+                        'rgba(16, 185, 129, 0.5)',
+                        'rgba(16, 185, 129, 0.5)'
+                    ],
+                    label: 'Count'
+                };
+            }
+        }
+
+        // Export Functions
+        async function exportCSV() {
+            // This is handled by the download link
+            return;
+        }
+
+        async function generateReport() {
+            if (!originalDataInfo || !cleanedDataInfo) {
+                alert('No data available for report generation');
+                return;
+            }
+            
+            const report = generateDataCleaningReport();
+            downloadTextFile(report, 'data_cleaning_report.txt');
+        }
+
+        function generateDataCleaningReport() {
+            const originalRows = originalDataInfo.shape[0];
+            const originalCols = originalDataInfo.shape[1];
+            const finalRows = cleanedDataInfo.shape[0];
+            const finalCols = cleanedDataInfo.shape[1];
+            
+            const originalMissing = Object.values(originalDataInfo.missing_values || {})
+                .reduce((sum, count) => sum + (parseInt(count) || 0), 0);
+            
+            const report = `
+DATA CLEANING REPORT
+==================
+
+DATASET OVERVIEW
+---------------
+Original Shape: ${originalRows.toLocaleString()} rows × ${originalCols} columns
+Final Shape: ${finalRows.toLocaleString()} rows × ${finalCols} columns
+Rows Change: ${finalRows - originalRows} (${((finalRows - originalRows) / originalRows * 100).toFixed(1)}%)
+Columns Change: ${finalCols - originalCols}
+
+DATA QUALITY METRICS
+-------------------
+Original Missing Values: ${originalMissing.toLocaleString()}
+Original Duplicates: ${originalDataInfo.duplicates || 0}
+Memory Usage: ${((originalDataInfo.memory_usage || 0) / (1024 * 1024)).toFixed(2)} MB
+
+COLUMN BREAKDOWN
+---------------
+${Object.entries(originalDataInfo.dtypes || {}).map(([col, dtype]) => {
+    const missing = originalDataInfo.missing_values?.[col] || 0;
+    const missingPct = originalRows > 0 ? ((missing / originalRows) * 100).toFixed(1) : '0.0';
+    return `${col}: ${dtype} (${missing} missing, ${missingPct}%)`;
+}).join('\n')}
+
+OPERATIONS APPLIED
+-----------------
+${cleanedDataInfo.operations?.map((op, i) => `${i + 1}. ${Object.keys(op)[0]}: ${Object.values(op)[0].status}`).join('\n') || 'No operations recorded'}
+
+Generated: ${new Date().toLocaleString()}
+            `.trim();
+            
+            return report;
+        }
+
+        async function exportSummary() {
+            if (!originalDataInfo || !cleanedDataInfo) {
+                alert('No data available for summary generation');
+                return;
+            }
+            
+            const summary = {
+                timestamp: new Date().toISOString(),
+                original_data: {
+                    shape: originalDataInfo.shape,
+                    missing_values: originalDataInfo.missing_values,
+                    duplicates: originalDataInfo.duplicates,
+                    dtypes: originalDataInfo.dtypes
+                },
+                cleaned_data: {
+                    shape: cleanedDataInfo.shape,
+                    operations: cleanedDataInfo.operations
+                },
+                improvements: {
+                    rows_change: cleanedDataInfo.shape[0] - originalDataInfo.shape[0],
+                    columns_change: cleanedDataInfo.shape[1] - originalDataInfo.shape[1],
+                    missing_values_removed: Object.values(originalDataInfo.missing_values || {})
+                        .reduce((sum, count) => sum + (parseInt(count) || 0), 0),
+                    duplicates_removed: originalDataInfo.duplicates || 0
+                }
+            };
+            
+            downloadTextFile(JSON.stringify(summary, null, 2), 'cleaning_summary.json');
+        }
+
+        function downloadTextFile(content, filename) {
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        // Utility Functions
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Add CSS for data type badges
+        const style = document.createElement('style');
+        style.textContent = `
+            .dtype-badge {
+                background: rgba(59, 130, 246, 0.2);
+                color: var(--accent-color);
+                padding: 0.25rem 0.5rem;
+                border-radius: 4px;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

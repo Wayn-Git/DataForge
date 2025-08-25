@@ -1,0 +1,1012 @@
+﻿Animal type;Country;Weight kg;Body Length cm;Gender;Animal code;Latitude;Longitude;Animal name;Observation date;Data compiled by
+;;;;;;;;;03.01.2024;James Johnson
+;;;;;;;;;03.02.2024;James Johnson
+European bison;Poland;930;335;male;;52.828845;23.820144;Szefu;01.03.2024;Anne Anthony
+European bison;Poland;909;311;not determined;;52.830509;23.826849;;01.03.2024;Anne Anthony
+European bison™;Poland;581;277;female;;52.834109;23.807093;;01.03.2024;Anne Anthony
+European bisson;Poland;900;295;male;;52.834759;23.817201;;01.03.2024;Anne Anthony
+European buster;Poland;620;250;female;;52.834960;23.820750;;01.03.2024;Anne Anthony
+lynx;Hungary;24;76;male;;48.505494;20.551966;;01.03.2024;Anne Anthony
+lynx?;Hungary;23;82;female;;48.506529;20.554548;;01.03.2024;Anne Anthony
+red squirel;Poland;0.308;22;female;;52.241273;21.055745;Basia;01.03.2024;Anne Anthony
+red squirrel;PL;0.348;20;female;;52.242060;21.057802;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.316;20;male;;52.240035;21.056188;Lolek;01.03.2024;Anne Anthony
+red squirrel;Poland;0.34;21;;;52.240284;21.051948;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.333;21;male;;;;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.265;19;female;;52.240560;21.055899;;01.03.2024;Anne Anthony
+red squirrel;Poland;;;male;;52.241177;21.052873;;01.03.2024;Anne Anthony
+red squirrel;PL;0.261;22;female;;52.240833;21.052093;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.317;23;male;;52.241358;21.056352;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.328;21;male;;52.241905;21.050727;;01.03.2024;Anne Anthony
+red squirrel;Hungary;0.305;21;male;;47.511401;18.949119;;01.03.2024;Anne Anthony
+red squirrell;Poland;0.328;23;male;;52.241920;21.056347;;01.03.2024;Anne Anthony
+red squirrel;Germany;0.294;19;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.25;19;female;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.262;21;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.267;21;female;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.269;22;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.308;22;female;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.308;19;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.27;20;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.32;20;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.262;20;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.256;21;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.245;22;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.292;19;male;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.289;19;female;;;;;01.03.2024;Bob Bobson
+red squirrel;Germany;0.308;22;male;;;;;01.03.2024;Bob Bobson
+European bison;Slovakia;420;182;male;;49.054684;22.417189;;01.03.2024;John Johnson
+European bison;Slovakia;511;266;female;;49.053629;22.421831;;01.03.2024;John Johnson
+European bison;Slovakia;814;288;male;;49.053489;22.415229;;01.03.2024;John Johnson
+European bison;Slovakia;130;141;female;;49.054166;22.422852;;01.03.2024;John Johnson
+European bison;Slovakia;390;180;female;;49.052731;22.422675;;01.03.2024;John Johnson
+European bison;Slovakia;355;179;male;;49.055974;22.415985;;01.03.2024;John Johnson
+European bison;Slovakia;566;272;female;;49.053342;22.423867;;01.03.2024;John Johnson
+European bison;Slovakia;393;152;not determined;;49.056471;22.422475;;01.03.2024;John Johnson
+European bison™;Czech Republic;823;286;male;;50.636564;14.834553;;01.03.2024;John Johnson
+European bison™;Slovakia;695;316;male;;49.055537;22.419428;;01.03.2024;John Johnson
+hedgehog;Czech Republic;0.6;20;female;;50.636869;14.844555;;01.03.2024;John Johnson
+hedgehog;Czech Republic;0.6;-16;male;;50.644733;14.835753;;01.03.2024;John Johnson
+hedgehog;Czech Republic;1.2;31;male;;50.635766;14.844247;;01.03.2024;John Johnson
+red squirrel;Slovakia;0.275;23;male;;48.185353;17.08322;;01.03.2024;John Johnson
+wedgehod;Czech Republic;0.9;22;male;;50.642843;14.841240;;01.03.2024;John Johnson
+red squirel;Poland;0.308;22;female;;52.241273;21.055745;Basia;01.03.2024;Anne Anthony
+red squirrel;PL;0.348;20;female;;52.242060;21.057802;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.316;20;male;;52.240035;21.056188;Lolek;01.03.2024;Anne Anthony
+red squirrel;Poland;0.34;21;;;52.240284;21.051948;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.333;21;male;;;;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.265;19;female;;52.240560;21.055899;;01.03.2024;Anne Anthony
+red squirrel;Poland;;;male;;52.241177;21.052873;;01.03.2024;Anne Anthony
+red squirrel;PL;0.261;22;female;;52.240833;21.052093;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.317;23;male;;52.241358;21.056352;;01.03.2024;Anne Anthony
+red squirrel;Poland;0.328;21;male;;52.241905;21.050727;;01.03.2024;Anne Anthony
+red squirrel;Hungary;0.305;21;male;;47.511401;18.949119;;01.03.2024;Anne Anthony
+red squirrell;Poland;0.328;23;male;;52.241920;21.056347;;01.03.2024;Anne Anthony
+lynx;Hungary;23;78;female;;48.504128;20.568479;;02.03.2024;Anne Anthony
+lynx?;Poland;29;94;male;;52.809851;23.858071;;02.03.2024;Anne Anthony
+red squirrel;Germany;0.244;22;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.299;21;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.284;20;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.289;20;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.284;21;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.314;22;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.262;19;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.258;20;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.297;21;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.255;22;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.28;22;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.293;22;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.295;20;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.28;20;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.281;20;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.245;21;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.283;21;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.27;19;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.315;22;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.254;17;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.249;19;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.298;21;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.314;19;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.28;20;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.251;19;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.293;20;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.301;20;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.271;17;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.275;20;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.314;19;female;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.304;21;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.308;20;male;;;;;02.03.2024;Bob Bobson
+red squirrel;Germany;0.24;21;male;;;;;02.03.2024;Bob Bobson
+European bison;Czech;402;162;female;;50.641008;14.836529;;02.03.2024;John Johnson
+European bison;Czech Republic;535;295;male;;50.643406;14.836495;;02.03.2024;John Johnson
+European buster;Czech Republic;572;251;female;;50.638945;14.845452;;02.03.2024;John Johnson
+hedgehog;Czech Republic;0.9;20;female;;50.639869;14.849702;;02.03.2024;John Johnson
+hedgehog;Czech Republic;0.7;16;female;;50.643039;14.840662;;02.03.2024;John Johnson
+hedgehog;Czech Republic;0.7;14;female;;50.637879;14.838429;;02.03.2024;John Johnson
+hedgehog;Czech Republic;1.1;32;male;;50.643254;14.843730;;02.03.2024;John Johnson
+hedgehog;Czech Republic;0.5;20;male;;50.643854;14.837155;;02.03.2024;John Johnson
+hedgehog;Czech Republic;1.1;22;female;;50.635584;14.837072;;02.03.2024;John Johnson
+hedgehog;Czech Republic;1;20;female;;50.642723;14.837229;;02.03.2024;John Johnson
+hedgehog;Czech Republic;0.7;13;female;;50.639389;14.844400;;02.03.2024;John Johnson
+lynx;Slovakia;30;120;male;;48.409308;18.832606;;02.03.2024;John Johnson
+red squirrel;Hungry;0.262;20;female;;47.510799;18.945583;;03.03.2024;Anne Anthony
+;;;;;;;;;03.03.2024;James Johnson
+hedgehog;Czech Republic;0.6;20;male;;50.637375;14.839785;;03.03.2024;John Johnson
+lynx;Slovakia;28;131;male;;48.406304;18.842851;;03.03.2024;John Johnson
+red squirel;Slovakia;0.281;18;male;;48.187690;17.086471;;03.03.2024;John Johnson
+red squirrel;Hungry;0.262;20;female;;47.510799;18.945583;;03.03.2024;Anne Anthony
+European bison;Poland;650;285;female;;52.834741;23.826716;;04.03.2024;Anne Anthony
+hedgehog;HU;1.1;24;male;;48.503795;20.555932;;04.03.2024;Anne Anthony
+hedgehog;Hungary;1.1;26;not determined;;48.503062;20.551698;;04.03.2024;Anne Anthony
+hedgehog;Hungary;0.8;18;female;;48.503498;20.539662;;04.03.2024;Anne Anthony
+hedgehog;Hungary;1.2;26;male;;48.509298;20.551977;;04.03.2024;Anne Anthony
+hedgehog;Poland;0.9;22;male;;52.214679;21.033021;;04.03.2024;Anne Anthony
+lynx;Hungary;25;89;male;;48.504169;20.559452;;04.03.2024;Anne Anthony
+red squirel;Hungary;0.283;18;female;;48.505251;20.551473;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.307;-19;male;;;;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.296;22;male;;48.502584;20.532518;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.301;18;female;;48.505512;20.538038;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.295;17;male;;48.505780;20.546466;;04.03.2024;Anne Anthony
+red squirrel;Hungry;0.32;18;male;;48.502091;20.547521;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.28;19;female;;48.505494;20.536362;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.33;24;male;;52.241203;21.050999;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.3;22;female;;52.240018;21.052390;Lola;04.03.2024;Anne Anthony
+red squirrel;Poland;0.283;17;female;;52.239931;21.056703;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.341;21;male;;52.241856;21.053078;;04.03.2024;Anne Anthony
+red squirrel;PL;0.35;24;male;;52.240453;21.055847;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.291;21;;;52.241662;21.056430;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.329;22;female;;52.241638;21.055998;Lola;04.03.2024;Anne Anthony
+red squirrell;HU;0.327;18;female;;48.502803;20.548668;;04.03.2024;Anne Anthony
+red squirrell;Poland;0.35;24;male;;52.240497;21.055991;;04.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.6;17;male;;50.635501;14.838158;;04.03.2024;John Johnson
+hedgehog;Czech Republic;0.9;22;female;;50.638142;14.849689;;04.03.2024;John Johnson
+red squirrel;Czech Republic;0.289;21;female;;49.937872;14.179825;;04.03.2024;John Johnson
+red squirrel;Slovakia;0.297;20;female;;48.185194;17.083142;;04.03.2024;John Johnson
+red squirel;Hungary;0.283;18;female;;48.505251;20.551473;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.307;-19;male;;;;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.296;22;male;;48.502584;20.532518;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.301;18;female;;48.505512;20.538038;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.295;17;male;;48.505780;20.546466;;04.03.2024;Anne Anthony
+red squirrel;Hungry;0.32;18;male;;48.502091;20.547521;;04.03.2024;Anne Anthony
+red squirrel;Hungary;0.28;19;female;;48.505494;20.536362;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.33;24;male;;52.241203;21.050999;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.3;22;female;;52.240018;21.052390;Lola;04.03.2024;Anne Anthony
+red squirrel;Poland;0.283;17;female;;52.239931;21.056703;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.341;21;male;;52.241856;21.053078;;04.03.2024;Anne Anthony
+red squirrel;PL;0.35;24;male;;52.240453;21.055847;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.291;21;;;52.241662;21.056430;;04.03.2024;Anne Anthony
+red squirrel;Poland;0.329;22;female;;52.241638;21.055998;Lola;04.03.2024;Anne Anthony
+red squirrell;HU;0.327;18;female;;48.502803;20.548668;;04.03.2024;Anne Anthony
+red squirrell;Poland;0.35;24;male;;52.240497;21.055991;;04.03.2024;Anne Anthony
+lynx;HU;24;79;male;;48.503043;20.561567;;05.03.2024;Anne Anthony
+red squirrel;Poland;0.301;23;female;;52.240867;21.054339;;05.03.2024;Anne Anthony
+red squirrel;Poland;0.344;20;male;;52.240522;21.057552;;05.03.2024;Anne Anthony
+red squirrel;Hungary;0.253;-19;male;;47.507002;18.950091;;05.03.2024;Anne Anthony
+red squirrel;Hungary;0.293;18;female;;47.507557;18.942066;;05.03.2024;Anne Anthony
+;Austria;0.263;22;male;;;;;05.03.2024;Bob Bobson
+hedgehog;Czech;0.9;19;female;;50.107284;14.346127;;05.03.2024;John Johnson
+lynx?;Slovakia;23;97;female;;48.413226;18.848128;;05.03.2024;John Johnson
+red squirel;Slovakia;0.333;23;male;;48.409023;18.843990;;05.03.2024;John Johnson
+red squirrel;Slovakia;0.32;17;male;;48.406733;18.838754;;05.03.2024;John Johnson
+red squirrel;Slovakia;0.266;18;female;;48.404590;18.846849;;05.03.2024;John Johnson
+red squirrel;Slovakia;0.306;22;male;;48.408318;18.844383;;05.03.2024;John Johnson
+red squirrel;Slovakia;0.311;22;male;;48.412458;18.832425;;05.03.2024;John Johnson
+red squirrel;Slovakia;0.291;22;female;;48.406551;18.837137;;05.03.2024;John Johnson
+red squirrell;Slovakia;0.259;19;male;;48.405516;18.850994;;05.03.2024;John Johnson
+red squirrel;Poland;0.301;23;female;;52.240867;21.054339;;05.03.2024;Anne Anthony
+red squirrel;Poland;0.344;20;male;;52.240522;21.057552;;05.03.2024;Anne Anthony
+red squirrel;Hungary;0.253;-19;male;;47.507002;18.950091;;05.03.2024;Anne Anthony
+red squirrel;Hungary;0.293;18;female;;47.507557;18.942066;;05.03.2024;Anne Anthony
+European bison;Poland;454;225;female;;52.834423;23.827103;;06.03.2024;Anne Anthony
+hedgehog;Poland;1.1;22;female;;52.214521;21.031889;;06.03.2024;Anne Anthony
+hedgehog;Poland;0.9;21;male;;52.214934;21.032106;;06.03.2024;Anne Anthony
+lynx;Hungry;18;81;female;;48.511532;20.539112;;06.03.2024;Anne Anthony
+red squirrel;Poland;0.343;23;male;;52.241638;21.057329;;06.03.2024;Anne Anthony
+red squirrel;Poland;0.274;22;female;;52.241235;21.057356;;06.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.6;17;female;;50.106942;14.348502;;06.03.2024;John Johnson
+hedgehog;Czech Republic;0.4;12;female;;50.107223;14.34732;;06.03.2024;John Johnson
+hedgehog;Czech Republic;1.1;26;male;;50.106379;14.347645;;06.03.2024;John Johnson
+hedgehog;Czech Republic;0.8;22;male;;50.106579;14.346283;;06.03.2024;John Johnson
+red squirrel;Slovakia;0.334;21;male;;48.188008;17.085312;;06.03.2024;John Johnson
+red squirrell;Slovakia;0.307;23;female;;48.185298;17.084072;;06.03.2024;John Johnson
+red squirrel;Poland;0.343;23;male;;52.241638;21.057329;;06.03.2024;Anne Anthony
+red squirrel;Poland;0.274;22;female;;52.241235;21.057356;;06.03.2024;Anne Anthony
+European bison;Poland;862;312;male;;52.831879;23.826297;;07.03.2024;Anne Anthony
+hedgehog;Hungary;;;female;;48.506206;20.565308;;07.03.2024;Anne Anthony
+hedgehog;Hungary;0.5;16;male;;48.505090;20.539448;;07.03.2024;Anne Anthony
+hedgehog;Hungary;0.8;23;female;;48.504425;20.548744;;07.03.2024;Anne Anthony
+hedgehog;Hungary;0.7;18;female;;48.505617;20.541054;;07.03.2024;Anne Anthony
+hedgehog;Hungry;1.2;23;male;;48.503254;20.555951;;07.03.2024;Anne Anthony
+hedgehog;Hungry;0.5;15;male;;48.502359;20.563385;;07.03.2024;Anne Anthony
+hedgehog;Hungary;0.6;18;female;;48.511048;20.567209;;07.03.2024;Anne Anthony
+lynx;Hungary;29;109;male;;48.501574;20.532455;;07.03.2024;Anne Anthony
+lynx;Poland;26;85;female;;52.808579;23.843768;;07.03.2024;Anne Anthony
+red squirrel;HU;0.296;19;male;;-2.023546;34.896734;;07.03.2024;Anne Anthony
+red squirrel;Hungary;0.3;23;male;;48.505406;20.535848;;07.03.2024;Anne Anthony
+red squirrel;Hungary;0.286;18;female;;48.503917;20.536503;;07.03.2024;Anne Anthony
+red squirrel;Poland;0.318;21;male;;52.240616;21.054902;;07.03.2024;Anne Anthony
+European bison;Czech Republic;716;303;male;;50.636161;14.846951;;07.03.2024;John Johnson
+European bison™;Czech Republic;541;212;female;;50.642592;14.850140;;07.03.2024;John Johnson
+European bisson;Czech Republic;30;100;female;;50.636423;14.847287;;07.03.2024;John Johnson
+ledgehod;Czech Republic;0.7;20;female;;50.106607;14.347909;;07.03.2024;John Johnson
+ledgehod;Czech Republic;0.7;20;female;;50.106925;14.346629;;07.03.2024;John Johnson
+ledgehod;Czech Republic;1.2;26;male;;50.107284;14.347676;;07.03.2024;John Johnson
+red squirrel;Czech Republic;0.273;17;female;;49.938634;14.181813;;07.03.2024;John Johnson
+red squirrel;HU;0.296;19;male;;-2.023546;34.896734;;07.03.2024;Anne Anthony
+red squirrel;Hungary;0.3;23;male;;48.505406;20.535848;;07.03.2024;Anne Anthony
+red squirrel;Hungary;0.286;18;female;;48.503917;20.536503;;07.03.2024;Anne Anthony
+red squirrel;Poland;0.318;21;male;;52.240616;21.054902;;07.03.2024;Anne Anthony
+hedgehog;Hungary;1;24;female;;48.506913;20.540427;;08.03.2024;Anne Anthony
+hedgehog;Poland;0.8;19;female;;52.214365;21.031462;;08.03.2024;Anne Anthony
+red squirrel;Hungary;0.261;19;female;;47.507023;18.940532;;08.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.8;22;male;;50.106811;14.348513;;08.03.2024;John Johnson
+hedgehog;Czech Republic;1.1;23;male;;50.107278;14.348461;;08.03.2024;John Johnson
+red squirrel;Hungary;0.261;19;female;;47.507023;18.940532;;08.03.2024;Anne Anthony
+European bison;Poland;621;277;female;;52.828561;23.816861;;09.03.2024;Anne Anthony
+European bison;Poland;385;168;female;;52.833261;23.815203;;09.03.2024;Anne Anthony
+hedgehog;Poland;0.6;-19;male;;52.214410;21.032484;;09.03.2024;Anne Anthony
+hedgehog;Poland;0.8;22;female;;52.214452;21.034505;;09.03.2024;Anne Anthony
+lynx;Hungary;12;61;female;;48.508239;20.567914;;09.03.2024;Anne Anthony
+lynx;Hungary;23;73;female;;48.507503;20.551726;;09.03.2024;Anne Anthony
+lynx;PL;20;95;female;;52.814984;23.840681;;09.03.2024;Anne Anthony
+lynx;Poland;18;63;male;;52.812647;23.863299;;09.03.2024;Anne Anthony
+red squirrel;Poland;0.302;22;male;;52.241375;21.050845;;09.03.2024;Anne Anthony
+red squirrell;Hungary;0.284;20;female;;47.509380;18.949607;;09.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.9;22;female;;50.106583;14.346471;;09.03.2024;John Johnson
+hedgehog;Czech Republic;1.1;23;male;;50.106960;14.346126;;09.03.2024;John Johnson
+hedgehog;Czech Republic;0.6;19;male;;50.106311;14.346906;;09.03.2024;John Johnson
+red squirrel;Czech Republic;0.293;19;male;;49.937416;14.181449;;09.03.2024;John Johnson
+red squirrel;Poland;0.302;22;male;;52.241375;21.050845;;09.03.2024;Anne Anthony
+red squirrell;Hungary;0.284;20;female;;47.509380;18.949607;;09.03.2024;Anne Anthony
+hedgehog;Hungary;0.9;20;female;;48.511080;20.567192;;10.03.2024;Anne Anthony
+hedgehog;Hungary;0.9;21;male;;48.505290;20.566169;;10.03.2024;Anne Anthony
+hedgehog;Hungary;1.1;26;male;;48.502486;20.562565;;10.03.2024;Anne Anthony
+lynx;Hungary;23;77;female;;48.509272;20.551952;;10.03.2024;Anne Anthony
+lynx;Hungry;15;71;male;;48.501180;20.557432;;10.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.8;17;male;;49.938707;14.182507;;10.03.2024;John Johnson
+hedgehog;Czech Republic;0.5;18;female;;49.937531;14.180359;;10.03.2024;John Johnson
+hedgehog;Czech Republic;0.7;17;female;;49.937890;14.180882;;10.03.2024;John Johnson
+hedgehog;Czech Republic;0.5;15;female;;49.937340;14.18071;;10.03.2024;John Johnson
+European bison;Poland;24;100;female;;52.834112;23.825722;;11.03.2024;Anne Anthony
+hedgehog;Hungary;0.9;19;female;;48.505634;20.543417;;11.03.2024;Anne Anthony
+hedgehog;Poland;0.8;16;female;;52.214968;21.030987;;11.03.2024;Anne Anthony
+lynx;Hungary;20;90;female;;48.501938;20.567814;;11.03.2024;Anne Anthony
+red squirel;Hungary;0.322;21;male;;48.506217;20.545055;;11.03.2024;Anne Anthony
+red squirrel;HU;0.282;21;male;;-2.023546;34.896734;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.311;22;female;;48.505737;20.546731;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.336;22;female;;48.506095;20.543032;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.29;21;male;;48.506429;20.543875;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.293;20;male;;48.505860;20.547649;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.335;19;female;;48.502521;20.558578;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.339;19;female;;48.503752;20.558664;;11.03.2024;Anne Anthony
+red squirrel;Poland;0.304;22;;;52.241093;21.055413;;11.03.2024;Anne Anthony
+red squirel;Czech Republic;0.271;18;male;;49.937391;14.179566;;11.03.2024;John Johnson
+red squirel;Hungary;0.322;21;male;;48.506217;20.545055;;11.03.2024;Anne Anthony
+red squirrel;HU;0.282;21;male;;-2.023546;34.896734;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.311;22;female;;48.505737;20.546731;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.336;22;female;;48.506095;20.543032;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.29;21;male;;48.506429;20.543875;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.293;20;male;;48.505860;20.547649;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.335;19;female;;48.502521;20.558578;;11.03.2024;Anne Anthony
+red squirrel;Hungary;0.339;19;female;;48.503752;20.558664;;11.03.2024;Anne Anthony
+red squirrel;Poland;0.304;22;;;52.241093;21.055413;;11.03.2024;Anne Anthony
+European bisson;Poland;315;175;male;;52.829512;23.811681;;12.03.2024;Anne Anthony
+red squirrel;Poland;0.316;24;male;;52.240707;21.057051;;12.03.2024;Anne Anthony
+red squirrel;Hungry;;;female;;47.508454;18.949343;;12.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.6;20;male;;49.938169;14.178703;;12.03.2024;John Johnson
+hedgehog;Czech;0.4;17;male;;49.938527;14.179315;;12.03.2024;John Johnson
+red squirrel;Czech Republic;0.324;23;female;;49.937724;14.182072;;12.03.2024;John Johnson
+red squirrel;Poland;0.316;24;male;;52.240707;21.057051;;12.03.2024;Anne Anthony
+red squirrel;Hungry;;;female;;47.508454;18.949343;;12.03.2024;Anne Anthony
+hedgehog;Hungary;0.6;14;female;;48.506262;20.547343;;13.03.2024;Anne Anthony
+hedgehog;Poland;0.8;24;male;;52.214734;21.031915;;13.03.2024;Anne Anthony
+lynx?;Hungary;20;86;male;;48.504717;20.558726;;13.03.2024;Anne Anthony
+red squirrel;Poland;0.36;23;female;;52.241510;21.052575;Basia;13.03.2024;Anne Anthony
+red squirrel;Hungary;0.26;18;male;;47.505768;18.943674;;13.03.2024;Anne Anthony
+red squirrel;Germany;0.335;18;male;;48.161549;11.493041;Bob Bobson;13.03.2024;Bob Bobson
+hedgehog;Czech Republic;0.6;15;female;;49.939297;14.181453;;13.03.2024;John Johnson
+red squirel;Slovakia;0.288;18;female;;48.185953;17.08393;;13.03.2024;John Johnson
+red squirrel;Poland;0.36;23;female;;52.241510;21.052575;Basia;13.03.2024;Anne Anthony
+red squirrel;Hungary;0.26;18;male;;47.505768;18.943674;;13.03.2024;Anne Anthony
+European bison;Poland;610;258;female;;52.821135;23.809947;;14.03.2024;Anne Anthony
+hedgehog;Hungary;0.7;21;female;;48.509199;20.552447;;14.03.2024;Anne Anthony
+hedgehog;Poland;1;21;female;;52.213985;21.030841;;14.03.2024;Anne Anthony
+hedgehog;PL;0.8;15;female;;52.213877;21.030861;;14.03.2024;Anne Anthony
+red squirrel;Poland;0.32;21;female;;52.241309;21.057247;;14.03.2024;Anne Anthony
+red squirrell;Hungary;0.287;23;female;;47.508679;18.946127;;14.03.2024;Anne Anthony
+hedgehog;Australia;0.8;24;not determined;;47.781689;14.386777;;14.03.2024;Bob Bobson
+hedgehog;Austria;0.7;19;female;;47.781139;14.382004;;14.03.2024;Bob Bobson
+hedgehog;Austria;0.8;20;male;;47.781828;14.385001;;14.03.2024;Bob Bobson
+hedgehog;Austria;0.6;14;female;;47.781060;14.386807;;14.03.2024;Bob Bobson
+hedgehog;Austria;0.7;24;male;;47.780872;14.38446;;14.03.2024;Bob Bobson
+hedgehog;Austria;0.8;21;female;;47.781117;14.38608;;14.03.2024;Bob Bobson
+lynx;Austria;22;80;female;;47.780779;14.384918;;14.03.2024;Bob Bobson
+lynx;Austria;23;86;male;;47.781257;14.383099;;14.03.2024;Bob Bobson
+hedgehog;Czech Republic;0.9;16;female;;49.938490;14.1802;;14.03.2024;John Johnson
+red squirrel;Poland;0.32;21;female;;52.241309;21.057247;;14.03.2024;Anne Anthony
+red squirrell;Hungary;0.287;23;female;;47.508679;18.946127;;14.03.2024;Anne Anthony
+hedgehog;Poland;0.9;22;male;;52.214498;21.034201;;15.03.2024;Anne Anthony
+lynx;Poland;16;70;male;;52.803129;23.844358;;15.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.7;21;female;;49.938132;14.181225;;15.03.2024;John Johnson
+red squirel;Slovakia;0.294;23;male;;48.184374;17.086;;15.03.2024;John Johnson
+red squirrel;Czech Republic;0.267;18;female;;49.938860;14.182738;;15.03.2024;John Johnson
+red squirrel;Czech Republic;0.328;19;male;;49.938357;14.177929;;15.03.2024;John Johnson
+European bison;Poland;35;125;female;;52.820739;23.815145;;16.03.2024;Anne Anthony
+hedgehog;Hungary;0.6;23;male;;48.501763;20.547976;;16.03.2024;Anne Anthony
+lynx;Poland;16;72;male;;52.814211;23.834358;;16.03.2024;Anne Anthony
+lynx;Poland;18;81;female;;52.802757;23.835199;;16.03.2024;Anne Anthony
+red squirrel;Poland;0.346;19;male;;52.240529;21.053603;;16.03.2024;Anne Anthony
+red squirrel;Hungary;0.27;22;female;;47.509866;18.942538;;16.03.2024;Anne Anthony
+red squirrel;Slovakia;0.326;19;female;;48.185585;17.091365;;16.03.2024;John Johnson
+red squirrel;Poland;0.346;19;male;;52.240529;21.053603;;16.03.2024;Anne Anthony
+red squirrel;Hungary;0.27;22;female;;47.509866;18.942538;;16.03.2024;Anne Anthony
+European bison;Poland;915;304;male;;52.822880;23.810852;;17.03.2024;Anne Anthony
+hedgehog;Hungary;0.7;15;female;;48.504773;20.536543;;17.03.2024;Anne Anthony
+hedgehog;Poland;0.6;15;female;;52.214745;21.033701;;17.03.2024;Anne Anthony
+red squirrel;Hungary;0.278;21;female;;47.510304;18.942925;;17.03.2024;Anne Anthony
+red squirrel;Slovakia;0.322;23;female;;49.056857;22.416369;;17.03.2024;John Johnson
+red squirrel;Slovakia;0.302;23;male;;48.412370;18.875325;;17.03.2024;John Johnson
+red squirrel;Slovakia;0.334;20;female;;48.406983;18.863197;;17.03.2024;John Johnson
+red squirrel;Slovakia;0.28;19;male;;48.411486;18.867730;;17.03.2024;John Johnson
+red squirrell;Slovakia;0.289;18;male;;48.410536;18.870325;;17.03.2024;John Johnson
+red squirrel;Hungary;0.278;21;female;;47.510304;18.942925;;17.03.2024;Anne Anthony
+European bison;Poland;537;287;female;;52.825500;23.808386;;18.03.2024;Anne Anthony
+red squirrel;Poland;0.346;23;male;;52.240737;21.053063;;18.03.2024;Anne Anthony
+hedgehog;Czech Republic;1.2;26;male;;49.938547;14.180402;;18.03.2024;John Johnson
+hedgehog;CZ;0.9;17;male;;49.937429;14.18264;;18.03.2024;John Johnson
+red squirrel;Czech Republic;0.32;18;female;;49.938634;14.179739;;18.03.2024;John Johnson
+red squirrel;Czech Republic;0.266;17;male;;49.939062;14.177939;;18.03.2024;John Johnson
+red squirrel;Poland;0.346;23;male;;52.240737;21.053063;;18.03.2024;Anne Anthony
+hedgehog;Hungary;1.1;19;female;;48.502512;20.563331;;19.03.2024;Anne Anthony
+hedgehog;Poland;0.4;16;male;;52.214758;21.030697;;19.03.2024;Anne Anthony
+hedgehog;Austria;1.1;21;female;;47.781212;14.384017;;19.03.2024;Bob Bobson
+hedgehog;Austria;0.7;25;male;;47.781764;14.38328;;19.03.2024;Bob Bobson
+hedgehog;Austria;1.1;24;male;;47.781883;14.382628;;19.03.2024;Bob Bobson
+hedgehog;Austria;0.4;21;female;;47.781093;14.38209;;19.03.2024;Bob Bobson
+hedgehog;Germany;0.8;16;male;;52.585958;13.147098;Bob Bobson;19.03.2024;Bob Bobson
+hedgehog;Germany;0.5;18;female;;52.586199;13.152793;Bob Bobson;19.03.2024;Bob Bobson
+hedgehog;Germany;0.5;18;male;;52.586589;13.146651;Bob Bobson;19.03.2024;Bob Bobson
+hedgehog;Germany;0.4;13;female;;52.587327;13.149206;Bob Bobson;19.03.2024;Bob Bobson
+hedgehog;Germany;1;21;male;;52.585937;13.146151;Bob Bobson;19.03.2024;Bob Bobson
+hedgehog;Czech Republic;1;17;female;;49.937696;14.182707;;19.03.2024;John Johnson
+lynx;Slovakia;16;65;male;;48.405926;18.839219;;19.03.2024;John Johnson
+red squirrel;Slovakia;0.33;18;;;48.184757;17.082936;;19.03.2024;John Johnson
+red squirrel;Slovakia;0.323;23;female;;48.186767;17.089935;;19.03.2024;John Johnson
+hedgehog;Poland;0.4;16;female;;52.214754;21.034364;;20.03.2024;Anne Anthony
+hedgehog;Poland;0.7;26;male;;52.215034;21.033030;;20.03.2024;Anne Anthony
+red squirel;Poland;0.35;19;female;;52.241637;21.051540;;20.03.2024;Anne Anthony
+red squirrel;Hungary;0.284;18;female;;47.505786;18.943124;;20.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.5;13;male;;49.937455;14.180775;;20.03.2024;John Johnson
+lynx?;Slovakia;17;80;female;;48.407449;18.850762;;20.03.2024;John Johnson
+red squirel;Poland;0.35;19;female;;52.241637;21.051540;;20.03.2024;Anne Anthony
+red squirrel;Hungary;0.284;18;female;;47.505786;18.943124;;20.03.2024;Anne Anthony
+European bison;PL;302;150;female;;52.820447;23.813259;;21.03.2024;Anne Anthony
+hedgehog;Hungary;1.2;29;male;;48.503795;20.555932;;21.03.2024;Anne Anthony
+hedgehog;Poland;1.2;25;male;;52.214156;21.032500;;21.03.2024;Anne Anthony
+lynx;Poland;171;75;male;;52.831229;23.814123;;21.03.2024;Anne Anthony
+lynx;Poland;18;73;female;;52.832726;23.825032;;21.03.2024;Anne Anthony
+red squirrel;Poland;0.33;23;male;;50.041479;19.951211;;21.03.2024;Anne Anthony
+red squirrel;Poland;;;male;;50.041154;19.949919;;21.03.2024;Anne Anthony
+red squirrel;Hungary;0.315;19;male;;47.506414;18.941655;;21.03.2024;Anne Anthony
+hedgehog;Austria;0.8;24;male;;47.781236;14.382219;;21.03.2024;Bob Bobson
+hedgehog;Australia;0.6;14;female;;47.781248;14.382649;;21.03.2024;Bob Bobson
+hedgehog;DE;1.1;21;male;;52.585628;13.149093;Bob Bobson;21.03.2024;Bob Bobson
+hedgehog;Germany;1.1;22;female;;52.583290;13.149155;Bob Bobson;21.03.2024;Bob Bobson
+lynx;Austria;20;74;female;;47.781106;14.382184;;21.03.2024;Bob Bobson
+red squirrel;Germany;0.323;20;male;;52.581896;13.151801;Bob Bobson;21.03.2024;Bob Bobson
+red squirrel;DE;0.276;21;female;;52.581885;13.152811;Bob Bobson;21.03.2024;Bob Bobson
+red squirrel;Germany;0.339;21;male;;52.587248;13.151499;Bob Bobson;21.03.2024;Bob Bobson
+red squirrell;Germany;0.34;19;female;;52.582370;13.146855;Bob Bobson;21.03.2024;Bob Bobson
+European bison;CZ;750;242;male;;50.638137;14.838129;;21.03.2024;John Johnson
+European bison;Czech Republic;35;110;male;;50.640733;14.845160;;21.03.2024;John Johnson
+European buster;Czech Republic;360;175;female;;50.636642;14.847946;;21.03.2024;John Johnson
+hedgehog;Czech Republic;1.1;18;female;;49.939474;14.180897;;21.03.2024;John Johnson
+red squirrel;Czech;0.335;20;male;;49.938958;14.181258;;21.03.2024;John Johnson
+red squirrel;Slovakia;0.273;23;male;;48.185898;17.090683;;21.03.2024;John Johnson
+red squirrel;Slovakia;0.33;19;male;;48.186672;17.091508;;21.03.2024;John Johnson
+red squirrel;Slovakia;0.329;19;female;;48.186850;17.091228;;21.03.2024;John Johnson
+red squirrel;Poland;0.33;23;male;;50.041479;19.951211;;21.03.2024;Anne Anthony
+red squirrel;Poland;;;male;;50.041154;19.949919;;21.03.2024;Anne Anthony
+red squirrel;Hungary;0.315;19;male;;47.506414;18.941655;;21.03.2024;Anne Anthony
+European bison;Poland;1000;320;male;;52.825470;23.813070;Klucha;22.03.2024;Anne Anthony
+hedgehog;Hungary;1.1;18;male;;48.503062;20.551698;;22.03.2024;Anne Anthony
+red squirrel;DE;0.306;23;male;;52.584352;13.148089;Bob Bobson;22.03.2024;Bob Bobson
+red squirrel;Germany;0.334;19;male;;52.587863;13.147785;Bob Bobson;22.03.2024;Bob Bobson
+red squirrel;Germany;0.334;21;male;;52.587734;13.151378;Bob Bobson;22.03.2024;Bob Bobson
+red squirrel;Germany;0.329;19;female;;52.582754;13.145364;Bob Bobson;22.03.2024;Bob Bobson
+red squirrel;Germany;0.317;22;male;;52.585517;13.150878;Bob Bobson;22.03.2024;Bob Bobson
+red squirrel;Germany;0.267;21;female;;52.588834;13.151920;Bob Bobson;22.03.2024;Bob Bobson
+European bison;CC;603;291;male;;50.644813;14.839817;;22.03.2024;John Johnson
+European bison;CC;717;305;male;;50.635565;14.839320;;22.03.2024;John Johnson
+European bison™;Czech Republic;390;145;female;;50.639856;14.847626;;22.03.2024;John Johnson
+hedgehog;Czech Republic;0.6;21;female;;49.939062;14.17875;;22.03.2024;John Johnson
+hedgehog;CZ;1.1;21;male;;49.939165;14.182528;;22.03.2024;John Johnson
+hedgehog;Czech Republic;0.7;18;female;;49.937562;14.181101;;22.03.2024;John Johnson
+hedgehog;Czech Republic;1.2;23;male;;49.939201;14.178923;;22.03.2024;John Johnson
+lynx;Slovakia;25;96;female;;48.410693;18.832845;;22.03.2024;John Johnson
+European bison;Poland;660;246;female;;52.824079;23.812790;;23.03.2024;Anne Anthony
+European bison;Poland;619;248;female;;52.826081;23.815823;;23.03.2024;Anne Anthony
+hedgehog;HU;0.6;19;female;;48.503498;20.539662;;23.03.2024;Anne Anthony
+hedgehog;Hungary;0.8;25;male;;48.509298;20.551977;;23.03.2024;Anne Anthony
+hedgehog;Hungary;0.4;15;female;;48.506206;20.565308;;23.03.2024;Anne Anthony
+hedgehog;Hungary;1.1;22;male;;48.505090;20.539448;;23.03.2024;Anne Anthony
+hedgehog;Poland;0.8;20;female;;52.215039;21.032591;;23.03.2024;Anne Anthony
+hedgehog;Poland;0.5;19;female;;52.215085;21.034198;;23.03.2024;Anne Anthony
+red squirrel;Poland;0.348;20;female;;50.041860;19.950192;;23.03.2024;Anne Anthony
+red squirrel;Hungary;0.301;18;male;;47.510260;18.947838;;23.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.7;20;female;;49.937454;14.182121;;23.03.2024;John Johnson
+hedgehog;Czech Republic;1;21;female;;49.937788;14.180368;;23.03.2024;John Johnson
+red squirrel;Poland;0.348;20;female;;50.041860;19.950192;;23.03.2024;Anne Anthony
+red squirrel;Hungary;0.301;18;male;;47.510260;18.947838;;23.03.2024;Anne Anthony
+red squirrel;PL;0.286;20;female;;50.041130;19.949698;;24.03.2024;Anne Anthony
+red squirrel;Poland;0.282;21;female;;50.041522;19.950563;Zuzia;24.03.2024;Anne Anthony
+hedgehog;Austria;0.8;18;male;;47.781882;14.384802;;24.03.2024;Bob Bobson
+hedgehog;Austria;0.6;19;male;;47.781019;14.385089;;24.03.2024;Bob Bobson
+hedgehog;Austria;0.5;20;male;;47.319782;11.190836;;24.03.2024;Bob Bobson
+hedgehog;Austria;0.6;16;female;;47.320020;11.185570;;24.03.2024;Bob Bobson
+hedgehog;Austria;0.6;20;male;;47.318793;11.185855;;24.03.2024;Bob Bobson
+hedgehog;Austria;1.1;23;female;;47.316963;11.188761;;24.03.2024;Bob Bobson
+hedgehog;DE;0.8;16;male;;52.582072;13.149185;;24.03.2024;Bob Bobson
+hedgehog;Germany;1.2;23;male;;52.585720;13.148613;;24.03.2024;Bob Bobson
+hedgehog;Germany;0.7;19;female;;52.587827;13.148164;;24.03.2024;Bob Bobson
+hedgehog;Germany;0.9;151;female;;52.583004;13.150686;;24.03.2024;Bob Bobson
+hedgehog;Germany;1.2;22;male;;52.587058;13.149675;;24.03.2024;Bob Bobson
+hedgehog;Germany;0.7;16;female;;52.587539;13.146575;;24.03.2024;Bob Bobson
+hedgehog;Germany;0.6;25;male;;52.587183;13.146661;;24.03.2024;Bob Bobson
+hedgehog;Germany;1;24;male;;52.586487;13.150015;;24.03.2024;Bob Bobson
+red squirrel;Germany;0.313;23;female;;52.588779;13.147948;;24.03.2024;Bob Bobson
+red squirrel;Germany;0.268;21;male;;52.587089;13.151807;;24.03.2024;Bob Bobson
+red squirrel;Austria;0.323;21;male;;47.781847;14.386835;;24.03.2024;Bob Bobson
+red squirrel;Austria;0.272;20;female;;47.781296;14.383799;;24.03.2024;Bob Bobson
+red squirrel;Austria;0.34;20;male;;47.781538;14.384561;;24.03.2024;Bob Bobson
+red squirrel;Austria;0.332;18;female;;47.781345;14.382936;;24.03.2024;Bob Bobson
+red squirrell;Germany;0.286;19;female;;52.582658;13.148057;;24.03.2024;Bob Bobson
+hedgehog;Czech Republic;0.8;18;male;;49.938688;14.179603;;24.03.2024;John Johnson
+red squirrel;Czech Republic;0.336;22;female;;49.939212;14.180839;;24.03.2024;John Johnson
+red squirrel;Slovakia;0.2;14;female;;48.186611;17.090271;;24.03.2024;John Johnson
+red squirrel;PL;0.286;20;female;;50.041130;19.949698;;24.03.2024;Anne Anthony
+red squirrel;Poland;0.282;21;female;;50.041522;19.950563;Zuzia;24.03.2024;Anne Anthony
+hedgehog;Poland;0.9;22;female;;52.214494;21.033154;;25.03.2024;Anne Anthony
+hedgehog;Poland;1;21;male;;52.214419;21.033441;;25.03.2024;Anne Anthony
+hedgehog;CZ;0.4;12;female;;49.937893;14.18083;;25.03.2024;John Johnson
+red squirrel;Czech Republic;0.336;23;male;;49.939262;14.179613;;25.03.2024;John Johnson
+red squirrel;Slovakia;0.254;18;male;;48.239854;17.086693;;25.03.2024;John Johnson
+red squirrel;Slovakia;0.294;23;male;;48.226680;17.081529;;25.03.2024;John Johnson
+red squirrel;Slovakia;0.265;22;female;;48.238620;17.074393;;25.03.2024;John Johnson
+European bison;Poland;823;305;male;;52.824290;23.813465;;26.03.2024;Anne Anthony
+European bison;Poland;594;243;male;;52.825554;23.812594;;26.03.2024;Anne Anthony
+red squirrel;Poland;0.31;24;male;;50.041235;19.951284;;26.03.2024;Anne Anthony
+red squirrel;Hungary;-0.251;20;female;;47.508618;18.944915;;26.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.7;16;male;;49.939150;14.179388;;26.03.2024;John Johnson
+hedgehog;Czech Republic;0.6;17;female;;49.938346;14.18024;;26.03.2024;John Johnson
+red squirrel;Poland;0.31;24;male;;50.041235;19.951284;;26.03.2024;Anne Anthony
+red squirrel;Hungary;-0.251;20;female;;47.508618;18.944915;;26.03.2024;Anne Anthony
+hedgehog;Poland;1.1;20;female;;52.214766;21.030532;;27.03.2024;Anne Anthony
+red squirrel;Poland;0.336;19;male;;50.041489;19.950768;Lolek;27.03.2024;Anne Anthony
+hedgehog;Germany;0.7;23;female;;52.587532;13.152361;;27.03.2024;Bob Bobson
+hedgehog;DE;0.7;17;male;;48.161584;11.494938;;27.03.2024;Bob Bobson
+hedgehog;Germany;0.9;18;female;;48.160459;11.493142;;27.03.2024;Bob Bobson
+hedgehog;Germany;0.5;20;male;;48.160834;11.489874;;27.03.2024;Bob Bobson
+hedgehog;Czech Republic;0.5;16;male;;49.938845;14.182246;;27.03.2024;John Johnson
+hedgehog;Czech Republic;0.8;17;female;;49.938959;14.180078;;27.03.2024;John Johnson
+red squirrel;CZ;0.277;22;male;;49.939097;14.179435;;27.03.2024;John Johnson
+red squirrel;Slovakia;0.321;18;female;;48.226708;17.087853;;27.03.2024;John Johnson
+red squirrell;Czech Republic;0.271;19;female;;49.938523;14.18244;;27.03.2024;John Johnson
+red squirrel;Poland;0.336;19;male;;50.041489;19.950768;Lolek;27.03.2024;Anne Anthony
+European bison;Poland;510;222;female;;52.807537;23.700909;;28.03.2024;Anne Anthony
+red squirrel;Poland;0.328;23;female;;50.041504;19.950218;;28.03.2024;Anne Anthony
+red squirrel;Poland;0.278;23;female;;50.041119;19.949730;;28.03.2024;Anne Anthony
+hedgehog;Czech Republic;0.6;18;female;;49.937805;14.179716;;28.03.2024;John Johnson
+hedgehog;Czech Republic;0.7;15;female;;49.939330;14.177877;;28.03.2024;John Johnson
+red squirrel;Poland;0.328;23;female;;50.041504;19.950218;;28.03.2024;Anne Anthony
+red squirrel;Poland;0.278;23;female;;50.041119;19.949730;;28.03.2024;Anne Anthony
+red squirrel;Hungary;0.273;23;female;;47.507157;18.940379;;29.03.2024;Anne Anthony
+red squirrel;Austria;0.336;20;female;;47.780752;14.383452;Bibi;29.03.2024;Bob Bobson
+red squirrel;Austria;0.29;19;male;;47.781078;14.384559;;29.03.2024;Bob Bobson
+red squirrell;Austria;0.337;22;male;;47.781088;14.385534;;29.03.2024;Bob Bobson
+hedgehog;Slovakia;0.7;16;male;;48.409138;18.863577;;29.03.2024;John Johnson
+lynx;Slovakia;16;62;female;;48.409448;18.845591;;29.03.2024;John Johnson
+red squirrel;Hungary;0.273;23;female;;47.507157;18.940379;;29.03.2024;Anne Anthony
+red squirrel;Poland;0.289;24;male;;50.041382;19.949403;;30.03.2024;Anne Anthony
+hedgehog;Germany;1.1;25;male;;48.160773;11.493680;;30.03.2024;Bob Bobson
+hedgehog;Germany;0.6;15;female;;48.160813;11.492539;;30.03.2024;Bob Bobson
+hedgehog;Germany;0.5;20;female;;48.161605;11.491150;;30.03.2024;Bob Bobson
+hedgehog;Germany;0.7;20;male;;48.162593;11.491872;;30.03.2024;Bob Bobson
+hedgehog;Germany;0.6;15;female;;48.161420;11.495056;;30.03.2024;Bob Bobson
+hedgehog;Germany;0.5;16;female;;48.162549;11.492991;;30.03.2024;Bob Bobson
+hedgehog;Germany;0.9;19;male;;48.161646;11.493511;;30.03.2024;Bob Bobson
+lynx;Slovakia;21;85;male;;48.405213;18.840850;;30.03.2024;John Johnson
+red squirrel;Czech Republic;0.288;18;male;;49.939000;14.182239;;30.03.2024;John Johnson
+red squirrel;Slovakia;0.287;21;male;;48.224897;17.085979;;30.03.2024;John Johnson
+red squirrel;Slovakia;0.286;18;male;;48.228961;17.076478;;30.03.2024;John Johnson
+red squirrel;Poland;0.289;24;male;;50.041382;19.949403;;30.03.2024;Anne Anthony
+European bison;Poland;970;307;male;;52.805402;23.691244;;31.03.2024;Anne Anthony
+red squirrel;Poland;0.323;20;female;;50.041366;19.949444;;31.03.2024;Anne Anthony
+red squirrel;Hungary;-0.25;19;female;;47.509538;18.945968;;31.03.2024;Anne Anthony
+hedgehog;Slovakia;0.9;19;female;;48.407464;18.874060;;31.03.2024;John Johnson
+lynx;Slovakia;20;78;female;;48.409790;18.870341;;31.03.2024;John Johnson
+red squirrel;Poland;0.323;20;female;;50.041366;19.949444;;31.03.2024;Anne Anthony
+red squirrel;Hungary;-0.25;19;female;;47.509538;18.945968;;31.03.2024;Anne Anthony
+European bison;Poland;459;212;female;;52.807403;23.683044;;01.04.2024;Anne Anthony
+European bison;Poland;705;280;female;;52.803733;23.686928;;01.04.2024;Anne Anthony
+red squirrel;Poland;0.323;19;female;;50.041804;19.951361;;01.04.2024;Anne Anthony
+red squirrel;Hungary;0.337;18;female;;47.511558;18.942454;;01.04.2024;Anne Anthony
+hedgehog;Slovakia;1.1;22;male;;48.409754;18.870477;;01.04.2024;John Johnson
+lynx;Czech Republic;26;81;female;;50.884012;14.370554;;01.04.2024;John Johnson
+red squirrel;Czech Republic;0.283;22;female;;49.939191;14.180256;;01.04.2024;John Johnson
+red squirrel;Slovakia;0.26;22;female;;48.231230;17.090253;;01.04.2024;John Johnson
+red squirrel;Poland;0.323;19;female;;50.041804;19.951361;;01.04.2024;Anne Anthony
+red squirrel;Hungary;0.337;18;female;;47.511558;18.942454;;01.04.2024;Anne Anthony
+hedgehog;Hungary;0.6;20;female;;48.504425;20.548744;;02.04.2024;Anne Anthony
+lynx;Poland;22;101;male;;52.824599;23.816842;;02.04.2024;Anne Anthony
+red squirrel;Poland;0.294;19;male;;50.041131;19.949543;;02.04.2024;Anne Anthony
+red squirrel;Poland;;;male;;50.041552;19.949984;;02.04.2024;Anne Anthony
+red squirrel;Poland;0.312;23;female;;50.041945;19.949320;Lola;02.04.2024;Anne Anthony
+red squirrel;Poland;0.29;24;male;;50.041925;19.950894;;02.04.2024;Anne Anthony
+red squirrel;Hungary;0.258;21;female;;47.511582;18.942341;;02.04.2024;Anne Anthony
+hedgehog;Austria;0.8;15;female;;47.319091;11.188058;;02.04.2024;Bob Bobson
+hedgehog;Germany;0.8;18;male;;48.161892;11.493888;;02.04.2024;Bob Bobson
+hedgehog;Germany;0.6;15;female;;48.161218;11.494677;;02.04.2024;Bob Bobson
+hedgehog;Germany;0.8;23;male;;48.161452;11.495239;;02.04.2024;Bob Bobson
+hedgehog;Germany;0.6;16;female;;48.160915;11.489927;;02.04.2024;Bob Bobson
+hedgehog;Germany;0.7;19;male;;48.162169;11.495473;;02.04.2024;Bob Bobson
+hedgehog;Germany;1;25;female;;49.546290;11.085729;;02.04.2024;Bob Bobson
+hedgehog;Germany;1.1;23;male;;49.559558;11.081150;;02.04.2024;Bob Bobson
+red squirrel;Austria;0.273;19;female;;47.781613;14.385153;;02.04.2024;Bob Bobson
+red squirrel;Austria;0.33;18;female;;47.781637;14.385383;;02.04.2024;Bob Bobson
+red squirrel;Austria;0.262;18;female;;47.781838;14.382938;;02.04.2024;Bob Bobson
+red squirrel;Austria;0.31;19;female;;47.780925;14.383695;;02.04.2024;Bob Bobson
+red squirrel;Austria;0.334;21;female;;47.781449;14.383421;;02.04.2024;Bob Bobson
+red squirrel;Austria;0.27;20;female;;47.781800;14.383699;;02.04.2024;Bob Bobson
+red squirrel;Austria;0.277;18;male;;47.781073;14.383506;;02.04.2024;Bob Bobson
+red squirrel;Germany;0.258;19;male;;48.162251;11.494811;;02.04.2024;Bob Bobson
+red squirrel;Germany;0.256;16;female;;48.160432;11.494472;;02.04.2024;Bob Bobson
+red squirrel;Germany;0.317;21;female;;48.162563;11.495277;;02.04.2024;Bob Bobson
+red squirrel;Germany;0.266;18;female;;48.161906;11.490434;;02.04.2024;Bob Bobson
+red squirrel;Germany;0.283;21;male;;49.562324;11.092212;;02.04.2024;Bob Bobson
+red squirrel;Germany;0.305;18;female;;49.561973;11.086554;;02.04.2024;Bob Bobson
+red squirrell;Austria;0.282;18;male;;47.781755;14.385083;;02.04.2024;Bob Bobson
+red squirrell;Germany;0.318;18;male;;49.557527;11.089447;;02.04.2024;Bob Bobson
+lynx;Slovakia;27;94;female;;48.411163;18.864362;;02.04.2024;John Johnson
+red squirrel;Slovakia;0.339;20;male;;48.410771;18.865888;;02.04.2024;John Johnson
+red squirrel;Slovakia;0.302;19;male;;48.410201;18.862513;;02.04.2024;John Johnson
+red squirrel;Slovakia;0.276;19;male;;48.408111;18.865646;;02.04.2024;John Johnson
+red squirrel;Slovakia;0.252;19;female;;48.410932;18.861704;;02.04.2024;John Johnson
+red squirrel;Slovakia;0.293;19;male;;48.227614;17.072903;;02.04.2024;John Johnson
+red squirrel;Poland;0.294;19;male;;50.041131;19.949543;;02.04.2024;Anne Anthony
+red squirrel;Poland;;;male;;50.041552;19.949984;;02.04.2024;Anne Anthony
+red squirrel;Poland;0.312;23;female;;50.041945;19.949320;Lola;02.04.2024;Anne Anthony
+red squirrel;Poland;0.29;24;male;;50.041925;19.950894;;02.04.2024;Anne Anthony
+red squirrel;Hungary;0.258;21;female;;47.511582;18.942341;;02.04.2024;Anne Anthony
+red squirrel;Hungary;0.286;18;male;;47.508260;18.948349;;03.04.2024;Anne Anthony
+hedgehog;Germany;1.2;22;male;;49.551211;11.077661;;03.04.2024;Bob Bobson
+hedgehog;Germany;0.9;23;female;;49.562583;11.082312;;03.04.2024;Bob Bobson
+hedgehog;Germany;0.7;23;female;;49.547597;11.079679;;03.04.2024;Bob Bobson
+;;;;;;;;;03.04.2024;James Johnson
+hedgehog;Slovakia;1.2;26;male;;48.409120;18.869274;;03.04.2024;John Johnson
+red squirrel;Czech Republic;0.258;21;female;;49.938787;14.178284;;03.04.2024;John Johnson
+red squirrel;Hungary;0.286;18;male;;47.508260;18.948349;;03.04.2024;Anne Anthony
+European bison;Poland;1000;295;male;;52.809543;23.708564;;04.04.2024;Anne Anthony
+hedgehog;Hungary;0.7;23;female;;47.508516;18.949429;;04.04.2024;Anne Anthony
+hedgehog;Hungary;1.2;24;male;;47.508941;18.948915;;04.04.2024;Anne Anthony
+red squirrel;Poland;0.337;22;female;;50.041819;19.951542;;04.04.2024;Anne Anthony
+red squirrel;Poland;0.272;23;female;;50.041800;19.950244;;04.04.2024;Anne Anthony
+red squirrel;Hungary;0.262;22;male;;47.508905;18.94657;;04.04.2024;Anne Anthony
+red squirrel;Poland;0.337;22;female;;50.041819;19.951542;;04.04.2024;Anne Anthony
+red squirrel;Poland;0.272;23;female;;50.041800;19.950244;;04.04.2024;Anne Anthony
+red squirrel;Hungary;0.262;22;male;;47.508905;18.94657;;04.04.2024;Anne Anthony
+European bison;Poland;557;255;female;;52.811204;23.697814;;05.04.2024;Anne Anthony
+hedgehog;Hungary;0.8;17;female;;47.507073;18.947873;;05.04.2024;Anne Anthony
+hedgehog;Austria;0.9;22;female;;47.317580;11.187606;;05.04.2024;Bob Bobson
+hedgehog;Austria;0.8;16;male;;47.319470;11.185730;;05.04.2024;Bob Bobson
+hedgehog;Austria;0.7;18;male;;47.319812;11.184790;;05.04.2024;Bob Bobson
+hedgehog;Austria;0.8;20;female;;47.316383;11.188381;;05.04.2024;Bob Bobson
+red squirrel;Austria;0.299;20;female;;47.781131;14.382207;;05.04.2024;Bob Bobson
+red squirrel;Australia;0.266;20;female;;47.781632;14.382365;;05.04.2024;Bob Bobson
+red squirrel;Austria;0.308;18;male;;47.780904;14.385669;;05.04.2024;Bob Bobson
+red squirrel;Austria;0.264;22;male;;47.781089;14.385211;;05.04.2024;Bob Bobson
+red squirrel;Austria;0.322;20;male;;47.781333;14.382547;;05.04.2024;Bob Bobson
+red squirrel;Austria;0.332;18;female;;47.780927;14.382188;;05.04.2024;Bob Bobson
+red squirrel;Austria;0.253;21;male;;47.856032;15.076768;;05.04.2024;Bob Bobson
+red squirrel;Germany;0.317;20;female;;49.545913;11.081051;;05.04.2024;Bob Bobson
+red squirrel;Germany;0.327;20;male;;49.550428;11.077659;;05.04.2024;Bob Bobson
+red squirrel;Germany;0.255;19;female;;49.558869;11.076638;;05.04.2024;Bob Bobson
+hedgehog;Slovakia;0.8;21;female;;48.412408;18.869074;;05.04.2024;John Johnson
+lynx;Czech Republic;15;70;male;;50.883894;14.372364;;05.04.2024;John Johnson
+red squirrel;Slovakia;0.3;19;female;;48.229837;17.089218;;05.04.2024;John Johnson
+European buster;Poland;589;279;female;;52.808704;23.705504;;06.04.2024;Anne Anthony
+hedgehog;HU;0.7;16;female;;47.510231;18.940042;;06.04.2024;Anne Anthony
+hedgehog;Hungary;0.8;14;female;;47.509073;18.946838;;06.04.2024;Anne Anthony
+red squirrel;Poland;0.348;23;male;;50.041252;19.950033;;06.04.2024;Anne Anthony
+red squirrel;Austria;0.294;22;male;;47.855007;15.076539;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.299;19;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.314;19;female;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.297;20;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.298;21;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.301;19;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.267;20;female;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.315;21;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.3;21;female;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.3;21;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.264;22;female;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.251;21;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.302;22;female;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.262;22;female;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.301;20;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.243;19;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.314;20;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.244;20;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.25;22;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.272;20;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.289;20;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.315;20;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.304;21;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.241;19;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.248;22;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.243;19;male;;;;;06.04.2024;Bob Bobson
+red squirrel;Germany;0.29;21;male;;;;;06.04.2024;Bob Bobson
+;Austria;0.319;20;male;;;;;06.04.2024;Bob Bobson
+;Austria;0.292;19;female;;;;;06.04.2024;Bob Bobson
+;Austria;0.319;19;female;;;;;06.04.2024;Bob Bobson
+;Austria;0.298;20;male;;;;;06.04.2024;Bob Bobson
+;Austria;0.255;22;male;;;;;06.04.2024;Bob Bobson
+;Austria;0.3;20;male;;;;;06.04.2024;Bob Bobson
+;Austria;0.252;21;male;;;;;06.04.2024;Bob Bobson
+hedgehog;Slovakia;0.8;17;male;;48.409645;18.872415;;06.04.2024;John Johnson
+lynx?;Czech Republic;26;88;female;;50.883881;14.373018;;06.04.2024;John Johnson
+red squirrel;Czech Republic;0.316;23;female;;49.939310;14.181266;;06.04.2024;John Johnson
+red squirrel;Czech Republic;0.327;21;male;;49.938616;14.181291;;06.04.2024;John Johnson
+red squirrel;Czech Republic;0.288;18;male;;49.937839;14.179075;;06.04.2024;John Johnson
+red squirrel;Czech Republic;0.313;22;female;;49.939308;14.180747;;06.04.2024;John Johnson
+red squirrel;Poland;0.348;23;male;;50.041252;19.950033;;06.04.2024;Anne Anthony
+European bison™;Poland;1100;350;male;;52.803316;23.686301;;07.04.2024;Anne Anthony
+hedgehog;Hungary;0.9;16;female;;47.506638;18.940091;;07.04.2024;Anne Anthony
+lynx;Poland;23;73;male;;52.823016;23.812286;;07.04.2024;Anne Anthony
+red squirrel;Hungary;0.319;18;male;;47.508665;18.940456;;07.04.2024;Anne Anthony
+red squirrell;Hungary;0.28;21;female;;47.510978;18.942963;;07.04.2024;Anne Anthony
+red squirrel;Austria;0.264;22;female;;47.857586;15.081328;;07.04.2024;Bob Bobson
+red squirrel;Austria;0.334;19;male;;47.856971;15.078984;;07.04.2024;Bob Bobson
+red squirrel;Austria;0.278;21;male;;47.856769;15.076411;;07.04.2024;Bob Bobson
+red squirrel;Austria;0.333;22;female;;47.855379;15.077237;Lola;07.04.2024;Bob Bobson
+red squirrel;Austria;0.323;23;male;;47.856015;15.08325;;07.04.2024;Bob Bobson
+hedgehog;Slovakia;1.1;16;female;;48.413154;18.875356;;07.04.2024;John Johnson
+red squirrel;Hungary;0.319;18;male;;47.508665;18.940456;;07.04.2024;Anne Anthony
+red squirrell;Hungary;0.28;21;female;;47.510978;18.942963;;07.04.2024;Anne Anthony
+red squirrel;PL;0.265;22;female;;50.041147;19.950460;;08.04.2024;Anne Anthony
+red squirrel;Austria;0.27;23;female;;47.853881;15.078367;;08.04.2024;Bob Bobson
+red squirrel;Austria;0.299;19;female;;47.854855;15.082168;Sissi;08.04.2024;Bob Bobson
+red squirrel;Austria;0.3;21;male;;47.855216;15.078877;;08.04.2024;Bob Bobson
+red squirrel;Austria;0.338;19;male;;47.857495;15.07895;;08.04.2024;Bob Bobson
+red squirrel;Austria;0.285;21;female;;47.853875;15.078745;;08.04.2024;Bob Bobson
+red squirrel;Austria;0.333;19;female;;47.854756;15.082892;Sissi;08.04.2024;Bob Bobson
+red squirrel;Austria;0.323;23;male;;47.854099;15.076812;;08.04.2024;Bob Bobson
+European bison;CC;560;250;female;;50.645077;14.840304;;08.04.2024;John Johnson
+hedgehog;Slovakia;1.1;25;male;;48.412590;18.873020;;08.04.2024;John Johnson
+red squirrel;Slovakia;-0.252;21;male;;49.057599;22.422203;;08.04.2024;John Johnson
+red squirrel;Slovakia;0.26;18;male;;49.053175;22.414666;;08.04.2024;John Johnson
+red squirrel;Slovakia;0.329;20;male;;49.054663;22.412082;;08.04.2024;John Johnson
+red squirrel;Slovakia;0.33;21;female;;49.055275;22.414210;;08.04.2024;John Johnson
+red squirrel;Slovakia;0.271;23;male;;49.052914;22.422990;;08.04.2024;John Johnson
+red squirrel;Slovakia;0.298;18;female;;49.055453;22.423536;;08.04.2024;John Johnson
+red squirrel;Slovakia;0.281;23;male;;49.056583;22.415432;;08.04.2024;John Johnson
+red squirrel;Slovakia;0.316;22;female;;49.054586;22.413680;;08.04.2024;John Johnson
+red squirrel;Slovakia;0.265;18;male;;49.056946;22.424916;;08.04.2024;John Johnson
+red squirrel;PL;0.265;22;female;;50.041147;19.950460;;08.04.2024;Anne Anthony
+red squirrel;Poland;0.296;22;male;;50.041497;19.950657;;09.04.2024;Anne Anthony
+red squirrel;Hungary;0.257;20;female;;47.509375;18.939808;;09.04.2024;Anne Anthony
+red squirrel;Czech Republic;0.313;21;male;;49.937425;14.182723;;09.04.2024;John Johnson
+red squirrel;Czech Republic;0.282;19;female;;49.939072;14.180063;;09.04.2024;John Johnson
+red squirrel;Poland;0.296;22;male;;50.041497;19.950657;;09.04.2024;Anne Anthony
+red squirrel;Hungary;0.257;20;female;;47.509375;18.939808;;09.04.2024;Anne Anthony
+European bison;PL;486;235;female;;52.809086;23.696425;;10.04.2024;Anne Anthony
+lynx;PL;22;78;male;;52.821625;23.818063;;10.04.2024;Anne Anthony
+hedgehog;Slovakia;1.2;26;male;;48.409469;18.861715;;10.04.2024;John Johnson
+red squirrel;Czech Republic;0.257;21;male;;50.107147;14.347009;;10.04.2024;John Johnson
+European bison;Poland;610;281;female;;52.810989;23.689137;;11.04.2024;Anne Anthony
+hedgehog;Hungary;0.8;17;female;;47.507081;18.939062;;11.04.2024;Anne Anthony
+red squirrel;Poland;0.325;20;female;;50.041347;19.950773;;11.04.2024;Anne Anthony
+red squirrel;Hungary;0.275;21;female;;47.506071;18.949311;;11.04.2024;Anne Anthony
+red squirrel;Hungary;0.285;20;male;;47.509655;18.943576;;11.04.2024;Anne Anthony
+red squirrel;Australia;0.31;23;male;;47.856092;15.083547;;11.04.2024;Bob Bobson
+red squirrel;Austria;0.256;19;male;;47.854876;15.08295;;11.04.2024;Bob Bobson
+red squirrel;Austria;0.285;23;male;;47.857535;15.078083;;11.04.2024;Bob Bobson
+red squirrel;Germany;0.303;19;female;;48.162437;11.494298;;11.04.2024;Bob Bobson
+red squirrel;Germany;0.273;19;male;;48.161106;11.48991;;11.04.2024;Bob Bobson
+red squirrel;Germany;0.267;22;female;;48.161385;11.492571;;11.04.2024;Bob Bobson
+red squirrel;Germany;0.258;20;female;;48.162137;11.494415;;11.04.2024;Bob Bobson
+red squirrel;Germany;0.296;18;male;;48.162162;11.493917;;11.04.2024;Bob Bobson
+lynx;Slovakia;22;88;male;;48.408550;18.864935;;11.04.2024;John Johnson
+red squirrel;Czech Republic;0.308;22;female;;50.106721;14.346231;;11.04.2024;John Johnson
+red squirrel;Poland;0.325;20;female;;50.041347;19.950773;;11.04.2024;Anne Anthony
+red squirrel;Hungary;0.275;21;female;;47.506071;18.949311;;11.04.2024;Anne Anthony
+red squirrel;Hungary;0.285;20;male;;47.509655;18.943576;;11.04.2024;Anne Anthony
+European bison;Poland;853;287;male;;52.803560;23.690378;;12.04.2024;Anne Anthony
+red squirrel;Germany;0.302;18;female;;48.160992;11.495374;;12.04.2024;Bob Bobson
+hedgehog;Slovakia;1;20;female;;48.408713;18.863829;;12.04.2024;John Johnson
+red squirrel;Czech Republic;0.325;21;female;;50.106483;14.348192;;12.04.2024;John Johnson
+hedgehog;HU;1.2;23;male;;47.511267;18.940191;;13.04.2024;Anne Anthony
+red squirrel;Poland;0.264;20;male;;50.041366;19.949936;;13.04.2024;Anne Anthony
+red squirrel;Poland;;;male;;50.041573;19.949850;;13.04.2024;Anne Anthony
+red squirrel;Poland;0.32;23;female;;50.041554;19.951130;;13.04.2024;Anne Anthony
+red squirrel;Poland;0.298;23;male;;52.211967;21.032924;;13.04.2024;Anne Anthony
+hedgehog;Slovakia;0.8;23;male;;48.412843;18.872614;;13.04.2024;John Johnson
+hedgehog;Slovakia;0.8;16;male;;48.407138;18.867247;;13.04.2024;John Johnson
+red squirrel;Poland;0.264;20;male;;50.041366;19.949936;;13.04.2024;Anne Anthony
+red squirrel;Poland;;;male;;50.041573;19.949850;;13.04.2024;Anne Anthony
+red squirrel;Poland;0.32;23;female;;50.041554;19.951130;;13.04.2024;Anne Anthony
+red squirrel;Poland;0.298;23;male;;52.211967;21.032924;;13.04.2024;Anne Anthony
+hedgehog;Hungary;0.4;17;female;;47.509261;18.949967;;14.04.2024;Anne Anthony
+lynx;Poland;20;90;female;;52.824608;23.817396;;14.04.2024;Anne Anthony
+red squirrel;Hungary;0.297;18;male;;47.506306;18.946099;;14.04.2024;Anne Anthony
+red squirrel;Hungary;0.308;20;female;;47.510068;18.947176;;14.04.2024;Anne Anthony
+red squirrel;Hungary;0.268;19;male;;47.511060;18.939832;;14.04.2024;Anne Anthony
+red squirrel;Germany;0.259;22;male;;48.160831;11.492403;;14.04.2024;Bob Bobson
+red squirrel;Hungary;0.297;18;male;;47.506306;18.946099;;14.04.2024;Anne Anthony
+red squirrel;Hungary;0.308;20;female;;47.510068;18.947176;;14.04.2024;Anne Anthony
+red squirrel;Hungary;0.268;19;male;;47.511060;18.939832;;14.04.2024;Anne Anthony
+European bisson;Poland;700;286;male;;52.808503;23.69937;;15.04.2024;Anne Anthony
+hedgehog;Hungary;0.7;15;male;;47.511427;18.948714;;15.04.2024;Anne Anthony
+red squirrel;Poland;0.278;21;female;;52.211888;21.032350;;15.04.2024;Anne Anthony
+red squirrel;Germany;0.339;19;female;;48.161422;11.491813;;15.04.2024;Bob Bobson
+red squirrel;Germany;0.307;22;male;;48.160790;11.489549;;15.04.2024;Bob Bobson
+red squirrel;Germany;0.256;20;female;;48.161009;11.491557;;15.04.2024;Bob Bobson
+red squirrel;Germany;0.29;20;male;;48.160807;11.494219;;15.04.2024;Bob Bobson
+red squirrel;Germany;0.323;18;female;;48.161794;11.494325;;15.04.2024;Bob Bobson
+red squirrel;Germany;0.293;21;male;;48.161069;11.49303;;15.04.2024;Bob Bobson
+red squirrel;Germany;0.326;18;female;;48.160870;11.49027;;15.04.2024;Bob Bobson
+red squirrel;Germany;0.266;21;female;;48.160560;11.490806;;15.04.2024;Bob Bobson
+hedgehog;Slovakia;0.5;18;female;;48.409909;18.867006;;15.04.2024;John Johnson
+red squirrel;Czech Republic;0.317;19;male;;50.106373;14.347574;;15.04.2024;John Johnson
+red squirrel;Poland;0.278;21;female;;52.211888;21.032350;;15.04.2024;Anne Anthony
+hedgehog;Hungary;0.5;19;female;;47.506430;18.947912;;16.04.2024;Anne Anthony
+hedgehog;Hungary;0.6;15;male;;47.506663;18.940320;;16.04.2024;Anne Anthony
+red squirrel;Hungary;0.254;20;female;;47.508169;18.947418;;16.04.2024;Anne Anthony
+red squirrel;Germany;0.313;19;male;;48.161902;11.49458;;16.04.2024;Bob Bobson
+red squirrel;Germany;0.2;14;male;;49.554765;11.0922;;16.04.2024;Bob Bobson
+red squirrel;Germany;0.278;18;female;;49.558466;11.096048;;16.04.2024;Bob Bobson
+hedgehog;Slovakia;0.6;25;male;;48.407605;18.876341;;16.04.2024;John Johnson
+red squirrel;Hungary;0.254;20;female;;47.508169;18.947418;;16.04.2024;Anne Anthony
+red squirrel;Poland;0.298;19;female;;52.212379;21.032913;;17.04.2024;Anne Anthony
+hedgehog;Germany;0.7;21;male;;49.556052;11.081501;;17.04.2024;Bob Bobson
+hedgehog;Germany;1.2;28;male;;49.551520;11.079537;;17.04.2024;Bob Bobson
+hedgehog;Germany;0.5;18;female;;49.553737;11.087705;;17.04.2024;Bob Bobson
+hedgehog;Germany;1;20;male;;49.560442;11.098395;;17.04.2024;Bob Bobson
+hedgehog;Germany;0.9;25;male;;49.560723;11.084667;;17.04.2024;Bob Bobson
+hedgehog;Germany;0.4;16;female;;49.558790;11.081218;;17.04.2024;Bob Bobson
+red squirrel;Germany;0.294;20;male;;49.545857;11.076254;;17.04.2024;Bob Bobson
+red squirrel;Germany;0.3;23;female;;49.554685;11.08345;;17.04.2024;Bob Bobson
+hedgehog;Slovakia;1.1;23;male;;48.186112;17.090491;;17.04.2024;John Johnson
+lynx;Slovakia;27;100;male;;48.411117;18.862265;;17.04.2024;John Johnson
+red squirrel;Czech Republic;0.283;22;female;;50.106413;14.348204;;17.04.2024;John Johnson
+red squirrel;Czech Republic;0.28;22;female;;50.107135;14.348206;;17.04.2024;John Johnson
+red squirrel;Poland;0.298;19;female;;52.212379;21.032913;;17.04.2024;Anne Anthony
+European bison;Poland;405;220;female;;52.804031;23.683032;;18.04.2024;Anne Anthony
+hedgehog;Germany;1;24;male;;49.561057;11.084334;;18.04.2024;Bob Bobson
+hedgehog;Germany;0.6;11;male;;49.557055;11.101996;;18.04.2024;Bob Bobson
+hedgehog;Germany;0.7;25;male;;49.554133;11.089674;;18.04.2024;Bob Bobson
+hedgehog;Germany;0.6;22;female;;49.561174;11.102216;;18.04.2024;Bob Bobson
+hedgehog;Germany;0.5;20;male;;49.563085;11.101392;;18.04.2024;Bob Bobson
+hedgehog;Germany;0.9;25;male;;49.551318;11.085475;;18.04.2024;Bob Bobson
+hedgehog;Germany;0.5;16;female;;49.556237;11.088639;;18.04.2024;Bob Bobson
+hedgehog;Germany;0.8;17;male;;49.545768;11.086386;;18.04.2024;Bob Bobson
+red squirrel;Czech Republic;0.326;23;male;;50.107313;14.348552;;18.04.2024;John Johnson
+European bison;Poland;662;244;female;;52.809106;23.680095;;19.04.2024;Anne Anthony
+red squirrel;Poland;0.341;23;male;;52.212042;21.033492;;19.04.2024;Anne Anthony
+hedgehog;Austria;0.6;17;female;;47.319579;11.186061;;19.04.2024;Bob Bobson
+hedgehog;Austria;0.9;25;male;;47.317974;11.187472;;19.04.2024;Bob Bobson
+hedgehog;Austria;1.1;22;male;;47.316562;11.191160;;19.04.2024;Bob Bobson
+hedgehog;Austria;1.2;24;male;;47.318191;11.189484;;19.04.2024;Bob Bobson
+European bison;CC;656;245;female;;50.643056;14.843037;;19.04.2024;John Johnson
+hedgehog;Slovakia;1.1;19;female;;48.187522;17.087251;;19.04.2024;John Johnson
+hedgehog;Slovakia;1.1;29;male;;48.185406;17.084535;;19.04.2024;John Johnson
+lynx;Czech Republic;12;52;male;;-78.582972;14.367993;;19.04.2024;John Johnson
+lynx;Slovakia;24;81;female;;48.408549;18.873960;;19.04.2024;John Johnson
+lynx?;Czech Republic;22;83;female;;50.882924;14.368207;;19.04.2024;John Johnson
+red squirrel;Poland;0.341;23;male;;52.212042;21.033492;;19.04.2024;Anne Anthony
+red squirrel;Poland;0.327;23;male;;52.212168;21.032304;;20.04.2024;Anne Anthony
+red squirrel;Poland;0.337;24;female;;52.211797;21.033750;Basia;20.04.2024;Anne Anthony
+red squirrel;Poland;0.318;24;male;;52.212470;21.033642;;20.04.2024;Anne Anthony
+red squirrel;Poland;0.33;23;male;;52.211872;21.032296;Puchatek;20.04.2024;Anne Anthony
+red squirrel;Poland;0.327;23;male;;52.212168;21.032304;;20.04.2024;Anne Anthony
+red squirrel;Poland;0.337;24;female;;52.211797;21.033750;Basia;20.04.2024;Anne Anthony
+red squirrel;Poland;0.318;24;male;;52.212470;21.033642;;20.04.2024;Anne Anthony
+red squirrel;Poland;0.33;23;male;;52.211872;21.032296;Puchatek;20.04.2024;Anne Anthony
+European bison;Poland;776;294;male;;52.805299;23.701093;;21.04.2024;Anne Anthony
+hedgehog;Slovakia;0.8;18;male;;48.186208;17.089749;;21.04.2024;John Johnson
+red squirrel;Poland;0.306;19;female;;52.212605;21.033877;;22.04.2024;Anne Anthony
+red squirrel;Poland;0.349;20;female;;52.212001;21.033903;;22.04.2024;Anne Anthony
+lynx;Czech Republic;23;78;male;;-78.582973;14.366824;;22.04.2024;John Johnson
+red squirrel;Poland;0.306;19;female;;52.212605;21.033877;;22.04.2024;Anne Anthony
+red squirrel;Poland;0.349;20;female;;52.212001;21.033903;;22.04.2024;Anne Anthony
+hedgehog;Slovakia;0.7;16;male;;48.184231;17.091694;;23.04.2024;John Johnson
+European bison;Poland;650;286;female;;52.812486;23.686231;;24.04.2024;Anne Anthony
+red squirrel;Poland;0.271;19;female;;52.211797;21.032857;;24.04.2024;Anne Anthony
+red squirrel;Poland;0.329;24;female;;52.212045;21.031986;;24.04.2024;Anne Anthony
+lynx;Austria;20;90;male;;47.781188;14.385356;;24.04.2024;Bob Bobson
+lynx;Austria;26;91;female;;47.780999;14.382120;;24.04.2024;Bob Bobson
+hedgehog;Slovakia;0.6;15;female;;48.185648;17.083763;;24.04.2024;John Johnson
+red squirrel;Poland;0.271;19;female;;52.211797;21.032857;;24.04.2024;Anne Anthony
+red squirrel;Poland;0.329;24;female;;52.212045;21.031986;;24.04.2024;Anne Anthony
+lynx;Poland;14;65;female;;52.851841;23.891580;;25.04.2024;Anne Anthony
+red squirrel;Poland;0.311;21;male;;52.212203;21.032279;;25.04.2024;Anne Anthony
+red squirrel;Poland;0.311;21;male;;52.212203;21.032279;;25.04.2024;Anne Anthony
+hedgehog;Slovakia;0.7;16;male;;48.185433;17.086216;;26.04.2024;John Johnson
+red squirrel;Poland;0.29;24;female;;52.212763;21.032786;;27.04.2024;Anne Anthony
+hedgehog;Slovakia;1.2;22;male;;48.186913;17.088174;;27.04.2024;John Johnson
+hedgehog;Slovakia;0.7;24;female;;48.185649;17.088834;;27.04.2024;John Johnson
+red squirrel;Poland;0.29;24;female;;52.212763;21.032786;;27.04.2024;Anne Anthony
+lynx;Poland;12;52;male;;52.848214;23.891978;;28.04.2024;Anne Anthony
+lynx;Poland;27;95;female;;52.853843;23.919668;;28.04.2024;Anne Anthony
+red squirrel;Poland;0.312;23;male;;52.212120;21.034268;;28.04.2024;Anne Anthony
+hedgehog;Germany;0.5;20;male;;49.553240;11.074008;;28.04.2024;Bob Bobson
+hedgehog;Germany;1.1;20;female;;49.551562;11.081737;;28.04.2024;Bob Bobson
+hedgehog;Germany;0.6;18;male;;49.547376;11.079529;;28.04.2024;Bob Bobson
+hedgehog;Germany;0.8;20;male;;49.560178;11.093259;;28.04.2024;Bob Bobson
+hedgehog;Germany;0.8;19;male;;49.558968;11.106642;;28.04.2024;Bob Bobson
+hedgehog;Slovakia;0.9;20;male;;48.186370;17.090384;;28.04.2024;John Johnson
+red squirrel;Poland;0.312;23;male;;52.212120;21.034268;;28.04.2024;Anne Anthony
+hedgehog;Hungary;0.6;16;female;;47.506035;18.944528;;29.04.2024;Anne Anthony
+red squirrel;Poland;0.27;21;female;;52.212390;21.034548;Basia;29.04.2024;Anne Anthony
+hedgehog;Slovakia;1.1;23;male;;48.183848;17.082806;;29.04.2024;John Johnson
+lynx;Slovakia;22;73;male;;48.410551;18.864866;;29.04.2024;John Johnson
+red squirrel;Poland;0.27;21;female;;52.212390;21.034548;Basia;29.04.2024;Anne Anthony
+red squirrel;Poland;0.292;20;female;;52.212433;21.032496;;30.04.2024;Anne Anthony
+red squirrel;Poland;0.292;20;female;;52.212433;21.032496;;30.04.2024;Anne Anthony
+;;;;;;;;;03.05.2024;James Johnson
+red squirrel;Poland;0.305;19;female;;52.212746;21.033832;;09.05.2024;Anne Anthony
+hedgehog;Slovakia;0.7;22;male;;48.232760;17.069049;;09.05.2024;John Johnson
+red squirrel;Poland;0.305;19;female;;52.212746;21.033832;;09.05.2024;Anne Anthony
+hedgehog;Hungary;0.7;16;male;;47.509595;18.939751;;10.05.2024;Anne Anthony
+hedgehog;Hungary;1;20;male;;47.511301;18.939740;;10.05.2024;Anne Anthony
+red squirrel;Poland;0.264;21;male;;52.212148;21.033421;;11.05.2024;Anne Anthony
+hedgehog;Germany;0.7;24;male;;49.560230;11.102233;;11.05.2024;Bob Bobson
+hedgehog;Germany;1.1;19;female;;49.548410;11.078249;;11.05.2024;Bob Bobson
+hedgehog;Slovakia;0.8;24;female;;48.239628;17.087298;;11.05.2024;John Johnson
+red squirrel;Poland;0.264;21;male;;52.212148;21.033421;;11.05.2024;Anne Anthony
+hedgehog;Hungary;1;23;female;;47.507376;18.939600;;12.05.2024;Anne Anthony
+red squirrel;Poland;0.266;20;male;;52.212429;21.032435;;12.05.2024;Anne Anthony
+hedgehog;Slovakia;0.5;19;male;;48.231939;17.087688;;12.05.2024;John Johnson
+red squirrel;Poland;0.266;20;male;;52.212429;21.032435;;12.05.2024;Anne Anthony
+red squirrel;Poland;0.266;21;female;;52.212840;21.034377;;13.05.2024;Anne Anthony
+red squirrel;Poland;0.317;20;female;;52.212163;21.032633;;13.05.2024;Anne Anthony
+hedgehog;Slovakia;1;18;male;;48.225014;17.081449;;13.05.2024;John Johnson
+red squirrel;Poland;0.266;21;female;;52.212840;21.034377;;13.05.2024;Anne Anthony
+red squirrel;Poland;0.317;20;female;;52.212163;21.032633;;13.05.2024;Anne Anthony
+hedgehog;Hungary;0.6;17;female;;47.506311;18.947371;;14.05.2024;Anne Anthony
+red squirrel;Poland;0.27;23;female;;52.212553;21.032768;;14.05.2024;Anne Anthony
+hedgehog;Slovakia;0.7;22;female;;48.225116;17.086408;;14.05.2024;John Johnson
+red squirrel;Poland;0.27;23;female;;52.212553;21.032768;;14.05.2024;Anne Anthony
+red squirrel;Poland;0.279;22;male;;52.212411;21.033173;;15.05.2024;Anne Anthony
+red squirrel;Poland;0.279;22;male;;52.212411;21.033173;;15.05.2024;Anne Anthony
+hedgehog;Hungary;1;18;female;;47.507019;18.944015;;16.05.2024;Anne Anthony
+hedgehog;Slovakia;0.4;13;male;;48.237386;17.078352;;16.05.2024;John Johnson
+hedgehog;Hungary;;;male;;47.510077;18.945646;;17.05.2024;Anne Anthony
+hedgehog;Hungary;0.7;11;female;;47.507758;18.949223;;17.05.2024;Anne Anthony
+red squirrel;Poland;0.28;19;female;;52.212542;21.033829;;17.05.2024;Anne Anthony
+red squirrel;Poland;0.26;19;male;;52.212628;21.034494;;17.05.2024;Anne Anthony
+red squirrel;Poland;0.294;24;female;;52.212940;21.034208;;17.05.2024;Anne Anthony
+hedgehog;Slovakia;0.6;20;male;;48.235981;17.081698;;17.05.2024;John Johnson
+hedgehog;Slovakia;0.8;16;female;;48.234930;17.084813;;17.05.2024;John Johnson
+lynx;Slovakia;18;76;male;;48.412724;18.868878;;17.05.2024;John Johnson
+red squirrel;Poland;0.28;19;female;;52.212542;21.033829;;17.05.2024;Anne Anthony
+red squirrel;Poland;0.26;19;male;;52.212628;21.034494;;17.05.2024;Anne Anthony
+red squirrel;Poland;0.294;24;female;;52.212940;21.034208;;17.05.2024;Anne Anthony
+red squirrel;Poland;0.306;21;male;;52.211896;21.033806;;18.05.2024;Anne Anthony
+red squirrel;Poland;0.277;22;male;;52.211924;21.033243;;18.05.2024;Anne Anthony
+red squirrel;Poland;0.306;21;male;;52.211896;21.033806;;18.05.2024;Anne Anthony
+red squirrel;Poland;0.277;22;male;;52.211924;21.033243;;18.05.2024;Anne Anthony
+hedgehog;Hungary;1.1;22;female;;47.510584;18.941730;;19.05.2024;Anne Anthony
+hedgehog;Slovakia;0.6;19;female;;48.236605;17.071495;;19.05.2024;John Johnson
+lynx;Slovakia;22;85;male;;48.411436;18.864780;;19.05.2024;John Johnson
+red squirrel;Poland;0.341;21;female;;52.212295;21.034039;;20.05.2024;Anne Anthony
+red squirrel;Poland;0.341;21;female;;52.212295;21.034039;;20.05.2024;Anne Anthony
+red squirrel;Poland;0.338;22;female;;52.212915;21.033226;;21.05.2024;Anne Anthony
+red squirrel;Poland;0.311;19;female;;52.212601;21.032613;;21.05.2024;Anne Anthony
+hedgehog;Slovakia;1.2;25;male;;48.231497;17.073128;;21.05.2024;John Johnson
+hedgehog;Slovakia;0.4;16;female;;48.238634;17.074895;;21.05.2024;John Johnson
+red squirrel;Poland;0.338;22;female;;52.212915;21.033226;;21.05.2024;Anne Anthony
+red squirrel;Poland;0.311;19;female;;52.212601;21.032613;;21.05.2024;Anne Anthony
+red squirrel;Poland;0.308;23;male;;52.212245;21.032988;;22.05.2024;Anne Anthony
+red squirrel;Poland;0.308;22;female;;52.212583;21.032932;;22.05.2024;Anne Anthony
+red squirrel;Poland;0.308;23;male;;52.212245;21.032988;;22.05.2024;Anne Anthony
+red squirrel;Poland;0.308;22;female;;52.212583;21.032932;;22.05.2024;Anne Anthony
+red squirrel;Poland;0.29;23;male;;52.212065;21.034571;;23.05.2024;Anne Anthony
+hedgehog;Slovakia;0.5;16;male;;48.231214;17.084105;;23.05.2024;John Johnson
+lynx;Czech Republic;21;91;female;;50.881878;14.371969;;23.05.2024;John Johnson
+red squirrel;Poland;0.29;23;male;;52.212065;21.034571;;23.05.2024;Anne Anthony
+red squirrel;Poland;0.346;22;female;;52.212305;21.033921;;24.05.2024;Anne Anthony
+hedgehog;Slovakia;0.7;20;female;;48.231411;17.075484;;24.05.2024;John Johnson
+red squirrel;Poland;0.346;22;female;;52.212305;21.033921;;24.05.2024;Anne Anthony
+red squirrel;Poland;;;male;;52.212906;21.033210;;25.05.2024;Anne Anthony
+red squirrel;Poland;;;male;;52.212906;21.033210;;25.05.2024;Anne Anthony
+red squirrel;Poland;0.327;24;female;;52.822110;23.814403;;26.05.2024;Anne Anthony
+hedgehog;Slovakia;0.8;18;male;;48.237588;17.090344;;26.05.2024;John Johnson
+red squirrel;Poland;0.327;24;female;;52.822110;23.814403;;26.05.2024;Anne Anthony
+hedgehog;Slovakia;0.7;18;female;;48.232775;17.070226;;27.05.2024;John Johnson
+red squirrel;Poland;0.274;23;male;;52.821631;23.813638;;28.05.2024;Anne Anthony
+red squirrel;Poland;0.274;23;male;;52.821631;23.813638;;28.05.2024;Anne Anthony
+red squirrel;Poland;0.31;19;female;;52.821524;23.817037;Basia;29.05.2024;Anne Anthony
+hedgehog;Slovakia;0.8;18;male;;48.226890;17.084025;;29.05.2024;John Johnson
+lynx;Slovakia;25;101;female;;48.412941;18.863684;;29.05.2024;John Johnson
+red squirrel;Poland;0.31;19;female;;52.821524;23.817037;Basia;29.05.2024;Anne Anthony
+hedgehog;Slovakia;0.6;18;female;;48.237124;17.085811;;30.05.2024;John Johnson
+red squirrel;Poland;0.315;24;female;;52.822950;23.812750;;31.05.2024;Anne Anthony
+red squirrel;Poland;0.293;22;female;;52.820813;23.809086;;31.05.2024;Anne Anthony
+red squirrel;Poland;0.302;24;male;;52.825793;23.811068;;31.05.2024;Anne Anthony
+red squirrel;Poland;0.299;20;female;;52.820308;23.809736;;31.05.2024;Anne Anthony
+hedgehog;Slovakia;0.6;15;male;;48.228141;17.089055;;31.05.2024;John Johnson
+lynx;Slovakia;30;115;male;;48.408025;18.865229;;31.05.2024;John Johnson
+red squirrel;Poland;0.315;24;female;;52.822950;23.812750;;31.05.2024;Anne Anthony
+red squirrel;Poland;0.293;22;female;;52.820813;23.809086;;31.05.2024;Anne Anthony
+red squirrel;Poland;0.302;24;male;;52.825793;23.811068;;31.05.2024;Anne Anthony
+red squirrel;Poland;0.299;20;female;;52.820308;23.809736;;31.05.2024;Anne Anthony
+red squirrel;Poland;0.325;20;male;;52.823959;23.817073;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.276;22;male;;52.825746;23.815204;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.298;24;female;;52.823595;23.814758;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.322;23;male;;52.825363;23.816829;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.344;22;female;;52.821958;23.811375;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.323;22;female;;52.823084;23.816106;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.325;20;male;;52.823959;23.817073;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.276;22;male;;52.825746;23.815204;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.298;24;female;;52.823595;23.814758;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.322;23;male;;52.825363;23.816829;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.344;22;female;;52.821958;23.811375;;01.06.2024;Anne Anthony
+red squirrel;Poland;0.323;22;female;;52.823084;23.816106;;01.06.2024;Anne Anthony
+hedgehog;Slovakia;0.6;15;male;;48.238913;17.065508;;02.06.2024;John Johnson
+;;;;;;;;;03.06.2024;James Johnson
+hedgehog;Slovakia;0.7;14;female;;48.237762;17.067101;;03.06.2024;John Johnson
+hedgehog;Slovakia;0.7;17;female;;48.238517;17.090268;;03.06.2024;John Johnson
+hedgehog;Slovakia;0.7;24;male;;48.232384;17.067453;;05.06.2024;John Johnson
+red squirrel;Czech Republic;0.324;19;male;;50.881376;14.367503;;06.06.2024;John Johnson
+red squirrel;Czech Republic;0.324;19;female;;50.883325;14.372463;;06.06.2024;John Johnson
+lynx;Slovakia;19;84;female;;48.408917;18.862915;;07.06.2024;John Johnson
+red squirrel;Czech Republic;0.291;21;female;;50.881428;14.366689;;08.06.2024;John Johnson
+red squirrel;Czech Republic;0.258;20;male;;50.882642;14.372818;;08.06.2024;John Johnson
+red squirrel;Czech Republic;0.333;23;male;;50.883849;14.367353;;10.06.2024;John Johnson
+red squirrel;Czech Republic;0.278;18;female;;50.884288;14.372837;;11.06.2024;John Johnson
+lynx;Slovakia;23;95;male;;48.411736;18.874597;;19.06.2024;John Johnson
+lynx;Slovakia;11;52;female;;48.411790;18.871650;;19.06.2024;John Johnson
+lynx?;Czech Republic;25;97;female;;50.881003;14.369286;;30.06.2024;John Johnson
+lynx;Slovakia;15;65;female;;48.406339;18.841071;;03.07.2024;James Johnson
+lynx;Slovakia;18;85;male;;48.411729;18.835591;;03.07.2024;James Johnson
+red squirel;Slovakia;0.297;20;not determined;;49.054132;22.411066;;03.07.2024;James Johnson
+red squirrel;Slovakia;0.273;23;female;;49.055962;22.425527;;03.07.2024;James Johnson
+red squirrel;Slovakia;0.254;19;male;;49.055646;22.412458;;03.07.2024;James Johnson
+red squirrel;Slovakia;0.305;20;female;;49.052910;22.420861;;03.07.2024;James Johnson
+red squirrel;Slovakia;0.327;19;female;;49.055547;22.411172;;03.07.2024;James Johnson
+red squirrell;Slovakia;0.305;20;male;;49.054647;22.410445;;03.07.2024;James Johnson
+;;;;;;;;;03.07.2024;James Johnson
+hedgehog;Slovakia;1;17;male;;48.226063;17.078596;;05.07.2024;James Johnson
+hedgehog;Slovakia;0.6;16;female;;48.238067;17.090891;;05.07.2024;James Johnson
+hedgehog;Slovakia;1.1;20;female;;48.239540;17.066719;;05.07.2024;James Johnson
+red squirrel;Slovakia;0.327;23;male;;49.057284;22.423861;;03.08.2024;James Johnson
+red squirrel;Slovakia;0.319;22;female;;49.054751;22.419160;;03.08.2024;James Johnson
+red squirrel;Slovakia;0.303;20;male;;49.055930;22.424085;;03.08.2024;James Johnson
+;;;;;;;;;03.08.2024;James Johnson
+lynx?;Slovakia;12;61;male;;48.413928;18.835281;;03.09.2024;James Johnson
+red squirrel;Slovakia;0.309;20;female;;49.057758;22.415169;;03.09.2024;James Johnson
+red squirrel;Slovakia;0.332;19;male;;48.185695;17.090742;;03.09.2024;James Johnson
+red squirrel;Slovakia;0.331;18;female;;48.186040;17.091147;;03.11.2024;James Johnson
+;;;;;;;;;03.13.2024;James Johnson
+;;;;;;;;;03.14.2024;James Johnson
+;;;;;;;;;03.22.2024;James Johnson
+;;;;;;;;;03.22.2024;James Johnson
+hedgehog;Hungary;;;male;;47.509755;18.949465;;1 May 2024;Anne Anthony
+hedgehog;Hungary;0.9;16;female;;47.507053;18.943306;;1 May 2024;Anne Anthony
+red squirrel;Poland;0.281;21;male;;52.211985;21.032869;;1 May 2024;Anne Anthony
+hedgehog;Slovakia;0.6;19;female;;48.184621;17.089464;;1 May 2024;John Johnson
+lynx;Slovakia;27;96;male;;48.406669;18.871602;;1 May 2024;John Johnson
+red squirrel;Poland;0.281;21;male;;52.211985;21.032869;;1 May 2024;Anne Anthony
+lynx;Poland;13;63;female;;52.846379;23.904990;;2 may 2024;Anne Anthony
+lynx?;Poland;20;87;female;;52.852069;23.900870;;2 may 2024;Anne Anthony
+red squirrel;Poland;0.282;22;female;;52.212911;21.034175;;2 may 2024;Anne Anthony
+red squirrel;Germany;0.305;21;female;;48.162609;11.494157;;2 may 2024;Bob Bobson
+European bison;Czech Republic;727;210;male;;50.643056;14.843037;;2 may 2024;John Johnson
+lynx;Slovakia;25;107;female;;48.408475;18.872535;;2 may 2024;John Johnson
+red squirrel;Poland;0.282;22;female;;52.212911;21.034175;;2 may 2024;Anne Anthony
+hedgehog;Hungary;1.2;26;male;;47.509103;18.948171;;3 May 2024;Anne Anthony
+hedgehog;Slovakia;1.1;22;male;;48.183927;17.090716;;3 May 2024;John Johnson
+red squirrel;Poland;0.317;19;female;;52.212310;21.033586;Zuzia;4 May 2024;Anne Anthony
+red squirrel;Poland;0.317;19;female;;52.212310;21.033586;Zuzia;4 May 2024;Anne Anthony
+hedgehog;Hungary;0.7;26;male;;47.510697;18.948588;;5 May 2024;Anne Anthony
+hedgehog;Hungary;1.1;21;female;;47.505903;18.948538;;5 May 2024;Anne Anthony
+lynx;Poland;24;89;female;;52.847483;23.906057;;5 May 2024;Anne Anthony
+hedgehog;Germany;0.6;23;female;;49.561220;11.082195;;5 May 2024;Bob Bobson
+hedgehog;Germany;0.7;21;female;;49.559523;11.103684;;5 May 2024;Bob Bobson
+hedgehog;Germany;0.6;23;male;;49.547725;11.082734;;5 May 2024;Bob Bobson
+hedgehog;Slovakia;1;21;male;;48.185893;17.08942;;5 May 2024;John Johnson
+hedgehog;Slovakia;0.4;16;male;;48.187845;17.086572;;5 May 2024;John Johnson
+hedgehog;Slovakia;0.7;19;female;;48.184278;17.086878;;5 May 2024;John Johnson
+red squirrel;Poland;0.301;22;male;;52.212760;21.034189;;6 May 2024;Anne Anthony
+red squirrel;Poland;0.343;22;male;;52.212497;21.033515;;6 May 2024;Anne Anthony
+red squirrel;Poland;0.307;20;female;;52.212144;21.033534;;6 May 2024;Anne Anthony
+hedgehog;Slovakia;0.8;21;male;;48.187468;17.088827;;6 May 2024;John Johnson
+red squirrel;Poland;0.301;22;male;;52.212760;21.034189;;6 May 2024;Anne Anthony
+red squirrel;Poland;0.343;22;male;;52.212497;21.033515;;6 May 2024;Anne Anthony
+red squirrel;Poland;0.307;20;female;;52.212144;21.033534;;6 May 2024;Anne Anthony
+hedgehog;Hungary;0.9;23;male;;47.510055;18.944356;;7 May 2024;Anne Anthony
+red squirrel;Poland;0.346;20;female;;52.212001;21.033187;Lola;7 May 2024;Anne Anthony
+hedgehog;Germany;1;23;female;;49.561356;11.105334;;7 May 2024;Bob Bobson
+hedgehog;Germany;0.5;17;female;;49.561569;11.087046;;7 May 2024;Bob Bobson
+red squirrel;Poland;0.346;20;female;;52.212001;21.033187;Lola;7 May 2024;Anne Anthony
+hedgehog;Hungary;0.9;16;female;;47.509860;18.939943;;8 May 2024;Anne Anthony
