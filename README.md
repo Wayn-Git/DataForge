@@ -37,7 +37,7 @@ Users can upload their data, and our system will automatically:
 
 ### Hero Page
 
-![Hero Page](./images/before.jpg)
+![Hero Page](./images/upload_screen.jpg)
 
 ---
 
@@ -55,7 +55,7 @@ Users can upload their data, and our system will automatically:
 
 ### Cleaning Summary
 
-![summary](./images/cleaning_summary.jpg)
+![summary](./images/clean_summary.jpg)
 
 ---
 
